@@ -1,38 +1,222 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-image: url(./images/ehud-neuhaus-Sne2rCdLz3w-unsplash.jpg);
+  background-size: cover;
+  background-color:  rgb(202, 225, 243);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.shadowA {
+  padding: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.7);
+}
+.shadowA:hover {
+  border: 1px solid grey;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.shadowA:active {
+  background-color: rgba(56, 221, 23, 0.63);
+}
+.shadowA2 {
+  padding: 0 2px;
+  border: 1px solid rgba(245, 245, 245, 0.0);
+  box-shadow: 0px 1px 1px 0px rgba(245, 245, 245, 0.75);
+}
+.shadowA2:hover {
+  border: 1px solid rgba(245, 245, 245, 0.5);
+  box-shadow: 0px 3px 3px 0px rgba(245, 245, 245, 0.5);
+}
+.shadowA2:active {
+  background-color: rgba(56, 221, 23, 0.63);
+}
+
+.mainHeader {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  min-height: 54px;
+  background-color: rgba(123, 123, 123, 1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3px;
+}
+.mainName {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 2vw;
+}
+.mainName:hover {
+  text-shadow: 0px 0px 9px #d2e8fa, 0px 0px 15px white;
+}
+.mainName:active {
+  color: #fdfca5;
+  text-shadow: 0px 0px 12px #fffd75, 0px 0px 18px #d2e8fa, 0px 0px 24px white;
+}
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex: 5;
+  min-width: 270px;
+  justify-content: center;
+  align-content: center;
+  color: whitesmoke;
+  align-self: center;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0 8vw;
+}
+.topNav {
+  padding: 3px 15px 6px 15px;
+  border-radius: 2px;
+}
+.topNav:hover {
+  background-color: rgba(241, 241, 241, 0.4);
+  color: rgb(60, 60, 60);
+}
+.topNav:active {
+  color: yellowgreen;
+}
 .App {
+  position: fixed; 
+  overflow-y: scroll;
+  top: 70px; right: 0; bottom: 0; left: 0;
+}
+.pageBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 120px;
+  color: whitesmoke;
+}
+.footerLeftHalf {
+  width: 50%;
+  padding: 15px;
+}
+.footerRightHalf {
+  width: 50%;
+  padding: 15px;
+  text-align: right;
+}
+.pageBottomCredits {
+  font-size: 0.7rem;
+}
+.pageBottomInfo {
+  font-size: 0.8rem;
+}
+.pageBottomLink {
+  font-size: 0.8rem;
+  margin: 6px 0;
+}
+.centered {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myUlList {
+  margin: 6px 0 9px 0;
+  padding-left: 24px;
+}
+.myUlList2 {
+  margin: 0 0 12px 0;
+  padding-left: 20px;
+}
+.paddedRow {
+  padding: 18px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+@media only screen and (min-width: 475px) {
+  .mainHeader {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .headerNav {
+    min-width: 240px;
+    justify-content: flex-end;
+    margin: 0;
+    padding-right: 2%;
   }
-  to {
-    transform: rotate(360deg);
+  .topNav {
+    padding: 3px 9px 6px 9px;
   }
+  .App {
+    top: 54px; right: 0; bottom: 0; left: 0; 
+  }
+  .contactLabel {
+    display: inline-block;
+    width: 66px;
+    text-align: right;
+    margin: 9px 3px 3px 3px;
+  }
+  #message {
+    margin-top: 9px;
+  }
+
 }

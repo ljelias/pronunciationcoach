@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import VowelTest from './components/VowelTest/VowelTest.js';
+import Exercises from './components/Exercises/Exercises.js';
+import Resources from './components/Resources/Resources.js';
+import Home from './components/Home/Home.js';
+import About from './components/About/About.js';
+import VowelContrastsContextProvider from './contexts/VowelContrastsContext';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (<>
+    <Router>
+      <Header></Header>
+      <main className="App">
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/resources' component={Resources} />
+            <Route exact path='/about' component={About} />
+
+            <VowelContrastsContextProvider>
+              <Route exact path='/voweltest' component={VowelTest} />
+              <Route exact path='/exercises' component={Exercises} />
+            </VowelContrastsContextProvider>
+          </Switch>
+        <Footer></Footer>
+      </main>
+    </Router>
+  </>
   );
 }
 

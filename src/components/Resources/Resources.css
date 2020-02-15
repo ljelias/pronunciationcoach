@@ -1,0 +1,58 @@
+.resourcesPageTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.row1Resources {
+  width: 100%;
+  min-height: 180px;
+  padding: 30px;
+}
+.row2Resources {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 1);
+}
+.row3Resources {
+  width: 100;
+  min-height: 180px;
+  padding: 30px;
+  background-color: rgba(245, 245, 245, 0.3);
+}
+.columnAResources {
+  background-color: rgba(245, 245, 245, 0.8);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+  border-right: 2px solid rgba(123, 123, 123, 1);
+  padding: 3vh 0.5vw;
+}
+.columnBResources {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-height: 540px;
+  min-width: 304px;
+  padding-right: 1vw;
+}
+
+.resourceCard {
+  width: 50%;
+  min-width: 300px;
+  margin: 45px auto;
+  padding: 0 24px;
+  background-color: whitesmoke;
+}
+.resourceTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.resourceP {
+  font-size: 1rem;
+  margin-bottom: 9px;
+}

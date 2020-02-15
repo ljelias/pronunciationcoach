@@ -1,0 +1,183 @@
+.row1Lessons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 480px;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.6);
+}
+.columnALessons {
+  background-color: rgba(245, 245, 245, 0.8);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+  padding: 3vh 0.5vw;
+}
+.columnBLessons {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 5;
+  min-height: 540px;
+  min-width: 304px;
+}
+#pairsIntroCard {
+  min-width: 300px;
+  display: none;
+}
+#pairsIntroCard,
+#pairsPracticeCard {
+  animation-delay: 0.2s;
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from { opacity: 0; color: white; }
+  to   { opacity: 1; color: #000000; }
+}
+
+.pairsLessonCard {
+  background-color: rgba(245, 245, 245, 0.9);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 300px;
+  margin: 45px auto;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  padding: 18px;
+}
+.pairsCardLeft{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 5;
+  min-width: 285px;
+}
+.pairsCardRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+.exercisesTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 3px 0;
+  background-color: rgba(100, 149, 237, 0.5);
+  border: 1px solid cornflowerblue;
+
+}
+.pairsTopicsList {
+  margin: 15px;
+  padding: 0;
+}
+.exerciseTopics {
+  margin: 3px 0;
+  padding: 3px 0 3px 9px;
+  list-style-type: none;
+  border: 1px solid rgba(245, 245, 245, 0.1);
+}
+.exerciseTopics:hover {
+  cursor: pointer;
+  background-color: rgba(100, 149, 237, 0.5);
+  border: 1px solid cornflowerblue;
+}
+.exerciseTopics:active {
+  background-color: rgba(123, 123, 123, 0.8);
+  border: 1px solid cornflowerblue;
+}
+.pairsLessonTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.pairsLessonIntroP {
+  font-size: 1rem;
+  margin: 12px;
+}
+.pairsLessonP {
+  font-size: 0.95rem;
+  line-height: 1rem;
+  margin: 6px 0;
+  width: 98%;
+  min-width: 279px;
+}
+.pairsLessonPSpan {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.pairsPlayer {
+  height: 30px;
+  width: 60%;
+  min-width: 270px;
+  border: 3px solid rgba(100, 149, 237, 0.6);
+  background-color: rgba(100, 149, 237, 0.6);
+  margin: 6px 0 21px 0;
+}
+.pairsLessonItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pairsFirstHalf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+}
+.pairsSecondHalf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+}
+.pairsLessonItem {
+  margin: 0 0 15px 9px;
+}
+.pairsNotesTitle {
+  margin-bottom: 6px;
+  border-top: 1px solid rgba(123, 123, 123, 1);
+  border-bottom: 2px solid rgba(123, 123, 123, 1);
+}
+.pairsNotesList {
+  padding-left: 24px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 2px 0;
+}
+.pairsNotesList li {
+  margin-bottom: 4px;
+}
+
+
+@media only screen and (min-width: 475px) {
+  .pairsLessonCard {
+    width: 90%;
+    margin: 12px auto;
+  } 
+}
+
+
+@media only screen and (min-width: 840px) {
+  .pairsLessonCard {
+    margin: 45px auto;
+  }
+  .pairsCardLeft{
+    margin-right: 6px;
+  }
+  .pairsCardRight {
+    border-left: 2px solid rgba(123, 123, 123, 1);
+  }
+  .pairsNotesTitle {
+    margin-left: 9px;
+  }
+}

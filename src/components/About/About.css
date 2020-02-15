@@ -1,0 +1,214 @@
+.row1Contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0px;
+}
+.row2Contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+  margin-top: 0px;
+}
+.aboutCard {
+  width: 100%;
+  margin: 0px auto;
+  background-color: rgba(123, 123, 123, 0.35);
+  color: whitesmoke;
+  padding: 45px 30px;
+}
+.aboutCard2 {
+  width: 95%;
+  margin: 0 auto;
+}
+.cardTop {
+  margin: 21px 15px 0 15px;
+}
+.inlineB {
+  display: inline-block;
+  margin: 0 9px;
+}
+.rowAboutCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.analysisCardLeft{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 3;
+  border-top: 2px solid rgba(123, 123, 123, 1);
+  border-bottom: 2px solid rgba(123, 123, 123, 1);
+  padding: 12px 18px 0 27px;
+}
+.analysisCardRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 270px;
+  border-top: 2px solid rgba(123, 123, 123, 1);
+  border-bottom: 2px solid rgba(123, 123, 123, 1);
+  text-align: center;
+  padding: 12px;
+}
+.analysisSubRow{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 270px;
+  margin-right: 12px;
+}
+.analysis1 {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  padding: 0 3px;
+}
+.analysis2 {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin-bottom: 3px;
+}
+.row3Contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0px;
+  padding: 10vh 0;
+}
+.columnAContact {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 270px;
+  background-color: rgba(245, 245, 245, 0.7);
+  margin: 1vh 1vw;
+  padding: 2vh 3vw;
+}
+.columnBContact {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 3;
+  min-width: 304px;
+  background-color: rgba(245, 245, 245, 0.7);
+  margin: 1vh 1vw;
+  padding: 2vh 2vw;
+}
+.aboutTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 6px 0 9px 0;
+}
+.aboutP {
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+  margin-bottom: 12px;
+}
+.aboutP2 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 6px;
+}
+.aboutP3 {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin-bottom: 12px;
+}
+.aboutP4 {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin-bottom: 6px;
+}
+.aboutP5 {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin-bottom: 3px;
+}
+.contactInput {
+  width: 55%;
+  min-width: 240px;
+}
+.contactLabel {
+  display: block;
+  text-align: left;
+  margin: 6px 3px 3px 3px;
+}
+#message {
+  width: 70%;
+  min-width: 285px;
+  margin-top: 3px;
+  vertical-align: top;
+}
+.contactButton {
+  float: right;
+  margin: 6px;
+  padding: 6px 15px;
+}
+.contactButton:hover {
+  cursor: pointer;
+  background-color: rgb(160, 160, 160);
+}
+.contactButton:active {
+  background-color: rgb(97, 226, 85);
+}
+.thankyouMessage {
+  margin-top: 36px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#contact {
+  min-height: 240px;
+}
+#checkbox {
+  display: none;
+}
+.thankyouMessage {
+  display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .aboutCard {
+    width: 85%;
+    margin: 45px auto;
+    padding: 30px;
+  }  
+  .analysisCardRight {
+    border-left: 2px solid rgba(123, 123, 123, 1);
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .contactLabel {
+    display: inline-block;
+    width: 69px;
+    text-align: right;
+    margin: 9px 3px 3px 3px;
+  }
+  #message {
+    margin-top: 9px;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .aboutCard {
+    width: 75%;
+    margin: 75px auto;
+  }
+  .buttonRow {
+    text-align: right;
+    margin: 6px 9px;
+  }  
+}
