@@ -68,7 +68,7 @@ class About extends Component {
 
   render() { 
     return ( <>
-      <div className="row1Contact">
+      <div className="row1Contact" id='aboutTop'>
         <div className="aboutCard">
           <h2 className='aboutTitle'>Laura Elias, MA / The Pronunciation Coach</h2>
           <p className="aboutP">Hello! Over the past 25+ years I have enjoyed working with so many different

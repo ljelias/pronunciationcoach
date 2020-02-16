@@ -57,7 +57,7 @@ class Exercises extends Component {
     let vowelTips = notes.map((note, idx) => <li key={idx} >{note}</li>);
 
     return ( 
-      <div className="row1Lessons">
+      <div className="row1Lessons" id='exercisesTop'>
         <div className="columnALessons">
           <h2 className="exercisesTitle centered">Practice Exercises</h2>
           <ul className='pairsTopicsList'>

@@ -70,7 +70,7 @@
   font-weight: 700;
   padding: 3px 0;
   background-color: rgba(154, 205, 50, 0.6);
-  border: 1px solid yellowgreen;
+  border: 1px solid rgb(154, 205, 50);
 }
 .testTopicsList {
   margin: 15px;

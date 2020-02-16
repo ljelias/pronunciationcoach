@@ -7,7 +7,7 @@ class Resources extends Component {
 
   render() { 
     return ( <>
-      <div className="row1Resources">
+      <div className="row1Resources" id='resourcesTop'>
         <h2 className="resourcesPageTitle">Recommended Resources</h2>
         <p>page under construction...</p>  
       </div>
