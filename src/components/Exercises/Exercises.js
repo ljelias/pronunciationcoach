@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
 import './Exercises.css';
 import { VowelContrastsContext } from '../../contexts/VowelContrastsContext.js';
+import longAShortEPairs from '../../audio/longAShortEPairs.mp3';
+import longEShortIPairs from '../../audio/longEShortIPairs.mp3';
+import longOShortOPairs from '../../audio/longOShortOPairs.mp3';
+import longU2ShortOOPairs from '../../audio/longU2ShortOOPairs.mp3';
+import shortA1ShortA2Pairs from '../../audio/shortA1ShortA2Pairs.mp3';
+import shortA1ShortEPairs from '../../audio/shortA1ShortEPairs.mp3';
+import shortEShortIPairs from '../../audio/shortEShortIPairs.mp3';
+import shortOShortUPairs from '../../audio/shortOShortUPairs.mp3';
+import shortUShortOOPairs from '../../audio/shortUShortOOPairs.mp3';
+
 
 
 class Exercises extends Component {
   static contextType = VowelContrastsContext;
   state = { 
+    pairsAudioFiles: {
+      longAShortEPairs: longAShortEPairs,
+      longEShortIPairs: longEShortIPairs,
+      longOShortOPairs: longOShortOPairs,
+      longU2ShortOOPairs: longU2ShortOOPairs,
+      shortA1ShortA2Pairs: shortA1ShortA2Pairs,
+      shortA1ShortEPairs: shortA1ShortEPairs,
+      shortEShortIPairs: shortEShortIPairs,
+      shortOShortUPairs: shortOShortUPairs,
+      shortUShortOOPairs: shortUShortOOPairs
+    },
     currentPracticeTopic: 'longAShortE'
    }
 
@@ -21,18 +42,19 @@ class Exercises extends Component {
     document.getElementById('pairsIntroCard').style.display = 'block';
   }
 
-  componentDidMount() {
+  componentDidMount() { 
     this.displayPairsIntro();
   }
-
 
 
   render() { 
 
     let vowelsData = this.context; 
     let nextVowelTopic = vowelsData[this.state.currentPracticeTopic];
-    console.log(nextVowelTopic);
-
+    let audio = nextVowelTopic.practiceAudio;
+    let pairsAudioFile = this.state.pairsAudioFiles[audio];
+    let notes = nextVowelTopic.vowelNotes;
+    let vowelTips = notes.map((note, idx) => <li key={idx} >{note}</li>);
 
     return ( 
       <div className="row1Lessons">
@@ -47,7 +69,7 @@ class Exercises extends Component {
             <li className="exerciseTopics" id='shortEShortIpairs' onClick={() => this.displayPairsTopic('shortEShortI')}>Short-e vs. Short-i</li>
             <li className="exerciseTopics" id='shortOShortUpairs' onClick={() => this.displayPairsTopic('shortOShortU')}>Short-o vs. Short-u</li>
             <li className="exerciseTopics" id='longOShortOpairs' onClick={() => this.displayPairsTopic('longOShortO')}>Long-O vs. Short-o</li>
-            <li className="exerciseTopics" id='longU2ShortOOpairs' onClick={() => this.displayPairsTopic('longU2ShortOO')}>Long-U2 (Long-OO) vs. Short-oo</li>
+            <li className="exerciseTopics" id='longU2ShortOOpairs' onClick={() => this.displayPairsTopic('longU2ShortOO')}>Long-U2/Long-OO vs. Short-oo</li>
             <li className="exerciseTopics" id='shortUShortOOpairs' onClick={() => this.displayPairsTopic('shortUShortOO')}>Short-u vs. Short-oo</li>
           </ul>
         </div>
@@ -72,7 +94,7 @@ class Exercises extends Component {
             <h3 className='pairsLessonTitle'>{nextVowelTopic.titleA} <span><em> ~&nbsp;{nextVowelTopic.titleB}</em></span>
             </h3>
             <p className="pairsLessonP">{nextVowelTopic.practiceInfo}</p>
-            <audio controls src="/demoAudio.m4a" controlsList="nodownload" className='pairsPlayer'>
+            <audio controls src={pairsAudioFile} controlsList="nodownload" className='pairsPlayer'>
               Your browser does not support the <code>audio</code> element.
             </audio>
 
@@ -122,8 +144,7 @@ class Exercises extends Component {
           <div className="pairsCardRight">
             <h5 className="pairsNotesTitle">NOTES</h5>
             <ul className="pairsNotesList">
-              <li>These two vowels use the same place in the mouth</li>
-              <li>Relax the tongue and keep the jaw low</li>
+              {vowelTips}
             </ul>
           </div>
         </div>

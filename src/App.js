@@ -21,8 +21,8 @@ function App() {
             <Route exact path='/about' component={About} />
 
             <VowelContrastsContextProvider>
-              <Route exact path='/voweltest' component={VowelTest} />
-              <Route exact path='/exercises' component={Exercises} />
+              <Route path='/voweltest' component={VowelTest} />
+              <Route path='/exercises' component={Exercises} />
             </VowelContrastsContextProvider>
           </Switch>
         <Footer></Footer>

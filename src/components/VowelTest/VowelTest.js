@@ -1,25 +1,138 @@
 import React, { Component } from 'react';
 import './VowelTest.css';
-import demoAudio from '../../audio/longOShortOTest.mp3';
 import { VowelContrastsContext } from '../../contexts/VowelContrastsContext.js';
+import longAShortETest from '../../audio/longAShortETest.mp3';
+import longEShortITest from '../../audio/longEShortITest.mp3';
+import longOShortOTest from '../../audio/longOShortOTest.mp3';
+import longU2ShortOOTest from '../../audio/longU2ShortOOTest.mp3';
+import shortA1ShortA2Test from '../../audio/shortA1ShortA2Test.mp3';
+import shortA1ShortETest from '../../audio/shortA1ShortETest.mp3';
+import shortEShortITest from '../../audio/shortEShortITest.mp3';
+import shortOShortUTest from '../../audio/shortOShortUTest.mp3';
+import shortUShortOOTest from '../../audio/shortUShortOOTest.mp3';
+
 
 class VowelTest extends Component {
   static contextType = VowelContrastsContext;
   state = { 
     currentTopic: 'longAShortE',
-    answerArray: []
+    answerArray: [],
+    audioFiles: {
+      longAShortETest: longAShortETest,
+      longEShortITest: longEShortITest,
+      longOShortOTest: longOShortOTest,
+      longU2ShortOOTest: longU2ShortOOTest,
+      shortA1ShortA2Test: shortA1ShortA2Test,
+      shortA1ShortETest: shortA1ShortETest,
+      shortEShortITest: shortEShortITest,
+      shortOShortUTest: shortOShortUTest,
+      shortUShortOOTest: shortUShortOOTest
+    }
    };
 
+  checkAnswers = (studentAnswers) => {
+    let correctAnswers = this.state.answerArray;
+    let correctItems = 0;
+    let incorrectItems = 0;
+    let skippedItems = 0;
+    let emptyItems = 0;
+
+    for (let i=0; i<correctAnswers.length; i++){
+      if (correctAnswers[i] === '--') { emptyItems = emptyItems +1; }
+      else if (studentAnswers[i] === 'blank'){ skippedItems = skippedItems + 1; }
+      else if (studentAnswers[i] === correctAnswers[i]) { correctItems = correctItems + 1; }
+      else { incorrectItems = incorrectItems + 1; }
+    }
+    document.getElementById('correctTally').innerHTML = correctItems;
+    document.getElementById('incorrectTally').innerHTML = incorrectItems;
+    document.getElementById('skippedTally').innerHTML = skippedItems;
+    //return;
+  }
+
+  retrieveQuizChoices = () => {
+    let studentAnswers = [];
+
+    let AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, AK, AL;
+    if (document.querySelector('input[name=Q1]:checked')){
+      AA = document.querySelector('input[name=Q1]:checked').value
+    } else {AA = 'blank'}
+    studentAnswers.push(AA);
+    if (document.querySelector('input[name=Q2]:checked')){
+      AB = document.querySelector('input[name=Q2]:checked').value
+    } else {AB = 'blank'}
+    studentAnswers.push(AB);
+    if (document.querySelector('input[name=Q3]:checked')){
+      AC = document.querySelector('input[name=Q3]:checked').value
+    } else {AC = 'blank'}
+    studentAnswers.push(AC);
+    if (document.querySelector('input[name=Q4]:checked')){
+      AD = document.querySelector('input[name=Q4]:checked').value
+    } else {AD = 'blank'}
+    studentAnswers.push(AD);
+    if (document.querySelector('input[name=Q5]:checked')){
+      AE = document.querySelector('input[name=Q5]:checked').value
+    } else {AE = 'blank'}
+    studentAnswers.push(AE);
+    if (document.querySelector('input[name=Q6]:checked')){
+      AF = document.querySelector('input[name=Q6]:checked').value
+    } else {AF = 'blank'}
+    studentAnswers.push(AF);
+    if (document.querySelector('input[name=Q7]:checked')){
+      AG = document.querySelector('input[name=Q7]:checked').value
+    } else {AG = 'blank'}
+    studentAnswers.push(AG);
+    if (document.querySelector('input[name=Q8]:checked')){
+      AH = document.querySelector('input[name=Q8]:checked').value
+    } else {AH = 'blank'}
+    studentAnswers.push(AH);
+    if (document.querySelector('input[name=Q9]:checked')){
+      AI = document.querySelector('input[name=Q9]:checked').value
+    } else {AI = 'blank'}
+    studentAnswers.push(AI);
+    if (document.querySelector('input[name=Q10]:checked')){
+      AJ = document.querySelector('input[name=Q10]:checked').value
+    } else {AJ = 'blank'}
+    studentAnswers.push(AJ);
+    if (document.querySelector('input[name=Q11]:checked')){
+      AK = document.querySelector('input[name=Q11]:checked').value
+    } else {AK = 'blank'}
+    studentAnswers.push(AK);
+    if (document.querySelector('input[name=Q12]:checked')){
+      AL = document.querySelector('input[name=Q12]:checked').value
+    } else {AL = 'blank'}
+    studentAnswers.push(AL);
+
+    this.checkAnswers(studentAnswers);
+  }
+
+  revealAnswers = () => {
+    let answerLines = document.querySelectorAll('.correctAnswer');
+    for (let i=0; i < answerLines.length; i++) {
+      answerLines[i].style.display = 'inline-block';
+    }
+    this.retrieveQuizChoices();
+  }
+
   displayQuizTopic = (topicId) => {
+    let radioButtons = document.querySelectorAll('.vowelTestRadio');
+    for (let i=0; i < radioButtons.length; i++) {
+      radioButtons[i].checked = false;
+    }
+
+    let oldAnswers = document.querySelectorAll('.correctAnswer');
+    for (let i=0; i < oldAnswers.length; i++) {
+      oldAnswers[i].style.display = 'none';
+    }
+    document.getElementById('correctTally').innerHTML = '-';
+    document.getElementById('incorrectTally').innerHTML = '-';
+    document.getElementById('skippedTally').innerHTML = '-';
+
     let lot = this.context[topicId];
     let topicAnswers = [lot.OneAns, lot.TwoAns, lot.ThreeAns, lot.FourAns, lot.FiveAns, lot.SixAns, lot.SevenAns, lot.EightAns, lot.NineAns, lot.TenAns, lot.ElevenAns, lot.TwelveAns];
-    console.log(lot);
-    console.log(topicAnswers);
     this.setState( { 
       currentTopic: topicId,
       answerArray: topicAnswers
     } );
-    
     document.getElementById('testIntroCard').style.display = 'none';
     document.getElementById('vowelTestDisplayCard').style.display = 'flex';
   }
@@ -29,14 +142,16 @@ class VowelTest extends Component {
     document.getElementById('testIntroCard').style.display = 'block';
   }
 
-  componentDidMount() {
-    this.displayIntroCard();
+  componentDidMount() { 
+    this.displayIntroCard(); 
   }
 
   render() { 
+
     let data = this.context; 
     let nextTopic = data[this.state.currentTopic];
-    console.log(nextTopic);
+    let audio = nextTopic.quizAudio;
+    let audioFile = this.state.audioFiles[audio];
 
     return (
     <div className="row1VowelTest">
@@ -79,7 +194,7 @@ class VowelTest extends Component {
           <div className="testCardLeft">
             <h3 className='vowelTestTitle'><span>{nextTopic.titleA}<em> ~&nbsp;{nextTopic.titleB}</em></span></h3>
             <p className="vowelTestP"> <span className="vowelTestPSpan">WHICH WORD DO YOU HEAR? </span>{nextTopic.instructions}</p>
-            <audio controls src={demoAudio} controlsList="nodownload" className='testPlayer'>
+            <audio controls src={audioFile} controlsList="nodownload" className='testPlayer'>
               Your browser does not support the <code>audio</code> element.
             </audio>
 
@@ -164,15 +279,16 @@ class VowelTest extends Component {
               </div>
               <div className="buttonRow">
                 <button type="reset" className='checkTest' value="Reset">Reset</button>
-                <button type='button' className='checkTest'>Check score only</button>
-                <button type='button' className='checkTest'>Show answers</button>
+                <button type='button' className='checkTest' onClick={() => this.retrieveQuizChoices()}>Check score only</button>
+                <button type='button' className='checkTest' onClick={() => this.revealAnswers()}>Show answers</button>
               </div>
             </form>
           </div>
           <div className="testCardRight">
             <h5 className="testResults">RESULTS</h5>
-            <p className="testTally">Correct: <span>-</span></p>
-            <p className="testTally">Incorrect: <span>-</span></p>
+            <p className="testTally">Correct: <span id='correctTally'>-</span></p>
+            <p className="testTally">Incorrect: <span id='incorrectTally'>-</span></p>
+            <p className="testTally">Skipped: <span id='skippedTally'>-</span></p>
             <h6 className="testAnswerTitle">Answers</h6>
             <p className="testAnswers">1: <span className='correctAnswer'>{nextTopic.OneAns}</span></p>
             <p className="testAnswers">2: <span className='correctAnswer'>{nextTopic.TwoAns}</span></p>

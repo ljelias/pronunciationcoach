@@ -78,6 +78,17 @@ class Home extends Component {
             </div>
 
             <div className="topicCard topicB">
+              <h4 className='scrollTitle'>Vowel Resources</h4>
+              <p className="scrollP">One of the more difficult aspects of English pronunciation is the vowel system. 
+                Two pages on this site have some basic help with some of the most difficult vowel contrasts.</p>
+              <p className="scrollP">The <Link to='/voweltest' className='shadowA'>Vowel&nbsp;Test</Link> page has brief listening 
+                quizzes to see if you can hear the difference between certain vowels. This may help you uncover specific areas of 
+                weakness to focus on.</p>
+              <p className="scrollP">The <Link to='/exercises' className='shadowA'>Exercises</Link> page has simple listening activities 
+                with the word pairs from the vowel test quizzes, to help train your ear to distinguish the vowel sounds.</p>
+            </div>
+
+            <div className="topicCard topicC">
               <h4 className='scrollTitle'>Does "American English" have specific rules?</h4>
               <p className="scrollP">There are no official rules for American English pronunciation, however, there
               is an informal standard. In general, the information on this site is very similar to the informal standard <Link
@@ -86,7 +97,7 @@ class Home extends Component {
               on Wikipedia.</p>
             </div>
 
-            <div className="topicCard topicC">
+            <div className="topicCard topicD">
               <h4 className='scrollTitle'>What is your pronunciation goal?</h4>
               <p className="scrollP">Learning to sound just like a native speaker is a goal that many start with. But
                 most adults do not have time to learn to pronounce English perfectly. A more attainable goal is to
@@ -98,7 +109,7 @@ class Home extends Component {
               help you feel more confident. </p>
             </div>
 
-            <div className="topicCard topicD">
+            <div className="topicCard topicE">
               <h4 className='scrollTitle'>Meet the Pronunciation Coach: Laura Elias, M.A.</h4>
               <p className="scrollP">I am a language teacher with a Master's degree in ESL (English as a Second Language) and
                 also a Master's degree in Hispanic Linguistics from the University of Minnesota. I have over 25 years of
@@ -106,7 +117,7 @@ class Home extends Component {
               always been pronunciation!</p>
             </div>
 
-            <div className="topicCard topicE">
+            <div className="topicCard topicA">
               <h4 className='scrollTitle'>English Pronunciation: Linguistic or Speech Therapy approach?</h4>
               <p className="scrollP">The pronunciation materials here use a linguistic approach (not speech therapy).
                 This is important because English pronunciation is closely linked to other aspects of the language.
@@ -116,7 +127,7 @@ class Home extends Component {
               confidence with speaking English!!</p>
             </div>
 
-            <div className="topicCard topicA">
+            <div className="topicCard topicB">
               <h4 className='scrollTitle'>Why do different textbooks have different vowel systems?</h4>
               <p className="scrollP">​One of the most complicated parts of English pronunciation is the vowel system. On top
                 of that, the differences between American and British English, or even between different regional accents,
@@ -128,7 +139,7 @@ class Home extends Component {
               are taught in school.</p>
             </div>
 
-            <div className="topicCard topicB">
+            <div className="topicCard topicC">
               <h4 className='scrollTitle'>Recommended: Check Vowel&nbsp;O</h4>
               <p className="scrollP">In my experience, the vowel that is mispronounced most often is "O". Most students that I
                 have worked with do not know that the English letter “O” has three different sounds, so they
@@ -141,7 +152,7 @@ class Home extends Component {
             </p>
             </div>
 
-            <div className="topicCard topicC">
+            <div className="topicCard topicD">
               <h4 className='scrollTitle'>The importance of phrasal verbs</h4>
               <p className="scrollP">Phrasal verbs are also sometimes called "two-word verbs." A few examples: call off (to
               cancel), go over (to review), or work out (to exercise).</p>
