@@ -77,18 +77,20 @@ class Home extends Component {
               the topic for an upcoming post!</p>
             </div>
 
-            <div className="topicCard topicC">
-              <h4 className='scrollTitle'>Vowel Resources</h4>
+            <div className="topicCard topicB">
+              <h4 className='scrollTitle'>Vowel Check!</h4>
               <p className="scrollP">One of the more difficult aspects of English pronunciation is the vowel system. 
-                Two pages on this site have some basic help with some of the most difficult vowel contrasts.</p>
-              <p className="scrollP">The <Link to='/voweltest' className='shadowA'>Vowel&nbsp;Test</Link> page has brief listening 
+                This site has a couple of simple resources to help you assess yourself on some of the most difficult vowel contrasts.</p>
+              <ul className="scrollP myUlList">
+                <li className='scrollP'>The <Link to='/voweltest' className='shadowA'>Vowel&nbsp;Test</Link> page has brief listening 
                 quizzes to see if you can hear the difference between certain vowels. This may help you uncover specific areas of 
-                weakness to focus on.</p>
-              <p className="scrollP">The <Link to='/exercises' className='shadowA'>Exercises</Link> page has simple listening activities 
-                with the word pairs from the vowel test quizzes, to help train your ear to distinguish the vowel sounds.</p>
+                weakness to focus on.</li>
+                <li className='scrollP'>The <Link to='/exercises' className='shadowA'>Exercises</Link> page has simple listening activities 
+                with the word pairs from the vowel test quizzes, to help train your ear to distinguish the vowel sounds.</li>
+              </ul>
             </div>
 
-            <div className="topicCard topicB">
+            <div className="topicCard topicC">
               <h4 className='scrollTitle'>Does "American English" have specific rules?</h4>
               <p className="scrollP">There are no official rules for American English pronunciation, however, there
               is an informal standard. In general, the information on this site is very similar to the informal standard <Link
@@ -97,7 +99,7 @@ class Home extends Component {
               on Wikipedia.</p>
             </div>
 
-            <div className="topicCard topicD">
+            <div className="topicCard topicA">
               <h4 className='scrollTitle'>What is your pronunciation goal?</h4>
               <p className="scrollP">Learning to sound just like a native speaker is a goal that many start with. But
                 most adults do not have time to learn to pronounce English perfectly. A more attainable goal is to
@@ -109,7 +111,7 @@ class Home extends Component {
               help you feel more confident. </p>
             </div>
 
-            <div className="topicCard topicA">
+            <div className="topicCard topicB">
               <h4 className='scrollTitle'>Meet the Pronunciation Coach: Laura Elias, M.A.</h4>
               <p className="scrollP">I am a language teacher with a Master's degree in ESL (English as a Second Language) and
                 also a Master's degree in Hispanic Linguistics from the University of Minnesota. I have over 25 years of
@@ -127,19 +129,26 @@ class Home extends Component {
               confidence with speaking English!!</p>
             </div>
 
-            <div className="topicCard topicB">
+            <div className="topicCard topicA">
               <h4 className='scrollTitle'>Why do different textbooks have different vowel systems?</h4>
-              <p className="scrollP">​One of the most complicated parts of English pronunciation is the vowel system. On top
-                of that, the differences between American and British English, or even between different regional accents,
-                is primarily in the vowel sounds. So ESL textbooks are often different because the authors are from
+              <p className="scrollP">​English has 15 different vowel sounds. (Some linguists might even say that there are more 
+                than 15!) And the one of the primary differences between American and British English, or between different regional accents,
+                is differences in the vowel sounds. So ESL textbooks are often different because the authors are from
               different places!!</p>
-              <p className="scrollP">The way that the vowels are explained on this site and on the Pronunciation Coach blog
-                aims for the "General American English" style. Also, the information on vowels is organized in a way that
-                helps clarify some useful pronunciation-spelling patterns, and is similar to how native-speaking children
-              are taught in school.</p>
+              <p className="scrollP">The way the PronunciationCoach site presents the vowel system...</p>
+              <ul className="scrollP myUlList"> 
+                <li className='scrollP'>aims for the "General American English" style.</li>
+                <li className='scrollP'>helps clarify some very useful pronunciation-spelling patterns that many textbooks overlook.</li>
+                <li className='scrollP'>is similar to how many native-speaking children are taught in school.</li>
+                <li className='scrollP'>is organized in a way that is straightforward, without making the learning process
+                more complicated by overanalyzing very small distinctions. There are small variations that happen naturally due to 
+                certain vowel+consonant combinations or other speech factors -- these are things that linguists like to analyze 
+                but most native English speakers are typically not aware of. You do not need to know all of the fine-grained 
+                differences in order to speak English well.</li>
+              </ul>
             </div>
 
-            <div className="topicCard topicD">
+            <div className="topicCard topicB">
               <h4 className='scrollTitle'>Recommended: Check Vowel&nbsp;O</h4>
               <p className="scrollP">In my experience, the vowel that is mispronounced most often is "O". Most students that I
                 have worked with do not know that the English letter “O” has three different sounds, so they
@@ -152,7 +161,7 @@ class Home extends Component {
             </p>
             </div>
 
-            <div className="topicCard topicA">
+            <div className="topicCard topicC">
               <h4 className='scrollTitle'>The importance of phrasal verbs</h4>
               <p className="scrollP">Phrasal verbs are also sometimes called "two-word verbs." A few examples: call off (to
               cancel), go over (to review), or work out (to exercise).</p>
