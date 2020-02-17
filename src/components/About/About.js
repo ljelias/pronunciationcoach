@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './About.css';
+import config from '../../config.js';
 
 
 class About extends Component {
@@ -7,7 +8,7 @@ class About extends Component {
 
   handleSendData = (form, formData) => {
 
-    let url = "https://script.google.com/macros/s/AKfycbzGJ3LP9MFFyA4hD-Tkteh0751itZTgwvOLTk64/exec";
+    let url = config.CONTACT_URL;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

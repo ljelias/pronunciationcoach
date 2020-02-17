@@ -4,9 +4,18 @@ import { HashLink as Link } from 'react-router-hash-link';
 class Header extends Component {
   state = {  };
 
+/*  hideHeader = () => {
+    document.getElementById('headerOne').style.display = 'none';
+  }
+
+  displayHeader = () => {
+    document.getElementById('headerOne').style.display = 'flex';
+  }
+*/
+
   render() { 
     return ( 
-      <header className='mainHeader'>
+      <header className='mainHeader' id='headerOne'>
       <Link to='/#homeTop' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><h1 className='mainName'>PronunciationCoach</h1></Link>
       <nav className='headerNav'>
         <Link to='/#topTenA' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><span className="topNav">Top&nbsp;Ten</span></Link>

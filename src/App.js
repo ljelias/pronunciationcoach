@@ -8,7 +8,8 @@ import Exercises from './components/Exercises/Exercises.js';
 import Resources from './components/Resources/Resources.js';
 import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
-import VowelContrastsContextProvider from './contexts/VowelContrastsContext';
+import VowelContrastsContextProvider from './contexts/VowelContrastsContext.js';
+
 
 function App() {
   return (<>
@@ -32,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 

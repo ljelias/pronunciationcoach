@@ -93,7 +93,7 @@
 }
 .topicCard {
   min-height: 120px;
-  width: 85%;
+  width: 90%;
   min-width: 300px;
   background-color: rgba(123, 123, 123, 0.85);
   border: 0px solid rgba(245, 245, 245, 0.3);
@@ -112,10 +112,7 @@
   background-color: rgba(221, 184, 121, 0.8);
 }
 .topicD {
-  background-color: rgba(135, 158, 202, 0.7);
-}
-.topicE {
-  background-color: rgba(218, 161, 148, 0.8);
+  background-color: rgba(218, 164, 152, 0.8);
 }
 
 .scrollTitle {

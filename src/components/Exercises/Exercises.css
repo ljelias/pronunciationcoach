@@ -5,6 +5,8 @@
   width: 100%;
   min-height: 480px;
   border-bottom: 1px solid rgba(245, 245, 245, 0.6);
+  overflow: hidden;
+
 }
 .columnALessons {
   background-color: rgba(245, 245, 245, 0.8);
@@ -14,14 +16,17 @@
   flex: 1;
   min-width: 225px;
   padding: 3vh 0.5vw;
+  overflow: hidden;
 }
 .columnBLessons {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 5;
-  min-height: 540px;
+  height: 540px;
   min-width: 304px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 #pairsIntroCard {
   min-width: 300px;
