@@ -12,18 +12,24 @@ class Header extends Component {
     document.getElementById('headerOne').style.display = 'flex';
   }
 */
+scrollDown = () => {
+  let elmnt = document.getElementById("topTenA");
+  elmnt.scrollIntoView({ behavior: 'smooth' });
+}
+
+
 
   render() { 
     return ( 
       <header className='mainHeader' id='headerOne'>
-      <Link to='/#homeTop' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><h1 className='mainName'>PronunciationCoach</h1></Link>
+      <Link to='/' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><h1 className='mainName'>PronunciationCoach</h1></Link>
       <nav className='headerNav'>
         <Link to='/#topTenA' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><span className="topNav">Top&nbsp;Ten</span></Link>
-        <Link to='/voweltest#vowelTestTop'><span className="topNav">Vowel&nbsp;Test</span></Link>
-        <Link to='/exercises#exercisesTop'><span className="topNav">Exercises</span></Link>
-        <Link to='/resources#resourcesTop'><span className="topNav">Resources</span></Link>
+        <Link to='/voweltest'><span className="topNav">Vowel&nbsp;Test</span></Link>
+        <Link to='/exercises'><span className="topNav">Exercises</span></Link>
+        <Link to='/resources'><span className="topNav">Resources</span></Link>
         <Link to='//pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'><span className="topNav">Blog</span></Link>
-        <Link to='/about#aboutTop'><span className="topNav">Anent</span></Link>
+        <Link to='/about'><span className="topNav">Anent</span></Link>
       </nav>
     </header>
   

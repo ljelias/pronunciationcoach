@@ -66,6 +66,14 @@ class About extends Component {
     }
   }
 
+  scrollToTop = () => {
+      let elmnt = document.getElementById("aboutTop");
+      elmnt.scrollIntoView({behavior: 'smooth' });
+  }
+
+  componentDidMount = () => {
+    window.scrollTo(0,0);
+  }
 
   render() { 
     return ( <>
@@ -161,6 +169,8 @@ class About extends Component {
         </div>
       </div>
 
+      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
+
       <div className="row3Contact">
 
         <div className="columnAContact">
@@ -228,3 +238,4 @@ class About extends Component {
 }
  
 export default About;
+

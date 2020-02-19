@@ -50,8 +50,14 @@ class Home extends Component {
     oldCard.style.display = "none";
     newCard.style.display = "block";
   }
-  
+
+  scrollToTop = () => {
+    let elmnt = document.getElementById("homeTop");
+    elmnt.scrollIntoView({ behavior: 'smooth' });
+}
+
   componentDidMount() {
+    window.scrollTo(0,0);
     let firstCard = document.getElementById('tip1');
     firstCard.style.display = 'block';
   }
@@ -179,6 +185,7 @@ class Home extends Component {
       </section>
 
       <section id='topTenA' className="row2">
+      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
         <div className="topTenHeader">
           <h3 id='topTenTitle'>Top Ten Tips!!</h3>
           <h5 id='topTenSubtitle'>Helpful advice for ANY student of English!</h5>

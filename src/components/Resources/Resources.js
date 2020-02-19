@@ -5,6 +5,11 @@ import './Resources.css';
 class Resources extends Component {
   state = {  };
 
+
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+
   render() { 
     return ( <>
       <div className="row1Resources" id='resourcesTop'>
