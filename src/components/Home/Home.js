@@ -194,10 +194,10 @@ class Home extends Component {
         <div className='topTenRoll'>
 
           <div className="tipButtonRow">
-            <button type='button' id="arrowButton1" onClick={() => this.seePrevious()} >&nbsp;&#10094;&nbsp;&#10094;&nbsp;</button>
+            <button type='button' id="arrowButton1" onClick={() => this.seePrevious()} >&nbsp;&lt;&nbsp;&lt;&nbsp;</button>
             <p className='topTenP'>Some pronunciation difficulties are related to patterns from your first language, 
             but these Top 10 Tips are helpful for almost anybody, no matter what your first language is.​</p>
-            <button type='button' id="arrowButton2" onClick={() => this.seeNext()} >&nbsp;&#10095;&nbsp;&#10095;&nbsp;</button>
+            <button type='button' id="arrowButton2" onClick={() => this.seeNext()} >&nbsp;>&nbsp;>&nbsp;</button>
           </div>
 
           <div className="topten" id="tip1"> 
