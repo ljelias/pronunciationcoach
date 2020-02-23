@@ -279,7 +279,7 @@ class VowelTest extends Component {
                 </div>
               </div>
               <div className="buttonRow">
-                <button type="reset" className='checkTest' value="Reset">Reset</button>
+                <button type="reset" className='checkTest' value="Reset">Reset choices</button>
                 <button type='button' className='checkTest' onClick={() => this.retrieveQuizChoices()}>Check score only</button>
                 <button type='button' className='checkTest' onClick={() => this.revealAnswers()}>Show answers</button>
               </div>

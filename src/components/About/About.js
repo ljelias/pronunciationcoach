@@ -167,9 +167,9 @@ class About extends Component {
           </div>
 
         </div>
+        <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
       </div>
 
-      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
 
       <div className="row3Contact">
 

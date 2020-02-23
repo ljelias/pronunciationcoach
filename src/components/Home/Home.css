@@ -133,13 +133,13 @@
   color: rgb(54, 54, 54);
 }
 .topTenRoll {
-  min-height: 510px;
+  min-height: 495px;
   width: 100%;
   margin: 0 auto;
   padding-bottom: 1px;
 }
 .topTenHeader {
-  padding: 6px 0 12px 0;  
+  padding: 18px 0 12px 0;  
 }
 #topTenTitle {
   display: inline-block;
@@ -164,8 +164,8 @@
 }
 #arrowButton1,
 #arrowButton2 {
-  background-color: rgba(123, 123, 123, 0.5);
-  border: 2px solid rgba(123, 123, 123, 0.6);
+  background-color: rgba(123, 123, 123, 0.6);
+  border: 2px solid rgba(123, 123, 123, 0.75);
   color: rgb(54, 54, 54);
 }
 #arrowButton1:hover,

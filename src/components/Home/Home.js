@@ -185,7 +185,6 @@ class Home extends Component {
       </section>
 
       <section id='topTenA' className="row2">
-      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
         <div className="topTenHeader">
           <h3 id='topTenTitle'>Top Ten Tips!!</h3>
           <h5 id='topTenSubtitle'>Helpful advice for ANY student of English!</h5>
@@ -397,14 +396,15 @@ class Home extends Component {
               and high notes and low notes in each sentence. Listen for this when you listen to English, and
               try to imitate it.</p>
             <p className='tipParag'><span className="exampleStart"><em>Be ready! </em></span>It may feel strange. English may feel
-              louder and noisier than you are accustomed to. Some students have told me, "I feel like I have to speak in an 
-              angry way" or "It feels silly". But, do your best, because if you do not use adequate levels of "music" in 
+              louder and noisier than you are accustomed to. But, do your best, because if you do not use adequate levels of "music" in 
               English, it could make you sound like you are bored, or boring, or sleepy, or sad, or not very smart. However, 
               using sufficient "music" in English can help make you sound like you are somebody who is friendly, positive, 
               and intelligent.</p>
           </div>
 
       </div>
+      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
+
     </section>
   </> );
   }
