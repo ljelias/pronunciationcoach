@@ -9,6 +9,7 @@ import Resources from './components/Resources/Resources.js';
 import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
 import VowelContrastsContextProvider from './contexts/VowelContrastsContext.js';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage.js';
 
 
 function App() {
@@ -16,16 +17,20 @@ function App() {
     <Router>
       <Header></Header>
       <main className="App">
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/resources' component={Resources} />
-            <Route exact path='/about' component={About} />
-
             <VowelContrastsContextProvider>
+              <Switch>
+
+              <Route exact path='/' component={Home} />
+              <Route path='/resources' component={Resources} />
+              <Route path='/about' component={About} />
               <Route path='/voweltest' component={VowelTest} />
               <Route path='/exercises' component={Exercises} />
+              <Route component={NotFoundPage} />
+
+              </Switch>
+
             </VowelContrastsContextProvider>
-          </Switch>
+
         <Footer></Footer>
       </main>
     </Router>

@@ -69,7 +69,7 @@ class Home extends Component {
         <div className="columnA">
           <div id="intro">
             <h2 id='introTitle'>Pronunciation<span className='miniBlank'> </span>Coach</h2>
-            <h2 id='subTitle'>Help and resources for learners of American English</h2>
+            <h2 id='subTitle'>Help and resources for&nbsp;learners of American&nbsp;English</h2>
           </div>
         </div>
         <div className="columnB">
@@ -168,15 +168,15 @@ class Home extends Component {
             </div>
 
             <div className="topicCard topicC">
-              <h4 className='scrollTitle'>The importance of phrasal verbs</h4>
-              <p className="scrollP">Phrasal verbs are also sometimes called "two-word verbs." A few examples: call off (to
-              cancel), go over (to review), or work out (to exercise).</p>
-              <p className="scrollP">English has thousands of phrasal verbs that people use every day. However, some students
-                don't know about them. Why? Because even though they are used very frequently in spoken English, they are
-                used much less frequently in written English, so you might not find them in a grammar book or you might
-              not see them very often in written materials.</p>
-              <p className="scrollP">However, if you want to be skilled with spoken English, you need to start to learn them.
-                (Link to books that I recommend --coming soon...)
+              <h4 className='scrollTitle'>The importance of Phrasal Verbs</h4>
+              <p className="scrollP">Phrasal verbs, also sometimes called "two-word verbs," are verbs such as: "call off" (to
+              cancel), "go over" (to review), or "work out" (to exercise).</p>
+              <p className="scrollP">English has thousands of phrasal verbs that people use every day, but some students
+                don't know about them. Why? Because even though they are used frequently in spoken English, they are
+                used much less frequently in written English, so you might not find them in a grammar book or 
+              see them very often in written materials.</p>
+              <p className="scrollP">However, to be skilled with spoken English, you need to learn to use them. Go to the <Link
+                to='/resources' className='shadowA'>Resources Page</Link> to see books that I recommend for learning phrasal verbs.
             </p>
             </div>
 
