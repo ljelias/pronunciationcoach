@@ -142,8 +142,13 @@ class VowelTest extends Component {
     document.getElementById('testIntroCard').style.display = 'block';
   }
 
+  scrollToTop = () => {
+    let elmnt = document.getElementById("vowelTestTop");
+    elmnt.scrollIntoView({behavior: 'smooth' });
+}
+
   componentDidMount() { 
-    window.scrollTo(0,0);
+    this.scrollToTop();
     this.displayIntroCard(); 
   }
 

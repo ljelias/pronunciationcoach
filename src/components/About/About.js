@@ -66,22 +66,35 @@ class About extends Component {
     }
   }
 
+  scrollToTopic = (id) => {
+    let element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+
   scrollToTop = () => {
       let elmnt = document.getElementById("aboutTop");
       elmnt.scrollIntoView({behavior: 'smooth' });
   }
 
   componentDidMount = () => {
-    window.scrollTo(0,0);
+    this.scrollToTop();
   }
 
   render() { 
     return ( <>
-      <div className="row1Contact" id='aboutTop'>
+      <div id='aboutTop'>
+      <nav className='pageScrollNav'>
+      <span className='scrollDownLink' onClick={() => this.scrollToTop()}>The Coach</span>
+        <span className='scrollDownLink' onClick={() => this.scrollToTopic('analysis')}>Analysis</span>
+        <span className='scrollDownLink' onClick={() => this.scrollToTopic('connect')}>Coaching</span>
+        <span className='scrollDownLink' onClick={() => this.scrollToTopic('contact')}>Contact</span>
+      </nav>
+      </div>
+      <div className="row1Contact">
         <div className="aboutCard">
           <h2 className='aboutTitle'>Laura Elias, MA / The Pronunciation Coach</h2>
           <p className="aboutP">Hello! Over the past 25+ years I have enjoyed working with so many different
-            students and I have had the amazing privelege of working with English learners from almost every
+            students and I have had the amazing privilege of working with English learners from almost every
             non-English-speaking country!</p>
           <p className="aboutP">I have M.A. degrees from the University of Minnesota in Hispanic Linguistics and in Teaching
             English as a Second Language, and I have taught college-level ESL and
@@ -95,7 +108,7 @@ class About extends Component {
         </div>
       </div>
 
-      <div className="row2Contact">
+      <div className="row2Contact" id='analysis'>
         <div className="aboutCard2">
           <div className="cardTop">
             <h2 className='aboutTitle inlineB'>Pronunciation Analysis</h2>
@@ -148,7 +161,7 @@ class About extends Component {
           </div>
 
           <div className="rowAboutCard paddedRow">
-            <p className="aboutP4">To begin the analysis process...</p>
+            <p className="aboutP4">If you would like to begin the analysis process...</p>
             <ol className='myUlList2'>
               <li className="aboutP4">Fill in <a href='https://forms.gle/hK5vUt61udEHTzrX7' target='_blank' rel='noopener noreferrer'
                   className='shadowA'>my&nbsp;form</a>
@@ -163,7 +176,7 @@ class About extends Component {
               <li className="aboutP4">Conference. When you are ready, we can plan a time to talk (skype, google hangouts...)!
               </li>
             </ol>
-            <p className="aboutP3">Questions? Use the form below to contact me!</p>
+            <p className="aboutP3">QUESTIONS? Use the form below to contact me!</p>
           </div>
 
         </div>
@@ -171,9 +184,9 @@ class About extends Component {
       </div>
 
 
-      <div className="row3Contact">
+      <div className="row3Contact" id='connect'>
 
-        <div className="columnAContact">
+        <div id='coaching'>
           <h2 className='aboutTitle'>Pronunciation Coaching</h2>
           <div className="aboutP">
             <ul className='myUlList2'>
@@ -183,14 +196,14 @@ class About extends Component {
               <li>30-minute session ($35 US) or 45-minute session ($50 US).</li>
             </ul>
             <ul className='myUlList2'>
-              <li>Use the form to contact me!</li>
+              <li>Questions? Use the form below to contact me!</li>
             </ul>
           </div>
         </div>
 
-        <div className="columnBContact">
           <div id='contact'>
             <h2 className="aboutTitle">Contact the Coach!</h2>
+            <p>Use this form for general questions or to learn more about my services. I would love to hear from you!</p>
             <form className="gform" onSubmit = {e => {this.getFormValues(e)}}>
               <div className="formElements">
                 <button type='submit' className='contactButton'>Send</button>
@@ -228,7 +241,6 @@ class About extends Component {
                   We will get back to you soon!</h5>
               </div>
             </form>
-          </div>
         </div>
 
       </div>

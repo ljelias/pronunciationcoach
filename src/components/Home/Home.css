@@ -33,7 +33,7 @@
 #intro {
   position: relative;
   width: 300px;
-  margin: 60px auto 60px auto;
+  margin: 45px auto 60px auto;
   background-color: rgba(111, 111, 111, 0.9);
   padding: 18px;
   text-align: center;
@@ -90,6 +90,23 @@
   line-height: 1.8rem;
   font-weight: 600;
   font-style: italic;
+}
+#scrollToTips {
+  margin: 24px auto;
+  padding: 9px 24px;
+  background-color: rgba(123, 123, 123, 0.3);
+  border-radius: 9px;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.95rem;
+}
+#scrollToTips:hover {
+  cursor: pointer;
+  background-color: rgba(154, 205, 50, 0.25);
+}
+#scrollDownArrow {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 .topicCard {
   min-height: 120px;

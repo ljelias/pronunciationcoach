@@ -13,7 +13,7 @@ class Resources extends Component {
 
 
   componentDidMount() {
-    window.scrollTo(0,0);
+    this.scrollToTop();
   }
 
   render() { 
@@ -24,8 +24,7 @@ class Resources extends Component {
           <div className='columnAResources'>
             <h3 className='resourcesSubtitle'>PHRASAL VERBS</h3>
             <p className='resourceP1'>To be skilled with spoken English, it is super important to know about phrasal verbs.</p>
-            <p className='resourceP1'>Phrasal verbs are also sometimes called "two-word verbs".</p> 
-            <p className='resourceP1'>Some examples of phrasal verbs are: "cut back" (to reduce), "drop out" (to quit), and "turn down" (to reject / to decrease the intensity).</p> 
+            <p className='resourceP1'>Phrasal verbs are also sometimes called "two-word verbs." Some examples are: "cut back" (to reduce), "drop out" (to quit), and "turn down" (to reject / to decrease the intensity).</p> 
             <p className='resourceP1'>English has thousands of phrasal verbs that are used every day.</p>
           </div>
 
@@ -34,16 +33,17 @@ class Resources extends Component {
           <p className='resourceP1'>These verbs are used VERY frequently in spoken English, but much less frequently in written English. 
             Therefore, they are sometimes not included in English textbooks, and so some students don't know about them.</p>
           <p className='resourceP1'>Different types of phrasal verbs have different grammar patterns, so it can really help to have a book that explains how to use them correctly.</p>
-          <p className='resourceP1'>Below are my top picks for phrasal verb books. I have added some comments to help you choose the best option for you!</p>
           </div>
 
           <div className='columnAResources'>
             <h4 className='resourcesSubtitle'>Who should learn phrasal verbs?</h4>
             <p className='resourceP1'>If you first learned English verbally, by talking with native speakers in everyday life, or by listening to video with everyday conversations, then you might already have a good instinct for using phrasal verbs.</p>
-            <p className='resourceP1'>However, if you have primarily learned English through reading or in a classroom, then you may still need to learn about phrasal verbs in order to improve your speaking (and listening) skills for everyday communication.</p>
+            <p className='resourceP1'>However, if you have primarily learned English through reading or in a classroom, then you may still need to learn about phrasal verbs to improve your speaking (and listening) skills for everyday communication.</p>
           </div>
         </div>
+        <p className='resourceP3'>Here are my top picks for phrasal verb books, with my comments, to help you figure out the best option for you!</p>
       </div>
+
 
       <div className="row2Resources">
 

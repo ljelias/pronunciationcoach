@@ -42,8 +42,13 @@ class Exercises extends Component {
     document.getElementById('pairsIntroCard').style.display = 'block';
   }
 
+  scrollToTop = () => {
+    let elmnt = document.getElementById("exercisesTop");
+    elmnt.scrollIntoView({behavior: 'smooth' });
+}
+
   componentDidMount() { 
-    window.scrollTo(0,0);
+    this.scrollToTop();
     this.displayPairsIntro();
   }
 

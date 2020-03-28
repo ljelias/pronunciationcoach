@@ -55,9 +55,13 @@ class Home extends Component {
     let elmnt = document.getElementById("homeTop");
     elmnt.scrollIntoView({ behavior: 'smooth' });
 }
+  scrollToTopTips = () => {
+    let elmnt = document.getElementById("topTenA");
+    elmnt.scrollIntoView({ behavior: 'smooth' });
+}
 
   componentDidMount() {
-    window.scrollTo(0,0);
+    this.scrollToTop();
     let firstCard = document.getElementById('tip1');
     firstCard.style.display = 'block';
   }
@@ -70,6 +74,11 @@ class Home extends Component {
           <div id="intro">
             <h2 id='introTitle'>Pronunciation<span className='miniBlank'> </span>Coach</h2>
             <h2 id='subTitle'>Help and resources for&nbsp;learners of American&nbsp;English</h2>
+          </div>
+          <div id='scrollToTips' onClick={() => this.scrollToTopTips()}>
+            <p>Scroll to</p>
+            <p>TOP TEN TIPS!!</p>
+            <p id='scrollDownArrow'>&#8681;</p>
           </div>
         </div>
         <div className="columnB">
@@ -86,53 +95,27 @@ class Home extends Component {
             <div className="topicCard topicB">
               <h4 className='scrollTitle'>Vowel Check!</h4>
               <p className="scrollP">One of the more difficult aspects of English pronunciation is the vowel system. 
-                This site has a couple of simple resources to help you assess yourself on some of the most difficult vowel contrasts.</p>
+                Here are some resources to help you assess yourself on some of the most difficult vowel contrasts.</p>
               <ul className="scrollP myUlList">
                 <li className='scrollP'>The <Link to='/voweltest' className='shadowA'>Vowel&nbsp;Test</Link> page has brief listening 
                 quizzes to see if you can hear the difference between certain vowels. This may help you uncover specific areas of 
-                weakness to focus on.</li>
-                <li className='scrollP'>The <Link to='/exercises' className='shadowA'>Exercises</Link> page has simple listening activities 
-                with the word pairs from the vowel test quizzes, to help train your ear to distinguish the vowel sounds.</li>
+                weakness to target.</li>
+                <li className='scrollP'>The <Link to='/exercises' className='shadowA'>Exercises</Link> page has simple listening activities, 
+                using the word pairs from the vowel test quizzes, to help you train your ear to recognize these vowel sounds.</li>
               </ul>
             </div>
 
             <div className="topicCard topicC">
-              <h4 className='scrollTitle'>Does "American English" have specific rules?</h4>
-              <p className="scrollP">There are no official rules for American English pronunciation, however, there
-              is an informal standard. In general, the information on this site is very similar to the informal standard <Link
-                  to='//en.wikipedia.org/wiki/General_American_English#General_American_in_the_media'
-                  target='_blank' rel='noopener noreferrer' className='shadowA'><em>"General&nbsp;American&nbsp;English"</em></Link> described
-              on Wikipedia.</p>
-            </div>
-
-            <div className="topicCard topicA">
-              <h4 className='scrollTitle'>What is your pronunciation goal?</h4>
-              <p className="scrollP">Learning to sound just like a native speaker is a goal that many start with. But
-                most adults do not have time to learn to pronounce English perfectly. A more attainable goal is to
-                learn which specific factors of your accent are the MOST problematic, and then work on a couple of key
-              areas.</p>
-              <p className="scrollP">Often, making a few crucial changes in your speaking patterns can make a big
-                difference. Learning how to clean up just a couple of aspects -- the things that interfere most with the
-                clarity of your speech -- can make a big impact on how easily others can understand you and it can
-              help you feel more confident. </p>
-            </div>
-
-            <div className="topicCard topicB">
-              <h4 className='scrollTitle'>Meet the Pronunciation Coach: Laura Elias, M.A.</h4>
-              <p className="scrollP">I am a language teacher with a Master's degree in ESL (English as a Second Language) and
-                also a Master's degree in Hispanic Linguistics from the University of Minnesota. I have over 25 years of
-                experience teaching English and Spanish to students of all levels. My favorite area in both languages has
-              always been pronunciation!</p>
-            </div>
-
-            <div className="topicCard topicC">
-              <h4 className='scrollTitle'>English Pronunciation: Linguistic or Speech Therapy approach?</h4>
-              <p className="scrollP">The pronunciation materials here use a linguistic approach (not speech therapy).
-                This is important because English pronunciation is closely linked to other aspects of the language.
-                For example, some aspects of English grammar interact with pronunciation patterns, and the historical
-                development of the language is linked to spelling and pronunciation patterns. A linguistic approach
-                supports language development as a whole, and this can also help enhance overall competence and
-              confidence with speaking English!!</p>
+              <h4 className='scrollTitle'>The importance of Phrasal Verbs</h4>
+              <p className="scrollP">Phrasal verbs, also sometimes called "two-word verbs," are verbs such as: "call off" (to
+              cancel), "go over" (to review), or "work out" (to exercise).</p>
+              <p className="scrollP">English has thousands of phrasal verbs that people use every day, but some students
+                don't know about them. Why? Because even though they are used frequently in spoken English, they are
+                used much less frequently in written English, so you might not find them in a grammar book or 
+              see them very often in written materials.</p>
+              <p className="scrollP">However, to be skilled with spoken English, you need to learn to use them. Go to the <Link
+                to='/resources' className='shadowA'>Resources</Link> page to see books that I recommend for learning phrasal verbs.
+            </p>
             </div>
 
             <div className="topicCard topicA">
@@ -168,16 +151,44 @@ class Home extends Component {
             </div>
 
             <div className="topicCard topicC">
-              <h4 className='scrollTitle'>The importance of Phrasal Verbs</h4>
-              <p className="scrollP">Phrasal verbs, also sometimes called "two-word verbs," are verbs such as: "call off" (to
-              cancel), "go over" (to review), or "work out" (to exercise).</p>
-              <p className="scrollP">English has thousands of phrasal verbs that people use every day, but some students
-                don't know about them. Why? Because even though they are used frequently in spoken English, they are
-                used much less frequently in written English, so you might not find them in a grammar book or 
-              see them very often in written materials.</p>
-              <p className="scrollP">However, to be skilled with spoken English, you need to learn to use them. Go to the <Link
-                to='/resources' className='shadowA'>Resources Page</Link> to see books that I recommend for learning phrasal verbs.
-            </p>
+              <h4 className='scrollTitle'>English Pronunciation: Linguistic or Speech Therapy approach?</h4>
+              <p className="scrollP">The pronunciation materials here use a linguistic approach (not speech therapy).
+                This is important because English pronunciation is closely linked to other aspects of the language.
+                For example, some aspects of English grammar interact with pronunciation patterns, and the historical
+                development of the language is linked to spelling and pronunciation patterns. A linguistic approach
+                supports language development as a whole, and this can also help enhance overall competence and
+              confidence with speaking English!!</p>
+            </div>
+
+            <div className="topicCard topicA">
+              <h4 className='scrollTitle'>What is your pronunciation goal?</h4>
+              <p className="scrollP">Learning to sound just like a native speaker is a goal that many start with. But
+                most adults do not have time to learn to pronounce English perfectly. A more attainable goal is to
+                learn which specific factors of your accent are the MOST problematic, and then work on a couple of key
+              areas.</p>
+              <p className="scrollP">Often, making a few crucial changes in your speaking patterns can make a big
+                difference. Learning how to clean up just a couple of aspects -- the things that interfere most with the
+                clarity of your speech -- can make a big impact on how easily others can understand you and it can
+              help you feel more confident. </p>
+            </div>
+
+            <div className="topicCard topicB">
+              <h4 className='scrollTitle'>Meet the Pronunciation Coach: Laura Elias, M.A.</h4>
+              <p className="scrollP">I am a language teacher with a Master's degree in ESL (English as a Second Language) and
+                also a Master's degree in Hispanic Linguistics from the University of Minnesota. I have over 25 years of
+                experience teaching English and Spanish to students of all levels. My favorite area in both languages has
+              always been pronunciation!</p>
+              <p className="scrollP">Go to the <Link
+                to='/about' className='shadowA'>Anent</Link> page to learn more!</p>
+            </div>
+
+            <div className="topicCard topicC">
+              <h4 className='scrollTitle'>Does "American English" have specific rules?</h4>
+              <p className="scrollP">There are no official rules for American English pronunciation, however, there
+              is an informal standard. In general, the information on this site is very similar to the informal standard <Link
+                  to='//en.wikipedia.org/wiki/General_American_English#General_American_in_the_media'
+                  target='_blank' rel='noopener noreferrer' className='shadowA'><em>"General&nbsp;American&nbsp;English"</em></Link> described
+              on Wikipedia.</p>
             </div>
 
           </div>

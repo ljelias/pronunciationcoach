@@ -15,9 +15,8 @@ class Header extends Component {
   render() { 
     return ( 
       <header className='mainHeader' id='headerOne'>
-      <Link to='/' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><h1 className='mainName'>PronunciationCoach</h1></Link>
+      <Link to='/'><h1 className='mainName'>PronunciationCoach</h1></Link>
       <nav className='headerNav'>
-        <Link to='/#topTenA' scroll={el => el.scrollIntoView({ behavior: 'smooth' })} ><span className="topNav">Top&nbsp;Ten</span></Link>
         <Link to='/voweltest'><span className="topNav">Vowel&nbsp;Test</span></Link>
         <Link to='/exercises'><span className="topNav">Exercises</span></Link>
         <Link to='/resources'><span className="topNav">Resources</span></Link>
