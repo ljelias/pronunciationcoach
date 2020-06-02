@@ -45,7 +45,9 @@ table {
 }
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
+
 body {
   height: 100%;
   background-image: url(./images/ehud-neuhaus-Sne2rCdLz3w-unsplash.jpg);

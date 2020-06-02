@@ -6,6 +6,34 @@
   padding: 0;
   overflow: hidden;
 }
+
+.subrowA {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 3vh 2vw;
+}
+.subrowB {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: rgba(111, 111, 111, 0.4);
+  box-shadow: inset 0 0 18px  rgba(0, 0, 0, 0.7);
+  max-height: 540px;
+  min-width: 304px;
+  margin: 5vh auto 9vh auto;
+  padding: 2vh 2vw;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
+/*
 .columnA {
   display: flex;
   flex-direction: column;
@@ -19,23 +47,24 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 5;
+  flex: 5; */
 /*  border-top: 5px solid rgba(245, 245, 245, 0.3);
   border-left: 5px solid rgba(245, 245, 245, 0.3);
   border-bottom: 5px solid rgba(245, 245, 245, 0.3); */
-  box-shadow: inset 2px 0 18px  rgba(0, 0, 0, 0.7);
+/*  box-shadow: inset 0 0 18px  rgba(0, 0, 0, 0.7);
   max-height: 540px;
   min-width: 304px;
+  margin: 2vh 2vw;
   padding: 2vh 2vw;
   overflow: hidden;
   overflow-y: scroll;
 }
+*/
 #intro {
   position: relative;
-  width: 300px;
-  margin: 45px auto 60px auto;
-  background-color: rgba(111, 111, 111, 0.9);
-  padding: 18px;
+  background-color: rgba(111, 111, 111, 0.8);
+  margin: 15px 0;
+  padding: 15px;
   text-align: center;
   color: rgb(240, 230, 255);
   border-radius: 0;
@@ -82,8 +111,10 @@
 #introTitle {
   font-size: 1.8rem;
   line-height: 1.8rem;
-  margin-bottom: 15px;
   font-weight: 700;
+}
+.miniBlank {
+  font-size: 0.1rem;
 }
 #subTitle {
   font-size: 1.5rem;
@@ -92,17 +123,21 @@
   font-style: italic;
 }
 #scrollToTips {
-  margin: 24px auto;
-  padding: 9px 24px;
-  background-color: rgba(123, 123, 123, 0.3);
+  margin: 9px 0;
+  padding: 9px 12px;
+  height: 75px;
+  background-color: rgba(123, 123, 123, 0.6);
   border-radius: 9px;
+  border: 1px solid rgba(123, 123, 123, 0.7);
   color: whitesmoke;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: 600;
 }
 #scrollToTips:hover {
   cursor: pointer;
-  background-color: rgba(154, 205, 50, 0.25);
+  background-color: rgba(154, 205, 50, 0.55);
 }
 #scrollDownArrow {
   font-size: 1.6rem;
@@ -183,7 +218,7 @@
 #arrowButton2 {
   background-color: rgba(123, 123, 123, 0.6);
   border: 2px solid rgba(123, 123, 123, 0.75);
-  color: rgb(54, 54, 54);
+  color: rgb(40, 40, 40);
 }
 #arrowButton1:hover,
 #arrowButton2:hover {
@@ -271,19 +306,6 @@ animation: fadein 1s;
     margin-left: 4px;
     margin-right: 6px;
     max-height: 129px;
-  }
-}
-
-
-@media only screen and (min-width: 600px) {
-  .columnA {
-    min-width: 340px;
-  }
-  .columnB {
-    min-width: 360px;
-  }
-  #intro {
-    margin: 75px auto 45px auto;
   }
 }
 

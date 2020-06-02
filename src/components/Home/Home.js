@@ -52,13 +52,12 @@ class Home extends Component {
   }
 
   scrollToTop = () => {
-    let elmnt = document.getElementById("homeTop");
-    elmnt.scrollIntoView({ behavior: 'smooth' });
-}
+    document.getElementById("homeTop").scrollIntoView({ behavior: 'smooth' });
+  }
+
   scrollToTopTips = () => {
-    let elmnt = document.getElementById("topTenA");
-    elmnt.scrollIntoView({ behavior: 'smooth' });
-}
+    document.getElementById("topTenA").scrollIntoView({ behavior: 'smooth' });
+  }
 
   componentDidMount() {
     this.scrollToTop();
@@ -70,18 +69,18 @@ class Home extends Component {
   render() {
     return ( <>
       <section id='homeTop' className="row1">
-        <div className="columnA">
+        <div className="subrowA">
           <div id="intro">
             <h2 id='introTitle'>Pronunciation<span className='miniBlank'> </span>Coach</h2>
             <h2 id='subTitle'>Help and resources for&nbsp;learners of American&nbsp;English</h2>
           </div>
           <div id='scrollToTips' onClick={() => this.scrollToTopTips()}>
-            <p>Scroll to</p>
+            <p>Go to</p>
             <p>TOP TEN TIPS!!</p>
             <p id='scrollDownArrow'>&#8681;</p>
           </div>
         </div>
-        <div className="columnB">
+        <div className="subrowB">
           <div className="topicsGallery">
 
             <div className="topicCard topicA">
@@ -152,11 +151,11 @@ class Home extends Component {
 
             <div className="topicCard topicC">
               <h4 className='scrollTitle'>English Pronunciation: Linguistic or Speech Therapy approach?</h4>
-              <p className="scrollP">The pronunciation materials here use a linguistic approach (not speech therapy).
+              <p className="scrollP">The pronunciation materials here are based on a linguistic approach (not speech therapy).
                 This is important because English pronunciation is closely linked to other aspects of the language.
-                For example, some aspects of English grammar interact with pronunciation patterns, and the historical
+                For example, some aspects of grammar interact with pronunciation patterns, and the historical
                 development of the language is linked to spelling and pronunciation patterns. A linguistic approach
-                supports language development as a whole, and this can also help enhance overall competence and
+                supports language development holistically, and this can also help enhance overall competence and
               confidence with speaking English!!</p>
             </div>
 
@@ -173,8 +172,8 @@ class Home extends Component {
             </div>
 
             <div className="topicCard topicB">
-              <h4 className='scrollTitle'>Meet the Pronunciation Coach: Laura Elias, M.A.</h4>
-              <p className="scrollP">I am a language teacher with a Master's degree in ESL (English as a Second Language) and
+              <h4 className='scrollTitle'>The Pronunciation Coach: Laura Elias, M.A.</h4>
+              <p className="scrollP">Hello! I am a language teacher with a Master's degree in ESL (English as a Second Language) and
                 also a Master's degree in Hispanic Linguistics from the University of Minnesota. I have over 25 years of
                 experience teaching English and Spanish to students of all levels. My favorite area in both languages has
               always been pronunciation!</p>
