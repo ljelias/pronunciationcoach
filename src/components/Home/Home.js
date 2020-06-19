@@ -178,7 +178,7 @@ class Home extends Component {
                 experience teaching English and Spanish to students of all levels. My favorite area in both languages has
               always been pronunciation!</p>
               <p className="scrollP">Go to the <Link
-                to='/about' className='shadowA'>Anent</Link> page to learn more!</p>
+                to='/about' className='shadowA'>About</Link> page to learn more!</p>
             </div>
 
             <div className="topicCard topicC">

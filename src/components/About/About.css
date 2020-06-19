@@ -16,6 +16,7 @@
   color: rgb(60, 60, 60);
 }
 .scrollDownLink:hover {
+  cursor: pointer;
   background-color: rgba(123, 123, 123, 1);
   color: whitesmoke;
 }
@@ -40,7 +41,7 @@
 .aboutCard {
   width: 100%;
   margin: 36px auto 0 auto;
-  background-color: rgba(123, 123, 123, 0.5);
+  background-color: rgba(123, 123, 123, 0.65);
   color: whitesmoke;
   padding: 30px;
 }
@@ -101,6 +102,10 @@
   line-height: 1.1rem;
   margin-bottom: 3px;
 }
+.analysisProcess {
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+}
 .row3Contact {
   display: flex;
   flex-direction: column;
@@ -116,10 +121,13 @@
   flex-basis: 100%;
   width: 100%;
   min-width: 270px;
-  background-color: rgba(123, 123, 123, 0.5);
+  background-color: rgba(123, 123, 123, 0.6);
   color: whitesmoke;
-  margin: 1vh auto;
-  padding: 3vh 3vw;
+  margin: 3vh auto;
+  padding: 6vh 3vw;
+}
+.coachingListItem {
+  margin-bottom: 18px;
 }
 #contact {
   display: flex;
@@ -129,7 +137,7 @@
   min-width: 304px;
   background-color: rgba(245, 245, 245, 0.7);
   margin: 5vh auto;
-  padding: 3vh 2vw;
+  padding: 6vh 2vw 9vh 2vw;
   font-size: 0.9rem;
 }
 .aboutTitle {

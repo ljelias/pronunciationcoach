@@ -20,8 +20,8 @@ class Header extends Component {
         <Link to='/voweltest'><span className="topNav">Vowel&nbsp;Test</span></Link>
         <Link to='/exercises'><span className="topNav">Exercises</span></Link>
         <Link to='/resources'><span className="topNav">Resources</span></Link>
+        <Link to='/about'><span className="topNav">About</span></Link>
         <Link to='//pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'><span className="topNav">Blog</span></Link>
-        <Link to='/about'><span className="topNav">Anent</span></Link>
       </nav>
     </header>
   

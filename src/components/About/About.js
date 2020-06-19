@@ -93,7 +93,7 @@ class About extends Component {
       <div className="row1Contact">
         <div className="aboutCard">
           <h2 className='aboutTitle'>Laura Elias, MA / The Pronunciation Coach</h2>
-          <p className="aboutP">Hello! Over the past 25+ years I have enjoyed working with so many different
+          <p className="aboutP">Hello! Over the past 25+ years I have enjoyed working with many different
             students and I have had the amazing privilege of working with English learners from almost every
             non-English-speaking country!</p>
           <p className="aboutP">I have M.A. degrees from the University of Minnesota in Hispanic Linguistics and in Teaching
@@ -118,11 +118,15 @@ class About extends Component {
           <div className="rowAboutCard">
 
             <div className="analysisCardLeft">
-              <p className="aboutP3">The Process: 1) Record your voice on my analysis website, 2) I listen and
-                return the results to you by email, 3) We meet to talk about the results and answer your questions.</p>
+              <p className="aboutP4 bold">The Process:</p>
+              <ul className='myUlList3'>
+                <li className='analysisProcess'>1) Record your voice on my special analysis website</li>
+                <li className='analysisProcess'>2) I listen and return the results to you by email</li>
+                <li className='analysisProcess'>3) We meet to talk about the results and answer your questions</li>
+              </ul>
               <div className="rowAboutCard">
                 <div className="analysisSubRow">
-                  <p className="aboutP4">I will listen to your recordings to discover...</p>
+                  <p className="aboutP4 bold">I will listen to your recordings to discover...</p>
                   <ul className='myUlList2'>
                     <li className="aboutP5">Your overall strengths and weaknesses with spoken English.</li>
                     <li className="aboutP5">Which features of your accent are the most problematic and most likely to
@@ -131,7 +135,7 @@ class About extends Component {
                   </ul>
                 </div>
                 <div className="analysisSubRow">
-                  <p className="aboutP4">Then I will send you...</p>
+                  <p className="aboutP4 bold">Then I will send you...</p>
                   <ul className='myUlList2'>
                     <li className="aboutP5">Written feedback (3 to 4 pages) with examples and explanations of your top
                       priorities for improvement.</li>
@@ -146,7 +150,7 @@ class About extends Component {
             </div>
 
             <div className="analysisCardRight">
-              <p className='analysis1 centered'>The analysis covers these aspects of pronunciation:</p>
+              <p className='analysis1 centered'>The analysis covers all of these aspects of pronunciation:</p>
               <p className="analysis2 centered">Consonants</p>
               <p className="analysis2 centered">Consonant clusters</p>
               <p className="analysis2 centered">Vowels</p>
@@ -161,14 +165,14 @@ class About extends Component {
           </div>
 
           <div className="rowAboutCard paddedRow">
-            <p className="aboutP4">If you would like to begin the analysis process...</p>
+            <p className="aboutP4 bold">If you would like to begin the analysis process...</p>
             <ol className='myUlList2'>
               <li className="aboutP4">Fill in <a href='https://forms.gle/hK5vUt61udEHTzrX7' target='_blank' rel='noopener noreferrer'
                   className='shadowA'>my&nbsp;form</a>
                 with information about yourself, your language background, and your experience with English.</li>
               <li className="aboutP5">I will send you an email with instructions and a link to the analysis recording site.
               </li>
-              <li className="aboutP5">Record your voice. The analysis site has instructions and 4 topics to discuss.</li>
+              <li className="aboutP5">Record your voice on the analysis site. It has instructions and simple topics provided for recording.</li>
               <li className="aboutP5">When I receive your recordings, I will complete the analysis within 4 to 5 days, and
                 send you a preliminary summary with a PayPal email invoice ($140 US) for the payment.</li>
               <li className="aboutP5">Watch for your full results! When I receive the payment I will send your full analysis
@@ -176,7 +180,7 @@ class About extends Component {
               <li className="aboutP4">Conference. When you are ready, we can plan a time to talk (skype, google hangouts...)!
               </li>
             </ol>
-            <p className="aboutP3">QUESTIONS? Use the form below to contact me!</p>
+            <p className="aboutP3"><span className='bold'>QUESTIONS? </span>Use the form below to contact me!</p>
           </div>
 
         </div>
@@ -189,21 +193,19 @@ class About extends Component {
         <div id='coaching'>
           <h2 className='aboutTitle'>Pronunciation Coaching</h2>
           <div className="aboutP">
-            <ul className='myUlList2'>
-              <li>One-on-one or group lessons by video.</li>
-            </ul>
-            <ul className='myUlList2'>
-              <li>30-minute session ($35 US) or 45-minute session ($50 US).</li>
-            </ul>
-            <ul className='myUlList2'>
-              <li>Questions? Use the form below to contact me!</li>
+            <ul className='coachingList'>
+              <li className='coachingListItem'>One-on-one or group lessons.</li>
+              <li className='coachingListItem'>Meet by video conference.</li>
+              <li className='coachingListItem'>Lessons are customized to meet your needs.</li>
+              <li className='coachingListItem'>30-minute session ($35 US) or 45-minute session ($50 US).</li>
+              <li className='coachingListItem'>Questions? Use the form below to contact me!</li>
             </ul>
           </div>
         </div>
 
           <div id='contact'>
-            <h2 className="aboutTitle">Contact the Coach!</h2>
-            <p>Use this form for general questions or to learn more about my services. I would love to hear from you!</p>
+            <h2 className="aboutTitle">Contact the Coach</h2>
+            <p>Use this form for general questions or to learn more about my services!</p>
             <form className="gform" onSubmit = {e => {this.getFormValues(e)}}>
               <div className="formElements">
                 <button type='submit' className='contactButton'>Send</button>

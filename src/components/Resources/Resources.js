@@ -25,14 +25,14 @@ class Resources extends Component {
             <h3 className='resourcesSubtitle'>PHRASAL VERBS</h3>
             <p className='resourceP1'>To be skilled with spoken English, it is super important to know about phrasal verbs.</p>
             <p className='resourceP1'>Phrasal verbs are also sometimes called "two-word verbs." Some examples are: "cut back" (to reduce), "drop out" (to quit), and "turn down" (to reject / to decrease the intensity).</p> 
-            <p className='resourceP1'>English has thousands of phrasal verbs that are used every day.</p>
+            <p className='resourceP1'>English has thousands of phrasal verbs that are used frequently in everyday conversations.</p>
           </div>
 
           <div className='columnAResources'>
           <h4 className='resourcesSubtitle'>Why learn phrasal verbs?</h4>
           <p className='resourceP1'>These verbs are used VERY frequently in spoken English, but much less frequently in written English. 
             Therefore, they are sometimes not included in English textbooks, and so some students don't know about them.</p>
-          <p className='resourceP1'>Different types of phrasal verbs have different grammar patterns, so it can really help to have a book that explains how to use them correctly.</p>
+          <p className='resourceP1'>Different types of phrasal verbs have different grammar patterns, so it can very helpful to have a book that teaches you how to use them correctly.</p>
           </div>
 
           <div className='columnAResources'>
