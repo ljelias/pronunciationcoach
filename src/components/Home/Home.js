@@ -84,6 +84,16 @@ class Home extends Component {
           <div className="topicsGallery">
 
             <div className="topicCard topicA">
+              <h4 className='scrollTitle'>Pronunciation Master Classes</h4>
+              <p className="scrollP"><em><strong>NEW!! </strong></em> Affordable online interactive group classes!</p>
+              <p className="scrollP">A super great way to meet other learners of English, get some speaking practice, 
+                learn and improve, and get feedback from the Coach all at the same time!!</p>
+              <p className="scrollP">Sign up on <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
+                className='shadowA'> Calendly</Link> or find more info about the classes on the <Link
+                to='/about' className='shadowA'>About</Link> page, under "Classes."</p>
+            </div>
+
+            <div className="topicCard topicB">
               <h4 className='scrollTitle'>PronunciationCoach --&nbsp;the&nbsp;Blog!!</h4>
               <p className="scrollP">The <Link to='//pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'
                 className='shadowA'>PronunciationCoach blog</Link> has mini-lessons on a variety of pronunciation topics.</p>
@@ -91,10 +101,10 @@ class Home extends Component {
               the topic for an upcoming post!</p>
             </div>
 
-            <div className="topicCard topicB">
-              <h4 className='scrollTitle'>Vowel Check!</h4>
-              <p className="scrollP">One of the more difficult aspects of English pronunciation is the vowel system. 
-                Here are some resources to help you assess yourself on some of the most difficult vowel contrasts.</p>
+            <div className="topicCard topicC">
+              <h4 className='scrollTitle'>Vowel Self-Check!</h4>
+              <p className="scrollP">Almost all English learners struggle with some aspect of the vowel system. 
+                You can assess yourself on some of the most difficult vowel contrasts with:</p>
               <ul className="scrollP myUlList">
                 <li className='scrollP'>The <Link to='/voweltest' className='shadowA'>Vowel&nbsp;Test</Link> page has brief listening 
                 quizzes to see if you can hear the difference between certain vowels. This may help you uncover specific areas of 
@@ -104,7 +114,7 @@ class Home extends Component {
               </ul>
             </div>
 
-            <div className="topicCard topicC">
+            <div className="topicCard topicA">
               <h4 className='scrollTitle'>The importance of Phrasal Verbs</h4>
               <p className="scrollP">Phrasal verbs, also sometimes called "two-word verbs," are verbs such as: "call off" (to
               cancel), "go over" (to review), or "work out" (to exercise).</p>
@@ -117,7 +127,7 @@ class Home extends Component {
             </p>
             </div>
 
-            <div className="topicCard topicA">
+            <div className="topicCard topicB">
               <h4 className='scrollTitle'>Why do different textbooks have different vowel systems?</h4>
               <p className="scrollP">​English has 15 different vowel sounds. (Some linguists might even say that there are more 
                 than 15!) And the one of the primary differences between American and British English, or between different regional accents,
@@ -136,7 +146,7 @@ class Home extends Component {
               </ul>
             </div>
 
-            <div className="topicCard topicB">
+            <div className="topicCard topicC">
               <h4 className='scrollTitle'>Recommended: Check Vowel&nbsp;O</h4>
               <p className="scrollP">In my experience, the vowel that is mispronounced most often is "O". Most students that I
                 have worked with do not know that the English letter “O” has three different sounds, so they
@@ -149,7 +159,7 @@ class Home extends Component {
             </p>
             </div>
 
-            <div className="topicCard topicC">
+            <div className="topicCard topicA">
               <h4 className='scrollTitle'>English Pronunciation: Linguistic or Speech Therapy approach?</h4>
               <p className="scrollP">The pronunciation materials here are based on a linguistic approach (not speech therapy).
                 This is important because English pronunciation is closely linked to other aspects of the language.
@@ -159,7 +169,7 @@ class Home extends Component {
               confidence with speaking English!!</p>
             </div>
 
-            <div className="topicCard topicA">
+            <div className="topicCard topicB">
               <h4 className='scrollTitle'>What is your pronunciation goal?</h4>
               <p className="scrollP">Learning to sound just like a native speaker is a goal that many start with. But
                 most adults do not have time to learn to pronounce English perfectly. A more attainable goal is to
@@ -171,7 +181,7 @@ class Home extends Component {
               help you feel more confident. </p>
             </div>
 
-            <div className="topicCard topicB">
+            <div className="topicCard topicC">
               <h4 className='scrollTitle'>The Pronunciation Coach: Laura Elias, M.A.</h4>
               <p className="scrollP">Hello! I am a language teacher with a Master's degree in ESL (English as a Second Language) and
                 also a Master's degree in Hispanic Linguistics from the University of Minnesota. I have over 25 years of
@@ -181,7 +191,7 @@ class Home extends Component {
                 to='/about' className='shadowA'>About</Link> page to learn more!</p>
             </div>
 
-            <div className="topicCard topicC">
+            <div className="topicCard topicA">
               <h4 className='scrollTitle'>Does "American English" have specific rules?</h4>
               <p className="scrollP">There are no official rules for American English pronunciation, however, there
               is an informal standard. In general, the information on this site is very similar to the informal standard <Link

@@ -22,11 +22,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
-  background-color: rgba(111, 111, 111, 0.35);
   box-shadow: inset 0 0 18px  rgba(0, 0, 0, 0.7);
   max-height: 540px;
   min-width: 304px;
-  margin: 6vh auto 12vh auto;
+  margin: 4vh auto 12vh auto;
   padding: 2vh 2vw;
   overflow: hidden;
   overflow-y: scroll;
@@ -152,10 +151,11 @@
   background-color: rgba(123, 123, 123, 0.85);
   border: 0px solid rgba(245, 245, 245, 0.3);
 /*  box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.6); */
-  margin: 15px auto 36px auto;
-  padding: 12px 18px;
+  margin: 18px auto 39px auto;
+  padding: 15px 18px;
   color: rgb(40, 40, 40);
 }
+/*
 .topicA {
   background-color: rgba(180, 180, 180, 0.8);
 }
@@ -168,9 +168,23 @@
 .topicD {
   background-color: rgba(218, 164, 152, 0.8);
 }
+*/
+.topicA {
+  background-color: rgba(252, 249, 119, 0.8);
+}
+.topicB {
+  background-color: rgba(201, 238, 127, 0.7);
+}
+.topicC {
+  background-color: rgba(255, 202, 161, 0.8);
+}
+.topicD {
+  background-color: rgba(253, 205, 123, 0.8);
+
+}
 
 .scrollTitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-style: italic;
   font-weight: 600;
   margin-bottom: 9px;

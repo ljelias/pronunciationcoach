@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import config from '../../config.js';
 
 
 class About extends Component {
-  state = {  };
+  state = {};
 
   handleSendData = (form, formData) => {
 
@@ -13,7 +14,7 @@ class About extends Component {
     xhr.open('POST', url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       console.log(xhr.status, xhr.statusText);
       console.log(xhr.responseText);
 
@@ -27,12 +28,12 @@ class About extends Component {
       }
       //event.target.reset();
       form.reset();
-      setTimeout(() => {thankYouMessage.style.display = 'none';}, 7000);
-      setTimeout(() => {formElements.style.display = 'block';}, 8500);
+      setTimeout(() => { thankYouMessage.style.display = 'none'; }, 7000);
+      setTimeout(() => { formElements.style.display = 'block'; }, 8500);
       return;
     };
     // url encode form data for sending as post data
-    let encoded = Object.keys(formData).map(function(k) {
+    let encoded = Object.keys(formData).map(function (k) {
       return encodeURIComponent(k) + '=' + encodeURIComponent(formData[k]);
     }).join('&');
     //console.log(encoded);
@@ -72,38 +73,38 @@ class About extends Component {
   }
 
   scrollToTop = () => {
-      let elmnt = document.getElementById("aboutTop");
-      elmnt.scrollIntoView({behavior: 'smooth' });
+    let elmnt = document.getElementById("aboutTop");
+    elmnt.scrollIntoView({ behavior: 'smooth' });
   }
 
   componentDidMount = () => {
     this.scrollToTop();
   }
 
-  render() { 
-    return ( <>
+  render() {
+    return (<>
       <div id='aboutTop'>
-      <nav className='pageScrollNav'>
-      <span className='scrollDownLink' onClick={() => this.scrollToTop()}>The Coach</span>
-        <span className='scrollDownLink' onClick={() => this.scrollToTopic('analysis')}>Analysis</span>
-        <span className='scrollDownLink' onClick={() => this.scrollToTopic('connect')}>Coaching</span>
-        <span className='scrollDownLink' onClick={() => this.scrollToTopic('contact')}>Contact</span>
-      </nav>
+        <nav className='pageScrollNav'>
+          <span className='scrollDownLink' onClick={() => this.scrollToTop()}>The Coach</span>
+          <span className='scrollDownLink' onClick={() => this.scrollToTopic('analysis')}>Analysis</span>
+          <span className='scrollDownLink' onClick={() => this.scrollToTopic('coaching')}>Classes</span>
+          <span className='scrollDownLink' onClick={() => this.scrollToTopic('contact')}>Contact</span>
+        </nav>
       </div>
       <div className="row1Contact">
         <div className="aboutCard">
           <h2 className='aboutTitle'>Laura Elias, MA / The Pronunciation Coach</h2>
           <p className="aboutP">Hello! Over the past 25+ years I have enjoyed working with many different
-            students and I have had the amazing privilege of working with English learners from almost every
+          students and I have had the amazing privilege of working with English learners from almost every
             non-English-speaking country!</p>
           <p className="aboutP">I have M.A. degrees from the University of Minnesota in Hispanic Linguistics and in Teaching
-            English as a Second Language, and I have taught college-level ESL and
-            Spanish at a variety of schools, including the University of Minnesota, Minneapolis College,
-            Century College, and North Central University. This has given me the opportunity to work
-            with students at all levels of language ability -- from complete beginners to highly advanced
+          English as a Second Language, and I have taught college-level ESL and
+          Spanish at a variety of schools, including the University of Minnesota, Minneapolis College,
+          Century College, and North Central University. This has given me the opportunity to work
+          with students at all levels of language ability -- from complete beginners to highly advanced
             learners.</p>
           <p className="aboutP">I enjoy analyzing the pronunciation and spelling patterns of English, and
-            I have been developing my own approach to teaching pronunciation in order to make it more straightforward
+          I have been developing my own approach to teaching pronunciation in order to make it more straightforward
             for students to learn and understand.</p>
         </div>
       </div>
@@ -121,7 +122,7 @@ class About extends Component {
               <p className="aboutP4 bold">The Process:</p>
               <ul className='myUlList3'>
                 <li className='analysisProcess'>1) Record your voice on my special analysis website</li>
-                <li className='analysisProcess'>2) I listen and return the results to you by email</li>
+                <li className='analysisProcess'>2) I listen and send the results to you within a few days</li>
                 <li className='analysisProcess'>3) We meet to talk about the results and answer your questions</li>
               </ul>
               <div className="rowAboutCard">
@@ -165,10 +166,10 @@ class About extends Component {
           </div>
 
           <div className="rowAboutCard paddedRow">
-            <p className="aboutP4 bold">If you would like to begin the analysis process...</p>
+            <p className="aboutP4 bold">To begin the analysis process...</p>
             <ol className='myUlList2'>
               <li className="aboutP4">Fill in <a href='https://forms.gle/hK5vUt61udEHTzrX7' target='_blank' rel='noopener noreferrer'
-                  className='shadowA'>my&nbsp;form</a>
+                className='shadowA'>my&nbsp;form</a>
                 with information about yourself, your language background, and your experience with English.</li>
               <li className="aboutP5">I will send you an email with instructions and a link to the analysis recording site.
               </li>
@@ -188,68 +189,83 @@ class About extends Component {
       </div>
 
 
-      <div className="row3Contact" id='connect'>
+      <div className="row3Contact" id='classes'>
 
         <div id='coaching'>
-          <h2 className='aboutTitle'>Pronunciation Coaching</h2>
-          <div className="aboutP">
+          <h2 className='aboutTitle'>English Pronunciation Master Classes</h2>
+          <p className="aboutP">Interactive online group classes. Each class is 50 minutes (via Zoom), and limited to 18 people.</p>
+          <p className="aboutP">These classes give you the chance to... 
+            <ul className='classPoints'>
+              <li>interact with learners of English from other countries</li>
+              <li>have some fun speaking practice</li>
+              <li>learn how to improve your pronunciation</li>
+              <li>and get personal feedback from the Coach</li>
+            </ul>
+            ...all at the same time!!</p>
+          <p className="aboutP">To see current class times available: <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
+                className='shadowA'>calendly.com/professorcoach-le</Link> </p>
+          <p className="aboutP">The classes are super affordable, to make it easy for anyone to attend several sessions! Right now Class&nbsp;1 is just $7 USD, and Class&nbsp;2 is $10 USD. Get a friend and sign-up together!!</p>
+
+          <hr className='lightHr' />
+
+          <div className="aboutP" id='classList'>CURRENT CLASSES <em>(more to come!)</em>
             <ul className='coachingList'>
-              <li className='coachingListItem'>One-on-one or group lessons.</li>
-              <li className='coachingListItem'>Meet by video conference.</li>
-              <li className='coachingListItem'>Lessons are customized to meet your needs.</li>
-              <li className='coachingListItem'>30-minute session ($35 US) or 45-minute session ($50 US).</li>
-              <li className='coachingListItem'>Questions? Use the form below to contact me!</li>
+              <li className='coachingListItem'>Class&nbsp;1: English Pronunciation Basics: The most common pronunciation difficulties overall, important insights into the vowel system, and frequently used words.</li>
+              <li className='coachingListItem'>Class&nbsp;2: Overview of the Vowel System: the 15 different vowel sounds, how the Long and Short vowel system works, Short-vowel pronunciation tips, "R" as a vowel, and the most commonly mispronounced and confused vowel sounds.</li>
             </ul>
           </div>
+          <button className='signUpBtn'><Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'>
+            SIGN UP NOW!</Link></button>
         </div>
 
-          <div id='contact'>
-            <h2 className="aboutTitle">Contact the Coach</h2>
-            <p>Use this form for general questions or to learn more about my services!</p>
-            <form className="gform" onSubmit = {e => {this.getFormValues(e)}}>
-              <div className="formElements">
-                <button type='submit' className='contactButton'>Send</button>
+        <div id='contact'>
+          <h2 className="aboutTitle">Contact the Coach</h2>
+          <p>Use this form for general questions or to learn more about my services!</p>
+          <p><em>Don't worry! You email address will NOT be added to any list!</em></p>
+          <form className="gform" onSubmit={e => { this.getFormValues(e) }}>
+            <div className="formElements">
+              <button type='submit' className='contactButton'>Send</button>
 
-                <fieldset id="checkbox">
-                  <label htmlFor="subscribe" className="contactLabel">Subscribe: </label>
-                  <input type="checkbox" id="subscribe" name='subscribe' />
-                  <label htmlFor="analysis" className="contactLabel">Analysis: </label>
-                  <input type="checkbox" id="analysis" name='analysis' />
-                  <label htmlFor="coaching" className="contactLabel">Coaching: </label>
-                  <input type="checkbox" id="coaching" name='coaching' />
-                </fieldset>
+              <fieldset id="checkbox">
+                <label htmlFor="subscribe" className="contactLabel">Subscribe: </label>
+                <input type="checkbox" id="subscribe" name='subscribe' />
+                <label htmlFor="analysis" className="contactLabel">Analysis: </label>
+                <input type="checkbox" id="analysis" name='analysis' />
+                <label htmlFor="coaching" className="contactLabel">Coaching: </label>
+                <input type="checkbox" id="coaching" name='coaching' />
+              </fieldset>
 
-                <fieldset>
-                  <label htmlFor="name" className='contactLabel'>Name: </label>
-                  <input className='contactInput' id="name" name="name" placeholder="Your name" required />
-                </fieldset>
+              <fieldset>
+                <label htmlFor="name" className='contactLabel'>Name: </label>
+                <input className='contactInput' id="name" name="name" placeholder="Your name" required />
+              </fieldset>
 
-                <fieldset>
-                  <label htmlFor="email" className='contactLabel'>Email:</label>
-                  <input className='contactInput' id="email" name="email" type="email" required
-                    placeholder="your.name@email.com" />
-                </fieldset>
+              <fieldset>
+                <label htmlFor="email" className='contactLabel'>Email:</label>
+                <input className='contactInput' id="email" name="email" type="email" required
+                  placeholder="your.name@email.com" />
+              </fieldset>
 
-                <fieldset>
-                  <label htmlFor="message" className='contactLabel'>Message: </label>
-                  <textarea id="message" name="message" rows="6" required
-                    placeholder="Enter your message here..."></textarea>
-                </fieldset>
+              <fieldset>
+                <label htmlFor="message" className='contactLabel'>Message: </label>
+                <textarea id="message" name="message" rows="6" required
+                  placeholder="Enter your message here..."></textarea>
+              </fieldset>
 
-              </div>
+            </div>
 
-              <div className="thankyouMessage">
-                <h5>Thanks for contacting us!<br />
+            <div className="thankyouMessage">
+              <h5>Thanks for contacting us!<br />
                   We will get back to you soon!</h5>
-              </div>
-            </form>
+            </div>
+          </form>
         </div>
 
       </div>
 
-    </> );
+    </>);
   }
 }
- 
+
 export default About;
 
