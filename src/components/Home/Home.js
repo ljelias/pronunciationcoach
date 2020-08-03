@@ -75,7 +75,7 @@ class Home extends Component {
             <h2 id='subTitle'>Help and resources for&nbsp;learners of American&nbsp;English</h2>
           </div>
           <div id='scrollToTips' onClick={() => this.scrollToTopTips()}>
-            <p>Go to</p>
+            <p>See the</p>
             <p>TOP TEN TIPS!!</p>
             <p id='scrollDownArrow'>&#8681;</p>
           </div>
@@ -86,11 +86,11 @@ class Home extends Component {
             <div className="topicCard topicA">
               <h4 className='scrollTitle'>Pronunciation Master Classes</h4>
               <p className="scrollP"><em><strong>NEW!! </strong></em> Affordable online interactive group classes!</p>
-              <p className="scrollP">A super great way to meet other learners of English, get some speaking practice, 
+              <p className="scrollP">Meet other learners of English, get some speaking practice, 
                 learn and improve, and get feedback from the Coach all at the same time!!</p>
               <p className="scrollP">Sign up on <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
                 className='shadowA'> Calendly</Link> or find more info about the classes on the <Link
-                to='/about' className='shadowA'>About</Link> page, under "Classes."</p>
+                to='/classes' className='shadowA'>Classes</Link> page."</p>
             </div>
 
             <div className="topicCard topicB">
@@ -213,10 +213,10 @@ class Home extends Component {
         <div className='topTenRoll'>
 
           <div className="tipButtonRow">
-            <button type='button' id="arrowButton1" onClick={() => this.seePrevious()} >&nbsp;&lt;&nbsp;&lt;&nbsp;</button>
+            <button type='button' id="arrowButton1" onClick={() => this.seePrevious()} >&nbsp;&#8678;&nbsp;</button>
             <p className='topTenP'>Some pronunciation difficulties are related to patterns from your first language, 
-            but these Top 10 Tips are helpful for almost anybody, no matter what your first language is.​</p>
-            <button type='button' id="arrowButton2" onClick={() => this.seeNext()} >&nbsp;>&nbsp;>&nbsp;</button>
+            but these Top&nbsp;10&nbsp;Tips are helpful for almost anybody, no matter what your first language is.​</p>
+            <button type='button' id="arrowButton2" onClick={() => this.seeNext()} >&nbsp;&#8680;&nbsp;</button>
           </div>
 
           <div className="topten" id="tip1"> 
@@ -423,7 +423,7 @@ class Home extends Component {
           </div>
 
       </div>
-      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
+      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Go to Top ^</div>
 
     </section>
   </> );

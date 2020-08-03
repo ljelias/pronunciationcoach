@@ -87,7 +87,7 @@ class About extends Component {
         <nav className='pageScrollNav'>
           <span className='scrollDownLink' onClick={() => this.scrollToTop()}>The Coach</span>
           <span className='scrollDownLink' onClick={() => this.scrollToTopic('analysis')}>Analysis</span>
-          <span className='scrollDownLink' onClick={() => this.scrollToTopic('coaching')}>Classes</span>
+          <span className='scrollDownLink' onClick={() => this.scrollToTopic('classes')}>Classes</span>
           <span className='scrollDownLink' onClick={() => this.scrollToTopic('contact')}>Contact</span>
         </nav>
       </div>
@@ -171,13 +171,13 @@ class About extends Component {
               <li className="aboutP4">Fill in <a href='https://forms.gle/hK5vUt61udEHTzrX7' target='_blank' rel='noopener noreferrer'
                 className='shadowA'>my&nbsp;form</a>
                 with information about yourself, your language background, and your experience with English.</li>
-              <li className="aboutP5">I will send you an email with instructions and a link to the analysis recording site.
+              <li className="aboutP5">I send you an email with instructions and a link to my analysis recording site.
               </li>
-              <li className="aboutP5">Record your voice on the analysis site. It has instructions and simple topics provided for recording.</li>
-              <li className="aboutP5">When I receive your recordings, I will complete the analysis within 4 to 5 days, and
-                send you a preliminary summary with a PayPal email invoice ($140 US) for the payment.</li>
-              <li className="aboutP5">Watch for your full results! When I receive the payment I will send your full analysis
-                results to you.</li>
+              <li className="aboutP5">Record your voice on my analysis site. It has instructions and simple topics provided for recording.</li>
+              <li className="aboutP5">When I receive your recordings, I will complete the analysis within 4 to 5 business days, then 
+                send you an overview summary and a PayPal email invoice ($190 US).</li>
+              <li className="aboutP5">Get your full results! When I receive the payment I will send your full detailed analysis
+                results.</li>
               <li className="aboutP4">Conference. When you are ready, we can plan a time to talk (skype, google hangouts...)!
               </li>
             </ol>
@@ -185,33 +185,24 @@ class About extends Component {
           </div>
 
         </div>
-        <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
       </div>
 
 
       <div className="row3Contact" id='classes'>
 
-        <div id='coaching'>
-          <h2 className='aboutTitle'>English Pronunciation Master Classes</h2>
-          <p className="aboutP">Interactive online group classes. Each class is 50 minutes (via Zoom), and limited to 18 people.</p>
-          <p className="aboutP">These classes give you the chance to... 
-            <ul className='classPoints'>
-              <li>interact with learners of English from other countries</li>
-              <li>have some fun speaking practice</li>
-              <li>learn how to improve your pronunciation</li>
-              <li>and get personal feedback from the Coach</li>
-            </ul>
-            ...all at the same time!!</p>
-          <p className="aboutP">To see current class times available: <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
+        <div id='coachingCard'>
+          <h2 className='aboutTitle'>Live English Classes!</h2>
+          <p className="aboutP">Online group classes with the Coach. Each class is 50 minutes, full of information, and interactive. Class times are compatible with many different time zones, and super affordable. Get a friend and sign-up together!!</p>
+          <p className="aboutP">The schedule is updated weekly. See current class times: <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
                 className='shadowA'>calendly.com/professorcoach-le</Link> </p>
-          <p className="aboutP">The classes are super affordable, to make it easy for anyone to attend several sessions! Right now Class&nbsp;1 is just $7 USD, and Class&nbsp;2 is $10 USD. Get a friend and sign-up together!!</p>
 
           <hr className='lightHr' />
 
           <div className="aboutP" id='classList'>CURRENT CLASSES <em>(more to come!)</em>
             <ul className='coachingList'>
-              <li className='coachingListItem'>Class&nbsp;1: English Pronunciation Basics: The most common pronunciation difficulties overall, important insights into the vowel system, and frequently used words.</li>
-              <li className='coachingListItem'>Class&nbsp;2: Overview of the Vowel System: the 15 different vowel sounds, how the Long and Short vowel system works, Short-vowel pronunciation tips, "R" as a vowel, and the most commonly mispronounced and confused vowel sounds.</li>
+              <li className='coachingListItem'>Conversation Class: Fluency practice with classmates in breakout groups, on guided topics, with the help of the Coach.</li>
+              <li className='coachingListItem'>Master Class&nbsp;1: English Pronunciation Basics: The most common pronunciation difficulties overall.</li>
+              <li className='coachingListItem'>Master Class&nbsp;2: Overview of the Vowel System: the system underlying the 15 different vowel sounds and basic spelling-pronunciation patterns.</li>
             </ul>
           </div>
           <button className='signUpBtn'><Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'>
@@ -262,6 +253,7 @@ class About extends Component {
         </div>
 
       </div>
+      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
 
     </>);
   }

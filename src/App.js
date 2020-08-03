@@ -8,6 +8,7 @@ import Exercises from './components/Exercises/Exercises.js';
 import Resources from './components/Resources/Resources.js';
 import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
+import Courses from './components/Courses/Courses.js';
 import VowelContrastsContextProvider from './contexts/VowelContrastsContext.js';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage.js';
 
@@ -23,6 +24,7 @@ function App() {
               <Route exact path='/' component={Home} />
               <Route path='/resources' component={Resources} />
               <Route path='/about' component={About} />
+              <Route path='/classes' component={Courses} />
               <Route path='/voweltest' component={VowelTest} />
               <Route path='/exercises' component={Exercises} />
               <Route component={NotFoundPage} />

@@ -52,7 +52,7 @@ body {
   height: 100%;
   background-image: url(./images/ehud-neuhaus-Sne2rCdLz3w-unsplash.jpg);
   background-size: cover;
-  background-color:  rgb(202, 225, 243);
+  background-color: whitesmoke;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   overflow-y: hidden;
 }
@@ -95,7 +95,7 @@ a {
   top: 0;
   z-index: 2;
   width: 100%;
-  min-height: 54px;
+  min-height: 60px;
   background-color: rgba(123, 123, 123, 1);
   display: flex;
   flex-direction: row;
@@ -139,7 +139,7 @@ a {
   margin: 0 8vw;
 }
 .topNav {
-  padding: 3px 15px 6px 15px;
+  padding: 3px 9px 6px 9px;
   border-radius: 2px;
 }
 .topNav:hover {
@@ -205,13 +205,16 @@ a {
   font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
-  background-color: rgba(245, 245, 245, 0.35);
+  background-color: rgba(245, 245, 245, 0.6);
 }
 .scrollToTop:hover {
   cursor: pointer;
   background-color: rgba(154, 205, 50, 0.5);
 }
 
+body {
+  background-image: url(./images/ehud-neuhaus-Sne2rCdLz3w-unsplash.jpg);
+}
 
 @media only screen and (min-width: 475px) {
   .mainHeader {
@@ -224,11 +227,8 @@ a {
     margin: 0;
     padding-right: 2%;
   }
-  .topNav {
-    padding: 3px 9px 6px 9px;
-  }
   .App {
-    top: 54px; 
+    top: 60px; 
   }
   .contactLabel {
     display: inline-block;
@@ -240,4 +240,9 @@ a {
     margin-top: 9px;
   }
 
+}
+@media only screen and (min-width: 800px) {
+  .topNav {
+    padding: 9px 15px 12px 15px;
+  }
 }
