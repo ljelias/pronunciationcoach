@@ -22,8 +22,8 @@ class Courses extends Component {
       <div className="row1Courses" id='coursesTop'>
         <h2 className="coursesRowTitle">PronunciationCoach Classes</h2>
         <div id='classesInfo'>
-          <p className="aboutP">Interactive online group classes. Each class is 50 minutes (via Zoom), and limited in size (12-18 people) so that everyone can interact and also get personal feedback if they wish.</p>
-          <p className="aboutP">In these classes you can...
+          <p className="courseP1">Interactive online group classes. Each class is 50 minutes (via Zoom), and limited in size (12-18 people) so that everyone can interact and also get the personal feedback they need.</p>
+          <p className="courseP1">In these classes you can...
             <ul className='classPoints'>
               <li>interact with learners of English from other countries</li>
               <li>have some fun speaking practice</li>
@@ -31,9 +31,9 @@ class Courses extends Component {
               <li>and get personal feedback from the Coach</li>
             </ul>
             <span className='ulEndSpan'>...all at the same time!!</span></p>
-          <p className="aboutP">The classes are super affordable, to make it easy for anyone to attend several sessions!
+          <p className="courseP1">The classes are very affordable, to make it easy to attend several sessions!
           <br />Get a friend and sign-up together!!</p>
-          <p className="aboutP">Class times are set up to be compatible with a range of time zones.
+          <p className="courseP1">Class times are set up to be compatible with a range of time zones, and the schedule is updated weekly.
           <br />See current times available: <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
               className='shadowA'>calendly.com/professorcoach-le</Link> </p>
 

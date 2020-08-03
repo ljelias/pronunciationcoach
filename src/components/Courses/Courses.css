@@ -3,7 +3,7 @@
   min-height: 180px;
   padding: 18px 30px;
   background-color: rgba(245, 245, 245, 0.7);
-  color: rgb(60, 60, 60);
+  color: rgb(40, 40, 40);
 }
 #classesInfo {
   display: flex;
@@ -21,25 +21,16 @@
   margin-bottom: 3px;
   border-bottom: 1px solid grey;
 }
-.coursesSubtitle {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
 .courseP1 {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   margin-bottom: 9px;
 }
-.courseP2 {
-  font-size: 0.9rem;
-  padding: 0 3px;
-  margin-bottom: 9px;
+.classPoints {
+  line-height: 1.5rem;
+  margin: 4px 0;
 }
-.courseP3 {
-  font-size: 1rem;
-  font-style: italic;
-  text-align: center;
-  margin-top: 12px;
+.ulEndSpan{
+  margin-left: 18px;
 }
 .row2Courses {
   display: flex;
@@ -47,7 +38,7 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
-  padding: 18px 0;
+  padding: 45px 0;
 }
 .courseCard {
   width: 90%;
@@ -117,13 +108,7 @@
   background-color: rgba(245, 245, 245, 0.7);
   text-align: center;
 }
-.classPoints {
-  line-height: 1.6rem;
-  margin: 6px 0;
-}
-.ulEndSpan{
-  margin-left: 15px;
-}
+
 #classList {
   margin-top: 18px;
 }
