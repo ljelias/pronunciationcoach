@@ -34,8 +34,8 @@ class Courses extends Component {
           <p className="courseP1">The classes are very affordable, to make it easy to attend several sessions!
           <br />Get a friend and sign-up together!!</p>
           <p className="courseP1">Class times are set up to be compatible with a range of time zones, and the schedule is updated weekly.
-          <br />See current times available: <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
-              className='shadowA'>calendly.com/professorcoach-le</Link> </p>
+          <br />See current times available: <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
+              className='shadowA'>REGISTRATION PAGE</Link> </p>
 
           <p className="aboutP"></p>
 
@@ -47,7 +47,7 @@ class Courses extends Component {
       <div className="row2Courses">
 
         <div className="courseCard cardTopA">
-          <Link to='//calendly.com/professorcoach-le/conversation-class' target='_blank' rel='noopener noreferrer'>
+          <Link to='//pronunciationcoachtraining.as.me/conversation-class' target='_blank' rel='noopener noreferrer'>
             <h3 className='courseTitle'>Conversation Class: fluency practice</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 12 max</div></div>
           <p className='courseDetails'>Practice your speaking skills, improve your fluency, and have fun!</p>
@@ -56,7 +56,7 @@ class Courses extends Component {
         </div>
 
         <div className="courseCard cardTopB">
-          <Link to='//calendly.com/professorcoach-le/english-pron-basics' target='_blank' rel='noopener noreferrer'>
+          <Link to='//pronunciationcoachtraining.as.me/english-pron-basics' target='_blank' rel='noopener noreferrer'>
             <h3 className='courseTitle'>Master Class 1: English Pronunciation Basics</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 18 max</div></div>
           <p className='courseDetails'>English Pronunciation Intro, including: the most common pronunciation difficulties, some important insights into the vowel system, and a look at the most frequently used words that are most frequently mispronounced.</p>
@@ -64,7 +64,7 @@ class Courses extends Component {
         </div>
 
         <div className="courseCard cardTopC">
-          <Link to='//calendly.com/professorcoach-le/english-vowel-system' target='_blank' rel='noopener noreferrer'>
+          <Link to='//pronunciationcoachtraining.as.me/english-vowel-system' target='_blank' rel='noopener noreferrer'>
             <h3 className='courseTitle'>Master Class 2: English Vowel System</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 18 max</div></div>
           <p className='courseDetails'>Vowel System Overview. The English vowel system is one of the more confusing aspects for most learners. The class includes: the 15 different vowel sounds, how the Long and Short vowel system works, special Short-vowel pronunciation tips, some fundamental vowel spelling patterns, and the most commonly confused vowel contrasts.</p>
@@ -74,7 +74,7 @@ class Courses extends Component {
 
 
       <div className="row3Courses">
-        <button className='signUpBtn'><Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'>
+        <button className='signUpBtn'><Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'>
           SIGN UP NOW!</Link></button>
         <h2 className="coursesRowTitle">...</h2>
         <p>Questions? Use the Contact form on the "About" page.</p>

@@ -193,8 +193,8 @@ class About extends Component {
         <div id='coachingCard'>
           <h2 className='aboutTitle'>Live English Classes!</h2>
           <p className="aboutP">Online group classes with the Coach. Each class is 50 minutes, full of information, and interactive. Class times are compatible with many different time zones, and super affordable. Get a friend and sign-up together!!</p>
-          <p className="aboutP">The schedule is updated weekly. See current class times: <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
-                className='shadowA'>calendly.com/professorcoach-le</Link> </p>
+          <p className="aboutP">The schedule is updated weekly. See current class times: <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
+                className='shadowA'> REGISTRATION PAGE </Link> </p>
 
           <hr className='lightHr' />
 
@@ -205,7 +205,7 @@ class About extends Component {
               <li className='coachingListItem'>Master Class&nbsp;2: Overview of the Vowel System: the system underlying the 15 different vowel sounds and basic spelling-pronunciation patterns.</li>
             </ul>
           </div>
-          <button className='signUpBtn'><Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'>
+          <button className='signUpBtn'><Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'>
             SIGN UP NOW!</Link></button>
         </div>
 

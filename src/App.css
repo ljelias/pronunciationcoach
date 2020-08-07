@@ -111,7 +111,7 @@ a {
   flex: 1;
   min-width: 200px;
   color: whitesmoke;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 600;
   font-style: italic;
   margin: 0 2vw;
@@ -143,7 +143,7 @@ a {
   border-radius: 2px;
 }
 .topNav:hover {
-  background-color: rgba(241, 241, 241, 0.4);
+  background-color: rgba(241, 241, 241, 0.5);
   color: rgb(60, 60, 60);
 }
 .topNav:active {

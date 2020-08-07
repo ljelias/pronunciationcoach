@@ -71,8 +71,7 @@ class Home extends Component {
       <section id='homeTop' className="row1">
         <div className="subrowA">
           <div id="intro">
-            <h2 id='introTitle'>Pronunciation<span className='miniBlank'> </span>Coach</h2>
-            <h2 id='subTitle'>Help and resources for&nbsp;learners of American&nbsp;English</h2>
+            <h2 id='subTitle'>Pronunciation help and resources for&nbsp;learners of American&nbsp;English</h2>
           </div>
           <div id='scrollToTips' onClick={() => this.scrollToTopTips()}>
             <p>See the</p>
@@ -88,9 +87,9 @@ class Home extends Component {
               <p className="scrollP"><em><strong>NEW!! </strong></em> Affordable online interactive group classes!</p>
               <p className="scrollP">Meet other learners of English, get some speaking practice, 
                 learn and improve, and get feedback from the Coach all at the same time!!</p>
-              <p className="scrollP">Sign up on <Link to='//calendly.com/professorcoach-le' target='_blank' rel='noopener noreferrer'
-                className='shadowA'> Calendly</Link> or find more info about the classes on the <Link
-                to='/classes' className='shadowA'>Classes</Link> page."</p>
+              <p className="scrollP">Sign up on the <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
+                className='shadowA'>Registration Page</Link> or see more info about the classes on the <Link
+                to='/classes' className='shadowA'>Classes</Link> page.</p>
             </div>
 
             <div className="topicCard topicB">
