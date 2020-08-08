@@ -33,9 +33,10 @@ class Courses extends Component {
             <span className='ulEndSpan'>...all at the same time!!</span></p>
           <p className="courseP1">The classes are very affordable, to make it easy to attend several sessions!
           <br />Get a friend and sign-up together!!</p>
-          <p className="courseP1">Class times are set up to be compatible with a range of time zones, and the schedule is updated weekly.
-          <br />See current times available: <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
-              className='shadowA'>REGISTRATION PAGE</Link> </p>
+          <p className="courseP1">Class times are set up to be compatible with various time zones, and the schedule is updated weekly.</p>
+          
+          <button className='signUpBtn1'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
+          SEE CURRENT SCHEDULE</Link></button>
 
           <p className="aboutP"></p>
 
@@ -59,7 +60,7 @@ class Courses extends Component {
           <Link to='//pronunciationcoachtraining.as.me/english-pron-basics' target='_blank' rel='noopener noreferrer'>
             <h3 className='courseTitle'>Master Class 1: English Pronunciation Basics</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 18 max</div></div>
-          <p className='courseDetails'>English Pronunciation Intro, including: the most common pronunciation difficulties, some important insights into the vowel system, and a look at the most frequently used words that are most frequently mispronounced.</p>
+          <p className='courseDetails'>English Pronunciation Intro. Includes: the most common pronunciation difficulties, some important insights into the vowel system, and a look at the most frequently used words that are most frequently mispronounced.</p>
           <p className='courseDetails'><em>As the initial class of the series, it has a discounted price!!</em></p>
         </div>
 
@@ -74,7 +75,7 @@ class Courses extends Component {
 
 
       <div className="row3Courses">
-        <button className='signUpBtn'><Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'>
+        <button className='signUpBtn2'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
           SIGN UP NOW!</Link></button>
         <h2 className="coursesRowTitle">...</h2>
         <p>Questions? Use the Contact form on the "About" page.</p>

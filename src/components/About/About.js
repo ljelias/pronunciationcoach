@@ -193,20 +193,20 @@ class About extends Component {
         <div id='coachingCard'>
           <h2 className='aboutTitle'>Live English Classes!</h2>
           <p className="aboutP">Online group classes with the Coach. Each class is 50 minutes, full of information, and interactive. Class times are compatible with many different time zones, and super affordable. Get a friend and sign-up together!!</p>
-          <p className="aboutP">The schedule is updated weekly. See current class times: <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
-                className='shadowA'> REGISTRATION PAGE </Link> </p>
+          <p className="aboutP">The schedule is updated weekly.</p>
+          <button className='signUpBtn1'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
+          SEE CURRENT SCHEDULE</Link></button>
+
 
           <hr className='lightHr' />
 
           <div className="aboutP" id='classList'>CURRENT CLASSES <em>(more to come!)</em>
             <ul className='coachingList'>
-              <li className='coachingListItem'>Conversation Class: Fluency practice with classmates in breakout groups, on guided topics, with the help of the Coach.</li>
-              <li className='coachingListItem'>Master Class&nbsp;1: English Pronunciation Basics: The most common pronunciation difficulties overall.</li>
-              <li className='coachingListItem'>Master Class&nbsp;2: Overview of the Vowel System: the system underlying the 15 different vowel sounds and basic spelling-pronunciation patterns.</li>
+              <li className='coachingListItem'><strong>Conversation Class:</strong> Fluency practice with classmates in breakout groups, on guided topics, with the help of the Coach.</li>
+              <li className='coachingListItem'><strong>Master Class&nbsp;1:</strong> English Pronunciation Basics: The most common pronunciation difficulties overall.</li>
+              <li className='coachingListItem'><strong>Master Class&nbsp;2:</strong> Overview of the Vowel System: the system underlying the 15 different vowel sounds and basic spelling-pronunciation patterns.</li>
             </ul>
           </div>
-          <button className='signUpBtn'><Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'>
-            SIGN UP NOW!</Link></button>
         </div>
 
         <div id='contact'>
