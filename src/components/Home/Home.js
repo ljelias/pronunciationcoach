@@ -87,8 +87,8 @@ class Home extends Component {
               <p className="scrollP"><em><strong>NEW!! </strong></em> Affordable online interactive group classes!</p>
               <p className="scrollP">Meet other learners of English, get some speaking practice, 
                 learn and improve, and get feedback from the Coach all at the same time!!</p>
-              <p className="scrollP">Sign up on the <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
-                className='shadowA'>Registration Page</Link> or see more info about the classes on the <Link
+              <p className="scrollP">Go to the <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'
+                className='shadowA'>Registration</Link> page or see more info on the <Link
                 to='/classes' className='shadowA'>Classes</Link> page.</p>
             </div>
 

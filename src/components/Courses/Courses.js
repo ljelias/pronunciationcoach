@@ -22,18 +22,20 @@ class Courses extends Component {
       <div className="row1Courses" id='coursesTop'>
         <h2 className="coursesRowTitle">PronunciationCoach Classes</h2>
         <div id='classesInfo'>
-          <p className="courseP1">Interactive online group classes. Each class is 50 minutes (via Zoom), and limited in size (12-18 people) so that everyone can interact and also get the personal feedback they need.</p>
-          <p className="courseP1">In these classes you can...
+          <p className="courseP1"><span className='circle'></span> Fun interactive online group classes.</p>
+          <p className="courseP1"><span className='circle'></span> Classes are 50 minutes (by Zoom).</p>
+          <p className="courseP1"><span className='circle'></span> Perfect for intermediate or advanced learners.</p>
+          <p className="courseP1"><span className='circle'></span> Small classes (12-18 people) so that everyone can interact and get the personal feedback they need.</p>
+          <p className="courseP2">In these classes you can...
             <ul className='classPoints'>
               <li>interact with learners of English from other countries</li>
-              <li>have some fun speaking practice</li>
+              <li>get valuable speaking practice</li>
               <li>learn how to improve your pronunciation</li>
               <li>and get personal feedback from the Coach</li>
             </ul>
             <span className='ulEndSpan'>...all at the same time!!</span></p>
-          <p className="courseP1">The classes are very affordable, to make it easy to attend several sessions!
-          <br />Get a friend and sign-up together!!</p>
-          <p className="courseP1">Class times are set up to be compatible with various time zones, and the schedule is updated weekly.</p>
+          <p className="courseP1">Get a friend and sign-up together!!</p>
+          <p className="courseP1">Class times are compatible with various time zones, and the schedule is updated weekly.</p>
           
           <button className='signUpBtn1'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
           SEE CURRENT SCHEDULE</Link></button>
