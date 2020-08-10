@@ -30,7 +30,7 @@ class Courses extends Component {
             <ul className='classPoints'>
               <li>interact with learners of English from other countries</li>
               <li>get valuable speaking practice</li>
-              <li>learn how to improve your pronunciation</li>
+              <li>become more confident with your pronunciation</li>
               <li>and get personal feedback from the Coach</li>
             </ul>
             <span className='ulEndSpan'>...all at the same time!!</span></p>
