@@ -71,7 +71,7 @@ class Home extends Component {
       <section id='homeTop' className="row1">
         <div className="subrowA">
           <div id="intro">
-            <h2 id='subTitle'>Pronunciation help and resources for&nbsp;learners of American&nbsp;English</h2>
+            <h2 id='subTitle'>Pronunciation help for&nbsp;learners of American&nbsp;English</h2>
           </div>
           <div id='scrollToTips' onClick={() => this.scrollToTopTips()}>
             <p>See the</p>
@@ -84,7 +84,7 @@ class Home extends Component {
 
             <div className="topicCard topicA">
               <h4 className='scrollTitle'>Pronunciation Master Classes</h4>
-              <p className="scrollP"><em><strong>NEW!! </strong></em> Affordable online interactive group classes!</p>
+              <p className="scrollP"><em><strong>NEW!! </strong></em> Online interactive group classes!</p>
               <p className="scrollP">Meet other learners of English, get some speaking practice, 
                 learn and improve, and get feedback from the Coach all at the same time!!</p>
               <p className="scrollP">Go to the <Link to='//pronunciationcoachtraining.as.me' target='_blank' rel='noopener noreferrer'

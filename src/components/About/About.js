@@ -192,7 +192,7 @@ class About extends Component {
 
         <div id='coachingCard'>
           <h2 className='aboutTitle'>Live English Classes!</h2>
-          <p className="aboutP">Online group classes with the Coach. Each class is 50 minutes, full of information, and interactive. Class times are compatible with many different time zones, and super affordable. Get a friend and sign-up together!!</p>
+          <p className="aboutP">Online group classes with the Coach. Each class is 50 minutes, full of information, and interactive. Class times are compatible with many different time zones, and affordable. Sign-up with a friend!!</p>
           <p className="aboutP">The schedule is updated weekly.</p>
           <button className='signUpBtn1'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
           SEE CURRENT SCHEDULE</Link></button>

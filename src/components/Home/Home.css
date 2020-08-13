@@ -11,7 +11,7 @@
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   overflow: hidden;
@@ -61,79 +61,72 @@
 */
 #intro {
   position: relative;
-  background-color: rgba(165, 165, 165, 0.9);
-  margin: 0 0 18px 0;
-  padding: 15px 24px;
+  background-color: rgba(227, 226, 212, 0.7);
+  margin: 0 0 30px 0;
+  padding: 18px 24px;
   text-align: center;
-  color: rgb(240, 230, 255);
+  color: rgba(60, 60, 60, 0.9);
   border-radius: 0;
-  -webkit-transition: color 1s ease, text-shadow 2.5s ease;
-  -moz-transition: color 1s ease, text-shadow 2.5s ease;
-  -o-transition: color 1s ease, text-shadow 2.5s ease;
-  transition: color 1s ease, text-shadow 2.5s ease;
 }
-#intro:hover {
+#subTitle {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#scrollToTips {
+  margin: 6px 3px 3px 3px;
+  padding: 9px 12px;
+  border-radius: 33px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  background-color: rgba(160, 160, 160, 0.9);
+  color: rgb(240, 230, 255);
+  -webkit-transition: color 500ms ease, text-shadow 2s ease;
+  -moz-transition: color 500ms ease, text-shadow 2s ease;
+  -o-transition: color 500ms ease, text-shadow 2s ease;
+  transition: color 500ms ease, text-shadow 2s ease;
+}
+#scrollToTips:hover {
+  cursor: pointer;
+  background-color: rgba(123, 123, 123, 0.5);
   color: rgba(248, 245, 49, 0.9);
   text-shadow: 0px 0px 9px rgba(210, 232, 250, 0.4), 0px 0px 18px rgba(255, 255, 255, 0.6);
 }
-
-#intro:before{
+#scrollToTips:before{
   content: '';
   position: absolute;
   top: -2px;
   left: -2px;
   bottom: -2px;
   right: -2px;
-  border-radius: 0;
+  border-radius: 33px;
   background: #fff;
   z-index: -1;
+  background: linear-gradient(-30deg, #d2e8fa, #5a5a5a, #f8f531);
 }
-#intro:after{
+#scrollToTips:after{
   content: '';
   position: absolute;
   top: -9px;
   left: -9px;
   bottom: -2px;
   right: -2px;
-  border-radius: 0;
+  border-radius: 33px;
   background: #fff;
   z-index: -2;
   filter: blur(15px);
-}
-#intro:before {
-  background: linear-gradient(-30deg, #d2e8fa, #5a5a5a, #f8f531);
-}
-#intro:after {
   background: linear-gradient(-30deg, #d2e8fa, #fcfcfc, #f8f531);
-}
-
-
-#subTitle {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: 600;
-  font-style: italic;
-}
-#scrollToTips {
-  margin: 9px 3px;
-  padding: 9px 12px;
-  border-radius: 36px;
-  color: rgb(60, 60, 60);
-  background-color: rgba(245, 245, 245, 0.35);
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.2rem;
-  font-weight: 600;
-}
-#scrollToTips:hover {
-  cursor: pointer;
-  background-color: rgba(123, 123, 123, 0.5);
-  color: whitesmoke;
 }
 #scrollDownArrow {
   font-size: 1.6rem;
   line-height: 1.6rem;
 }
+
 .topicCard {
   min-height: 120px;
   width: 80%;
@@ -187,7 +180,7 @@
 
 .row2 {
   width: 100%;
-  background-color: rgba(245, 245, 245, 0.3);
+  background-color: rgba(245, 245, 245, 0.5);
   color: rgb(54, 54, 54);
   padding-top: 18px;
 }
