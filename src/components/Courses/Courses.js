@@ -25,7 +25,7 @@ class Courses extends Component {
           <p className="courseP1"><span className='circle'></span> Interactive online group classes.</p>
           <p className="courseP1"><span className='circle'></span> Perfect for intermediate or advanced learners.</p>
           <p className="courseP1"><span className='circle'></span> Small classes (12-18 people) -- everyone can interact and get personal feedback.</p>
-          <p className="courseP1"><span className='circle'></span> Classes are 50 minutes (by Zoom).</p>
+          <p className="courseP1"><span className='circle'></span> Each class is 50 minutes (by Zoom).</p>
           <p className="courseP2">In these classes you can...
             <ul className='classPoints'>
               <li>have fun talking with learners of English from other countries</li>
@@ -35,7 +35,7 @@ class Courses extends Component {
             </ul>
             <span className='ulEndSpan'>...all at the same time!!</span></p>
           <p className="courseP1">Get a friend and sign-up together!!</p>
-          <p className="courseP1">Class times are compatible with many time zones, and the schedule is updated weekly.</p>
+          <p className="courseP1">Class times are compatible with many time zones.</p>
           
           <button className='signUpBtn1'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
           SEE CURRENT SCHEDULE</Link></button>
@@ -50,7 +50,7 @@ class Courses extends Component {
       <div className="row2Courses">
 
         <div className="courseCard cardTopA">
-          <Link to='//pronunciationcoachtraining.as.me/conversation-class' target='_blank' rel='noopener noreferrer'>
+          <Link to='//pronunciationcoachtraining.as.me/conversation-class1' target='_blank' rel='noopener noreferrer'>
             <h3 className='courseTitle'>Conversation Class: fluency practice</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 12 max</div></div>
           <p className='courseDetails'>Practice your speaking skills, improve your fluency, and have fun!</p>
@@ -59,18 +59,25 @@ class Courses extends Component {
         </div>
 
         <div className="courseCard cardTopB">
-          <Link to='//pronunciationcoachtraining.as.me/english-pron-basics' target='_blank' rel='noopener noreferrer'>
-            <h3 className='courseTitle'>Master Class 1: English Pronunciation Basics</h3></Link>
+          <Link to='//pronunciationcoachtraining.as.me/english-pronunciation1' target='_blank' rel='noopener noreferrer'>
+            <h3 className='courseTitle'>Master Class 1: Most Common Pronunciation Problems</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 18 max</div></div>
-          <p className='courseDetails'>English Pronunciation Intro. Includes: the most common pronunciation difficulties, some important insights into the vowel system, and a look at the most frequently used words that are most frequently mispronounced.</p>
-          <p className='courseDetails'><em>As the initial class of the series, it has a discounted price!!</em></p>
+          <p className='courseDetails'>The most common errors and pronunciation difficulties in English, important insights into the vowel system, and some of the most frequently used words that are most frequently mispronounced.</p>
+          <p className='courseDetails'><em>As the initial class of the series, Master Class 1 has a discounted price!!</em></p>
         </div>
 
         <div className="courseCard cardTopC">
           <Link to='//pronunciationcoachtraining.as.me/english-vowel-system' target='_blank' rel='noopener noreferrer'>
             <h3 className='courseTitle'>Master Class 2: English Vowel System</h3></Link>
           <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 18 max</div></div>
-          <p className='courseDetails'>Vowel System Overview. The English vowel system is one of the more confusing aspects for most learners. The class includes: the 15 different vowel sounds, how the Long and Short vowel system works, special Short-vowel pronunciation tips, some fundamental vowel spelling patterns, and the most commonly confused vowel contrasts.</p>
+          <p className='courseDetails'>Vowel System Overview. The English vowel system is one of the more confusing aspects for most learners. The class includes: the 15 different vowel sounds, how the Long and Short vowel system works, Short-vowel pronunciation tips, and the most fundamental vowel spelling patterns.</p>
+        </div>
+
+        <div className="courseCard cardTopC">
+          <Link to='//pronunciationcoachtraining.as.me/vowels-workout' target='_blank' rel='noopener noreferrer'>
+            <h3 className='courseTitle'>Master Class 3: Most Challenging English Vowels Workout</h3></Link>
+          <div className='courseData'><div className='courseTime'>50 minutes</div><div className='classSize'>Size: 18 max</div></div>
+          <p className='courseDetails'>Master the most challenging English vowels: Long-E vs. Short-i, Long-A vs. Short-e, Short-o vs. Short-u, Short-i, and the R-vowel. These vowels most frequently lead to communication mix-ups! You will have a chance to practice these and get personal feedback from the instructor.</p>
         </div>
 
       </div>
