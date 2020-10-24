@@ -18,9 +18,9 @@ class Courses extends Component {
   }
 
   render() {
-    return (<>
+    return (<div className='coursesContainer'>
       <div className="row1Courses" id='coursesTop'>
-        <h2 className="coursesRowTitle">PronunciationCoach Classes</h2>
+        <h2 className="coursesRowTitle">PronunciationCoach Live Classes</h2>
         <div id='classesInfo'>
           <p className="courseP1"><span className='circle'></span> Interactive online group classes.</p>
           <p className="courseP1"><span className='circle'></span> Perfect for intermediate or advanced learners.</p>
@@ -91,7 +91,7 @@ class Courses extends Component {
       </div>
       <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
 
-    </>
+    </div>
     );
   }
 }

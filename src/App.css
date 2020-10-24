@@ -95,13 +95,13 @@ a {
   top: 0;
   z-index: 2;
   width: 100%;
-  min-height: 60px;
-  background-color: rgba(123, 123, 123, 1);
+  min-height: 54px;
+  background-color: rgba(140, 140, 140, 1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 3px;
+  padding-bottom: 0px;
 }
 .mainName {
   display: flex;
@@ -111,7 +111,7 @@ a {
   flex: 1;
   min-width: 200px;
   color: whitesmoke;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 600;
   font-style: italic;
   margin: 0 2vw;
@@ -139,7 +139,7 @@ a {
   margin: 0 8vw;
 }
 .topNav {
-  padding: 3px 9px 6px 9px;
+  padding: 0px 9px 3px 9px;
   border-radius: 2px;
 }
 .topNav:hover {
@@ -158,27 +158,33 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 120px;
+  height: 90px;
   color: whitesmoke;
 }
-.footerLeftHalf {
-  width: 50%;
-  padding: 15px;
+.footerLeft {
+  width: 33%;
+  padding: 18px 15px 12px 15px;
 }
-.footerRightHalf {
-  width: 50%;
-  padding: 15px;
+.footerCenter {
+  width: 33%;
+  padding: 18px 15px 12px 15px;
+  text-align: center;
+}
+.footerRight {
+  width: 33%;
+  padding: 18px 15px 12px 15px;
   text-align: right;
 }
 .pageBottomCredits {
   font-size: 0.7rem;
+  margin-top: 9px;
 }
 .pageBottomInfo {
   font-size: 0.8rem;
 }
 .pageBottomLink {
-  font-size: 0.8rem;
-  margin: 6px 0;
+  font-size: 0.75rem;
+  margin: 0 0 6px 0;
 }
 .centered {
   text-align: center;
@@ -228,7 +234,7 @@ body {
     padding-right: 2%;
   }
   .App {
-    top: 60px; 
+    top: 54px; 
   }
   .contactLabel {
     display: inline-block;
@@ -243,6 +249,6 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .topNav {
-    padding: 9px 15px 12px 15px;
+    padding: 3px 15px 6px 15px;
   }
 }

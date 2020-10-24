@@ -102,15 +102,10 @@ class Home extends Component {
 
             <div className="topicCard topicC">
               <h4 className='scrollTitle'>Vowel Self-Check!</h4>
-              <p className="scrollP">Almost all English learners struggle with some aspect of the vowel system. 
-                You can assess yourself on some of the most difficult vowel contrasts with:</p>
-              <ul className="scrollP myUlList">
-                <li className='scrollP'>The <Link to='/voweltest' className='shadowA'>Vowel&nbsp;Test</Link> page has brief listening 
-                quizzes to see if you can hear the difference between certain vowels. This may help you uncover specific areas of 
-                weakness to target.</li>
-                <li className='scrollP'>The <Link to='/exercises' className='shadowA'>Exercises</Link> page has simple listening activities, 
-                using the word pairs from the vowel test quizzes, to help you train your ear to recognize these vowel sounds.</li>
-              </ul>
+              <p className="scrollP">Most English learners struggle with some aspect of the vowel system. 
+                You can assess yourself on some of the most difficult vowel contrasts with the <Link to='/vowelcheck' className='shadowA'>Vowel&nbsp;Check</Link> page.</p>
+                <p className='scrollP'>Try the listening quizzes to see if you can hear the difference between certain vowels and discover specific areas of 
+                weakness. For practice you can listen to the word pairs from the vowel test quizzes, to help you train your ear.</p>
             </div>
 
             <div className="topicCard topicA">

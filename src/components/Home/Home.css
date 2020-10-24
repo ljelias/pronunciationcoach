@@ -11,11 +11,11 @@
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   overflow: hidden;
-  padding: 4vh 2vw;
+  padding: 2vh 2vw;
 }
 .subrowB {
   display: flex;
@@ -61,22 +61,22 @@
 */
 #intro {
   position: relative;
-  background-color: rgba(227, 226, 212, 0.7);
-  margin: 0 0 30px 0;
-  padding: 18px 24px;
+  background-color: rgba(227, 221, 216, 0.7);
+  margin: 0 0 36px 0;
+  padding: 18px 12px;
   text-align: center;
   color: rgba(60, 60, 60, 0.9);
   border-radius: 0;
 }
 #subTitle {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 2.2rem;
   font-weight: 400;
   font-style: italic;
 }
 
 #scrollToTips {
-  margin: 6px 3px 3px 3px;
+  margin: 9px auto;
   padding: 9px 12px;
   border-radius: 33px;
   text-align: center;
@@ -221,6 +221,12 @@
   border: 2px solid rgba(123, 123, 123, 0.75);
   color: rgb(54, 54, 54);
 }
+#arrowButton1 {
+  border-radius: 6px 0 0 6px;
+}
+#arrowButton2 {
+  border-radius: 0 6px 6px 0;
+}
 #arrowButton1:hover,
 #arrowButton2:hover {
   cursor: pointer;
@@ -316,10 +322,25 @@ animation: fadein 1s;
   .topten {
     width: 85%;
   }
+  #scrollToTips {
+    margin: 9px auto;
+  }
+
 }
+
+@media only screen and (min-width: 890px) {
+  #scrollToTips {
+    margin: 9px 24px;
+  }
+}
+
 
 @media only screen and (min-width: 1000px) {
   .topTenRoll {
     width: 90%;
   }
+  #scrollToTips {
+    margin: 9px 36px;
+  }
+
 }

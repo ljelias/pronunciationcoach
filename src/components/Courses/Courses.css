@@ -1,3 +1,8 @@
+/*
+.coursesContainer {
+  overflow-y: scroll; 
+}
+*/
 .row1Courses {
   width: 100%;
   min-height: 180px;

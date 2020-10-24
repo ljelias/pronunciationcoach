@@ -1,0 +1,406 @@
+.row1VowelCheck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 480px;
+  padding: 0;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.7);
+}
+.columnAVowelCheck {
+  background-color: rgba(245, 245, 245, 0.8);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 225px;
+  padding: 3vh 0.4vw;
+}
+.columnBVowelCheck {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 5;
+  min-height: 540px;
+  min-width: 304px;
+}
+.vowelCheckCard,
+.trainLessonCard {
+  display: none;
+  background-color: rgba(245, 245, 245, 0.9);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 300px;
+  margin: 45px auto;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  padding: 24px 24px 12px 24px;
+}
+
+#vowelCheckIntroCard {
+  min-width: 300px;
+}
+#vowelCheckIntroCard,
+#vowelCheckDisplayCard,
+#trainPracticeCard {
+  animation-delay: 0.2s;
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from { opacity: 0; color: white; }
+  to   { opacity: 1; color: #000000; }
+}
+
+.testTopicTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 3px 0;
+}
+
+.testTopicsList {
+  margin: 12px;
+  padding: 0;
+}
+#testIntro {
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  padding: 4px 0 4px 6px;
+  list-style-type: none;
+  background-color: rgba(123, 123, 123, 0.2);
+  border: 1px solid rgba(123, 123, 123, 0.5);
+  margin-top: 9px;
+  margin-bottom: 18px;
+}
+#testIntro:hover {
+  cursor: pointer;
+  background-color: rgba(123, 123, 123, 0.4);
+}
+.vowelContrast,
+.vowelOptions {
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  margin: 0;
+  list-style-type: none;
+}
+.vowelContrast {
+  font-weight: 500;
+  padding: 1px 0 0 4px;
+  border: 1px solid rgba(123, 123, 123, 0.6);
+  border-bottom: 1px solid rgba(123, 123, 123, 0);
+}
+.vowelOptions {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18px;
+  padding: 0;
+}
+.testTopic,
+.exerciseTopic {
+  flex: 1;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.2rem;
+  margin: 0;
+  padding: 3px auto;
+  border: 1px solid rgba(245, 245, 245, 0.1);
+}
+.testTopic {
+  background-color: rgba(154, 205, 50, 0.3);
+  border: 1px solid yellowgreen;
+}
+.testTopic:hover {
+  cursor: pointer;
+  background-color: rgba(154, 205, 50, 0.6);
+}
+.testTopic:active {
+  background-color: rgba(123, 123, 123, 0.8);
+  border: 1px solid yellowgreen;
+}
+.exerciseTopic {
+  background-color: rgba(100, 149, 237, 0.2);
+  border: 1px solid cornflowerblue;
+}
+.exerciseTopic:hover {
+  cursor: pointer;
+  background-color: rgba(100, 149, 237, 0.5);
+}
+.exerciseTopic:active {
+  background-color: rgba(123, 123, 123, 0.8);
+  border: 1px solid cornflowerblue;
+}
+.vowelTestTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+  padding: 3px 0 3px 6px;
+}
+.vowelCheckIntroP {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.vowelCheckIntroP2 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  margin-top: 0;
+  padding: 3px 15px;
+}
+.vowelCheckIntroSubtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding-left: 3px;
+  padding-bottom: 1px;
+}
+.greenGroup {
+  background-color: rgba(154, 205, 50, 0.6);
+  border: 1px solid yellowgreen;
+}
+.blueGroup {
+  background-color: rgba(100, 149, 237, 0.5);
+  border: 1px solid cornflowerblue;
+}
+
+.testCardLeft{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 5;
+  min-width: 285px;
+}
+.testCardRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+.vowelTestP {
+  font-size: 0.95rem;
+  line-height: 1rem;
+  margin: 6px 0;
+  width: 98%;
+  min-width: 279px;
+}
+.vowelCheckPSpan {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.vowelTestRadio {
+  margin: 0 -3px 2px 9px;
+  vertical-align: middle;
+  width: 2.5vw;
+  height: 2.5vh;
+}
+.testPlayer {
+  height: 30px;
+  width: 60%;
+  min-width: 270px;
+  border: 3px solid rgba(154, 205, 50, 0.6);
+  background-color: rgba(154, 205, 50, 0.6);
+  margin: 6px 0 21px 0;
+}
+.quizItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.quizFirstHalf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+}
+.quizSecondHalf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+}
+.questionItem {
+  margin: 0 0 15px 9px;
+}
+.checkButtonsRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 18px auto 12px auto;
+}
+.checkBtn {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  margin-right: 15px;
+  margin-top: 6px;
+  border-radius: 4px;
+  background-color: rgb(206, 206, 206);
+}
+.checkTest:hover {
+  border: 2px solid grey;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.checkTest:active {
+  background-color: rgba(154, 205, 50, 0.7);
+}
+.testResults {
+  margin-bottom: 6px;
+  border-top: 1px solid rgba(123, 123, 123, 1);
+  border-bottom: 2px solid rgba(123, 123, 123, 1);
+}
+.testTally {
+  margin: 2px 0;
+}
+.testAnswerTitle {
+  margin-top: 12px;
+  font-weight: 700;
+}
+.testAnswers {
+  font-size: 0.95rem;
+  margin: 2px 0;
+}
+.correctAnswer {
+  display: none;
+}
+
+.pairCardLeft{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 5;
+  min-width: 285px;
+}
+.pairCardRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+.pairLessonTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+  padding: 3px 0 3px 6px;
+}
+.testOrTrain {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+.pairLessonP {
+  font-size: 0.95rem;
+  line-height: 1rem;
+  margin: 6px 0;
+  width: 98%;
+  min-width: 279px;
+}
+.pairPlayer {
+  height: 30px;
+  width: 60%;
+  min-width: 270px;
+  border: 3px solid rgba(100, 149, 237, 0.6);
+  background-color: rgba(100, 149, 237, 0.6);
+  margin: 6px 0 21px 0;
+}
+.pairLessonItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pairFirstHalf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+}
+.pairSecondHalf {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 240px;
+}
+.pairLessonItem {
+  margin: 0 0 15px 9px;
+}
+.pairNotesTitle {
+  margin-bottom: 6px;
+  border-top: 1px solid rgba(123, 123, 123, 1);
+  border-bottom: 2px solid rgba(123, 123, 123, 1);
+}
+.pairNotesList {
+  padding-left: 24px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 2px 0;
+}
+.pairNotesList li {
+  margin-bottom: 4px;
+}
+.furtherPrac {
+  font-size: 0.9rem;
+  margin: 21px auto 3px auto;
+  padding: 0 3px 0 9px;
+  text-align: left;
+}
+.furtherPracP {
+  background-color: rgba(123, 123, 123, 0.2);
+  border: 1px solid cornflowerblue;
+  padding: 0 3px 6px 3px;
+}
+
+
+@media only screen and (min-width: 475px) {
+  .vowelCheckCard {
+    width: 90%;
+    margin: 12px auto;
+  }
+  .trainLessonCard {
+    width: 90%;
+    margin: 12px auto;
+  } 
+}
+
+
+@media only screen and (min-width: 840px) {
+  .checkBtn {
+    font-size: 0.8rem;
+    padding: 2px 9px;
+    margin-right: 15px;
+  }
+  .vowelCheckCard {
+    margin: 45px auto;
+  }
+  .testCardLeft{
+    margin-right: 6px;
+  }
+  .testCardRight {
+    border-left: 2px solid rgba(123, 123, 123, 1);
+  }
+  .testResults {
+    margin-left: 9px;
+  }
+  .trainLessonCard {
+    margin: 45px auto;
+  }
+  .pairCardLeft{
+    margin-right: 6px;
+  }
+  .pairCardRight {
+    border-left: 2px solid rgba(123, 123, 123, 1);
+  }
+  .pairNotesTitle {
+    margin-left: 9px;
+  }
+}
