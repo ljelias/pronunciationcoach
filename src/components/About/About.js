@@ -168,8 +168,8 @@ class About extends Component {
           <div className="rowAboutCard paddedRow">
             <p className="aboutP4 bold">To begin the analysis process...</p>
             <ol className='myUlList2'>
-              <li className="aboutP4">Fill in <a href='https://forms.gle/hK5vUt61udEHTzrX7' target='_blank' rel='noopener noreferrer'
-                className='shadowA'>my&nbsp;form</a>
+              <li className="aboutP4">Fill in <Link to='//forms.gle/hK5vUt61udEHTzrX7' target='_blank' rel='noopener noreferrer'
+                className='shadowA'>this&nbsp;form</Link>
                 with information about yourself, your language background, and your experience with English.</li>
               <li className="aboutP5">I send you an email with instructions and a link to my analysis recording site.
               </li>

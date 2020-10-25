@@ -33,8 +33,9 @@ function App() {
 
             </VowelContrastsContextProvider>
 
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
+
     </Router>
   </>
   );

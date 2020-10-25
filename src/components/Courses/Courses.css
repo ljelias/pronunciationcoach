@@ -53,6 +53,10 @@
 .ulEndSpan{
   margin-left: 18px;
 }
+.arrowSpan {
+  font-size: 2rem;
+  vertical-align: middle;
+}
 .row2Courses {
   display: flex;
   flex-direction: row;
@@ -124,12 +128,14 @@
 
 .row3Courses {
   width: 100;
-  min-height: 150px;
-  padding: 30px;
-  background-color: rgba(245, 245, 245, 0.7);
+  min-height: 111px;
+  padding: 21px;
+  background-color: rgba(245, 245, 245, 0.5);
   text-align: center;
 }
-
+.coursesQ {
+  margin-top: 9px;
+}
 #classList {
   margin-top: 18px;
 }
@@ -138,7 +144,7 @@
 }
 .signUpBtn1 {
   width: 240px;
-  margin: 9px 0 0 0;
+  margin: 9px 0;
   padding: 9px 15px;
   border-radius: 6px;
 }

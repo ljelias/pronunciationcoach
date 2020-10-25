@@ -50,11 +50,10 @@ html {
 
 body {
   height: 100%;
+  background-color: whitesmoke; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   background-image: url(./images/ehud-neuhaus-Sne2rCdLz3w-unsplash.jpg);
   background-size: cover;
-  background-color: whitesmoke;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  overflow-y: hidden;
 }
 
 a {
@@ -76,7 +75,7 @@ a {
 }
 .shadowA2 {
   padding: 0 2px;
-  border: 1px solid rgba(245, 245, 245, 0.0);
+  border: 1px solid rgba(245, 245, 245, 0);
   box-shadow: 0px 1px 1px 0px rgba(245, 245, 245, 0.75);
 }
 .shadowA2:hover {
@@ -151,41 +150,81 @@ a {
 }
 .App {
   position: fixed; 
-  overflow-y: scroll;
-  top: 70px; right: 0; bottom: 0; left: 0;
+  overflow: hidden;
+  overflow: auto;
+  top: 70px; right: 0; bottom: 111px; left: 0;
 }
 .pageBottom {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 111px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 90px;
-  color: whitesmoke;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-y: auto;
+  background-color: transparent;
 }
 .footerLeft {
-  width: 33%;
-  padding: 18px 15px 12px 15px;
+  width: 20%;
+  min-width: 150px;
+  padding: 4px 9px;
+  color: rgba(245, 245, 245, 0.1);
+}
+.footerLeft:hover {
+  color: rgba(245, 245, 245, 0.5);
 }
 .footerCenter {
-  width: 33%;
-  padding: 18px 15px 12px 15px;
+  width: 30%;
+  min-width: 150px;
+  padding: 4px;
   text-align: center;
+  color: rgba(245, 245, 245, 0.1);
+}
+.footerCenter:hover {
+  color: rgba(245, 245, 245, 0.5);
 }
 .footerRight {
-  width: 33%;
-  padding: 18px 15px 12px 15px;
-  text-align: right;
+  width: 49%;
+  min-width: 270px;
+  padding: 4px 9px;
+  text-align: center;
+  color: rgba(245, 245, 245, 0.1);
+}
+.footerRight:hover {
+  color: rgba(245, 245, 245, 0.5);
 }
 .pageBottomCredits {
   font-size: 0.7rem;
-  margin-top: 9px;
+  margin-top: 2px;
 }
 .pageBottomInfo {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .pageBottomLink {
+  display: inline-block;
   font-size: 0.75rem;
-  margin: 0 0 6px 0;
+  line-height: 0.95rem;
+  margin: 1px 6px 3px 6px;
 }
+.shadowA3 {
+  padding: 0 2px;
+  border: 1px solid rgba(245, 245, 245, 0);
+  box-shadow: 0px 1px 1px 0px rgba(245, 245, 245, 0);
+}
+.shadowA3:hover {
+  cursor: pointer;
+  border: 1px solid rgba(245, 245, 245, 0.4);
+  box-shadow: 0px 3px 3px 0px rgba(245, 245, 245, 0.4);
+}
+.shadowA3:active {
+  background-color: rgba(56, 221, 23, 0.6);
+}
+
 .centered {
   text-align: center;
 }
@@ -211,16 +250,13 @@ a {
   font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
-  background-color: rgba(245, 245, 245, 0.6);
+  background-color: rgba(245, 245, 245, 0.2);
 }
 .scrollToTop:hover {
   cursor: pointer;
   background-color: rgba(154, 205, 50, 0.5);
 }
 
-body {
-  background-image: url(./images/ehud-neuhaus-Sne2rCdLz3w-unsplash.jpg);
-}
 
 @media only screen and (min-width: 475px) {
   .mainHeader {
@@ -245,8 +281,18 @@ body {
   #message {
     margin-top: 9px;
   }
-
 }
+
+@media only screen and (min-width: 715px) {
+  .pageBottom {
+    height: 56px;
+  }
+  .App {
+    bottom: 56px;
+  }
+}
+
+
 @media only screen and (min-width: 800px) {
   .topNav {
     padding: 3px 15px 6px 15px;

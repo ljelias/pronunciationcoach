@@ -180,7 +180,7 @@
 
 .row2 {
   width: 100%;
-  background-color: rgba(245, 245, 245, 0.5);
+  background-color: rgba(245, 245, 245, 0.4);
   color: rgb(54, 54, 54);
   padding-top: 18px;
 }
@@ -217,7 +217,7 @@
 #arrowButton1,
 #arrowButton2 {
   font-size: 2rem;
-  background-color: rgba(123, 123, 123, 0.2);
+  background-color: rgba(123, 123, 123, 0.4);
   border: 2px solid rgba(123, 123, 123, 0.75);
   color: rgb(54, 54, 54);
 }
@@ -244,8 +244,8 @@
   border: 1px solid yellowgreen;
   padding: 9px 6px;
   text-align: center;
-  font-size: 1.05rem;
-  line-height: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
   font-style: italic;
   font-weight: 600;
 }
@@ -315,12 +315,20 @@ animation: fadein 1s;
     margin-right: 6px;
     max-height: 129px;
   }
+  .topTenP {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 }
 
 
 @media only screen and (min-width: 840px) {
   .topten {
     width: 85%;
+  }
+  .topTenP {
+    font-size: 1.05rem;
+    line-height: 1.25rem;
   }
   #scrollToTips {
     margin: 9px auto;

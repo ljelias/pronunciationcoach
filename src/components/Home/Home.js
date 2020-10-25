@@ -209,7 +209,7 @@ class Home extends Component {
           <div className="tipButtonRow">
             <button type='button' id="arrowButton1" onClick={() => this.seePrevious()} >&nbsp;&#8678;&nbsp;</button>
             <p className='topTenP'>Some pronunciation difficulties are related to patterns from your first language, 
-            but these Top&nbsp;10&nbsp;Tips are helpful for almost anybody, no matter what your first language is.​</p>
+            but these Top&nbsp;10&nbsp;Tips can help almost anybody, no matter what your first language is.​</p>
             <button type='button' id="arrowButton2" onClick={() => this.seeNext()} >&nbsp;&#8680;&nbsp;</button>
           </div>
 
@@ -417,9 +417,10 @@ class Home extends Component {
           </div>
 
       </div>
-      <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Go to Top ^</div>
 
     </section>
+    <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Go to Top ^</div>
+
   </> );
   }
 }

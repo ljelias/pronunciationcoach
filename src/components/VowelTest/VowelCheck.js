@@ -227,7 +227,7 @@ class VowelCheck extends Component {
         <div id='vowelCheckIntroCard' className="vowelCheckCard">
             <h3 className='vowelTestTitle centered'>Vowel Diagnostic: Introduction</h3>
             <p className="vowelCheckIntroP">Discover if you have difficulties with certain English vowels. These are vowel sounds that are easy to confuse and often difficult for students of English.</p>
-            <p className="vowelCheckIntroP">The activities use word pairs called "minimal pairs" -- the two words of each pair are the same except for the vowel sound. For each vowel contrast, there are two types of activities:</p>
+            <p className="vowelCheckIntroP">The activities use word pairs called "minimal pairs" -- the two words of each pair are the same except for the vowel sound. There are two types of activities:</p>
             <p className="vowelCheckIntroSubtitle greenGroup">Test Your Ear</p>
             <p className="vowelCheckIntroP2">A listening test! You see pairs of words, but on the recording you will hear just one of the words from each pair (repeated twice). Can you identify which word your hear?</p>
             <p className="vowelCheckIntroP2">If you have difficulty with any of the tests, you can practice listening to the word pairs with "Train Your Ear".</p>
@@ -238,7 +238,7 @@ class VowelCheck extends Component {
 
         <div id='vowelCheckDisplayCard' className="vowelCheckCard">
           <div className="testCardLeft">
-            <h3 className='vowelTestTitle greenGroup'><span>{nextTopic.titleA} <em> {nextTopic.titleB}</em></span><span className='testOrTrain'>(test)</span></h3>
+            <h3 className='vowelTestTitle greenGroup'><span>{nextTopic.titleA}&nbsp; <em> {nextTopic.titleB}</em></span><span className='testOrTrain'>(test)</span></h3>
             <p className="vowelTestP"> <span className="vowelCheckPSpan">WHICH WORD DO YOU HEAR? </span>{nextTopic.instructions}</p>
             <audio controls src={audioFile} controlsList="nodownload" className='testPlayer'>
               Your browser does not support the <code>audio</code> element.
@@ -354,7 +354,7 @@ class VowelCheck extends Component {
 
         <div id='trainPracticeCard' className="trainLessonCard">
           <div className="pairCardLeft">
-            <h3 className='pairLessonTitle blueGroup'>{nextVowelTopic.titleA} <span><em> {nextVowelTopic.titleB}</em></span><span className='testOrTrain'>(practice)</span></h3>
+            <h3 className='pairLessonTitle blueGroup'>{nextVowelTopic.titleA}&nbsp; <span><em> {nextVowelTopic.titleB}</em></span><span className='testOrTrain'>(practice)</span></h3>
             <p className="pairLessonP"><span className="vowelCheckPSpan">LISTEN AND COMPARE. </span>{nextVowelTopic.practiceInfo}</p>
             <audio controls src={pairsAudioFile} controlsList="nodownload" className='pairPlayer'>
               Your browser does not support the <code>audio</code> element.

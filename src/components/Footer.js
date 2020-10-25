@@ -9,22 +9,21 @@ class Footer extends Component {
         <div className="footerLeft">
           <p className="pageBottomInfo">The ProfessorCoach LLC</p>
           <p className="pageBottomInfo">Minneapolis, MN USA</p>
-          <p className="pageBottomInfo">612.234.1441</p>
         </div>
         <div className='footerCenter'>
           <p className="pageBottomInfo">&#169; Laura Elias 2020</p>
-          <p className="pageBottomCredits">Background image by Ehud Neuhaus on Unsplash</p>
+          <p className="pageBottomCredits">Background image by Ehud Neuhaus on&nbsp;Unsplash</p>
         </div>
         <div className="footerRight">
-          <p className="pageBottomLink">
+          <span className="pageBottomLink">
             <Link to='//pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'
-              className='shadowA2'>pronunciation-coach-blog</Link></p>
-          <p className="pageBottomLink">
+              className='shadowA3'>pronunciationcoach.blog</Link></span>
+          <span className="pageBottomLink">
             <Link to='//github.com/ljelias' target='_blank' rel='noopener noreferrer'
-              className='shadowA2'>github.com/ljelias</Link></p>
-          <p className="pageBottomLink">
+              className='shadowA3'>github.com/ljelias</Link></span>
+          <span className="pageBottomLink">
             <Link to='//ljelias.github.io/LEportfolio/' target='_blank' rel='noopener noreferrer'
-              className='shadowA2'>ljeliasDevPortfolio</Link></p>
+              className='shadowA3'>ljeliasDevPortfolio</Link></span>
         </div>
       </footer>
      );

@@ -39,9 +39,7 @@ class Courses extends Component {
           
           <button className='signUpBtn1'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
           SEE CURRENT SCHEDULE</Link></button>
-
-          <p className="aboutP"></p>
-
+          <p className="courseP1"><span className='arrowSpan'>&#8681;</span>&nbsp;Class descriptions below!</p>
         </div>
 
       </div>
@@ -86,8 +84,7 @@ class Courses extends Component {
       <div className="row3Courses">
         <button className='signUpBtn2'><Link to='//pronunciationcoachtraining.as.me/?template=class' target='_blank' rel='noopener noreferrer'>
           SIGN UP NOW!</Link></button>
-        <h2 className="coursesRowTitle">...</h2>
-        <p>Questions? Use the Contact form on the "About" page.</p>
+        <p className='coursesQ'>Questions? Use the Contact form on the "About" page.</p>
       </div>
       <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Scroll to Top ^</div>
 

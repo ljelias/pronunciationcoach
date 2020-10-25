@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  min-height: 480px;
+  height: 100%;
   padding: 0;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.7);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
 }
 .columnAVowelCheck {
   background-color: rgba(245, 245, 245, 0.8);
@@ -13,16 +14,21 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  height: 100%;
   min-width: 225px;
-  padding: 3vh 0.4vw;
+  max-width: 300px;
+  padding: 3vh 0.4vw 1vh 0.4vw;
+  overflow-y: hidden;
+  overflow: auto;
 }
 .columnBVowelCheck {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 5;
-  min-height: 540px;
+  height: 100%;
   min-width: 304px;
+  overflow-y: auto;
 }
 .vowelCheckCard,
 .trainLessonCard {
@@ -36,7 +42,7 @@
   margin: 45px auto;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
-  padding: 24px 24px 12px 24px;
+  padding: 15px 24px 12px 24px;
 }
 
 #vowelCheckIntroCard {
@@ -70,6 +76,7 @@
   list-style-type: none;
   background-color: rgba(123, 123, 123, 0.2);
   border: 1px solid rgba(123, 123, 123, 0.5);
+  box-shadow: 1px 2px 4px #888888;
   margin-top: 9px;
   margin-bottom: 18px;
 }
@@ -89,12 +96,14 @@
   padding: 1px 0 0 4px;
   border: 1px solid rgba(123, 123, 123, 0.6);
   border-bottom: 1px solid rgba(123, 123, 123, 0);
+  box-shadow: 1px 2px 4px #888888;
 }
 .vowelOptions {
   display: flex;
   flex-direction: row;
   margin-bottom: 18px;
   padding: 0;
+  box-shadow: 1px 2px 4px #888888;
 }
 .testTopic,
 .exerciseTopic {
@@ -134,18 +143,18 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 9px;
-  padding: 3px 0 3px 6px;
+  padding: 3px 3px 3px 6px;
 }
 .vowelCheckIntroP {
   font-size: 1rem;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   margin-top: 0;
 }
 .vowelCheckIntroP2 {
   font-size: 1rem;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   margin-top: 0;
-  padding: 3px 15px;
+  padding: 3px 18px;
 }
 .vowelCheckIntroSubtitle {
   font-size: 1.1rem;
@@ -230,7 +239,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 18px auto 12px auto;
+  margin: 9px auto 6px auto;
 }
 .checkBtn {
   font-size: 0.7rem;
@@ -287,7 +296,7 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 9px;
-  padding: 3px 0 3px 6px;
+  padding: 3px 3px 3px 6px;
 }
 .testOrTrain {
   font-size: 1rem;
@@ -362,14 +371,11 @@
 
 
 @media only screen and (min-width: 475px) {
-  .vowelCheckCard {
-    width: 90%;
-    margin: 12px auto;
-  }
+  .vowelCheckCard,
   .trainLessonCard {
     width: 90%;
     margin: 12px auto;
-  } 
+  }
 }
 
 
@@ -379,8 +385,9 @@
     padding: 2px 9px;
     margin-right: 15px;
   }
-  .vowelCheckCard {
-    margin: 45px auto;
+  .vowelCheckCard,
+  .trainLessonCard {
+    margin: 18px auto;
   }
   .testCardLeft{
     margin-right: 6px;
@@ -390,9 +397,6 @@
   }
   .testResults {
     margin-left: 9px;
-  }
-  .trainLessonCard {
-    margin: 45px auto;
   }
   .pairCardLeft{
     margin-right: 6px;
