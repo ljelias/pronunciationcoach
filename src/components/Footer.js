@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 
 class Footer extends Component {
@@ -15,15 +14,15 @@ class Footer extends Component {
           <p className="pageBottomCredits">Background image by Ehud Neuhaus on&nbsp;Unsplash</p>
         </div>
         <div className="footerRight">
-          <span className="pageBottomLink">
-            <Link to='//pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'
-              className='shadowA3'>pronunciationcoach.blog</Link></span>
-          <span className="pageBottomLink">
-            <Link to='//github.com/ljelias' target='_blank' rel='noopener noreferrer'
-              className='shadowA3'>github.com/ljelias</Link></span>
-          <span className="pageBottomLink">
-            <Link to='//ljelias.github.io/LEportfolio/' target='_blank' rel='noopener noreferrer'
-              className='shadowA3'>ljeliasDevPortfolio</Link></span>
+          <p className="pageBottomLink">
+            <a href='https://pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'
+              className='shadowA3'>pronunciationcoach.blog</a></p>
+          <p className="pageBottomLink">
+            <a href='https://github.com/ljelias' target='_blank' rel='noopener noreferrer'
+              className='shadowA3'>github.com/ljelias</a></p>
+          <p className="pageBottomLink">
+            <a href='https://ljelias.github.io/LEportfolio/' target='_blank' rel='noopener noreferrer'
+              className='shadowA3'>ljeliasDevPortfolio</a></p>
         </div>
       </footer>
      );

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './VowelCheck.css';
 import { VowelContrastsContext } from '../../contexts/VowelContrastsContext.js';
 import longAShortETest from '../../audio/longAShortETest.mp3';
@@ -163,8 +162,8 @@ class VowelCheck extends Component {
     let vowelTips = notes.map((note, idx) => <li key={idx} >{note}</li>);
     let lessonLink = nextVowelTopic.blogLesson;
     let lessonTitle = nextVowelTopic.blogLessonTitle;
-    let lessonDetails = <div className='furtherPrac'><strong>LEARN MORE!</strong><p className='furtherPracP'>See the free blog mini-lesson:<br /><Link to={lessonLink} target='_blank' rel='noopener noreferrer'
-    className='shadowA'>{lessonTitle}</Link></p></div>;
+    let lessonDetails = <div className='furtherPrac'><strong>LEARN MORE!</strong><p className='furtherPracP'>See the free blog mini-lesson:<br /><a href={lessonLink} target='_blank' rel='noopener noreferrer'
+    className='shadowA'>{lessonTitle}</a></p></div>;
     let lessonInfo = lessonLink ? lessonDetails : '';
 
     return (
@@ -354,7 +353,7 @@ class VowelCheck extends Component {
 
         <div id='trainPracticeCard' className="trainLessonCard">
           <div className="pairCardLeft">
-            <h3 className='pairLessonTitle blueGroup'>{nextVowelTopic.titleA}&nbsp; <span><em> {nextVowelTopic.titleB}</em></span><span className='testOrTrain'>(practice)</span></h3>
+            <h3 className='pairLessonTitle blueGroup'>{nextVowelTopic.titleA}&nbsp; <span><em> {nextVowelTopic.titleB}</em></span><span className='testOrTrain'>(train)</span></h3>
             <p className="pairLessonP"><span className="vowelCheckPSpan">LISTEN AND COMPARE. </span>{nextVowelTopic.practiceInfo}</p>
             <audio controls src={pairsAudioFile} controlsList="nodownload" className='pairPlayer'>
               Your browser does not support the <code>audio</code> element.

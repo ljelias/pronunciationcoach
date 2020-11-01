@@ -1,0 +1,133 @@
+#startHereTop {
+  margin-top: 1px;
+}
+#startHereRow1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 90px 9px;
+}
+.startHereCard {
+  width: 100%;
+  margin: 15px auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 18px 1px rgba(0, 0, 0, 0.6);
+}
+.startHereCardHeader {
+  min-height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.startHereTopicTitle {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding: 3px;
+}
+.topicColorA {
+  background-color: rgba(252, 249, 119, 0.85);
+}
+.topicColorB {
+  background-color: rgba(201, 238, 127, 0.75);
+}
+.topicColorC {
+  background-color: rgba(255, 202, 161, 0.85);
+}
+
+.startHereCardBottom {
+  background-color: white;
+  padding: 0px 15px;
+  height: 100%;
+}
+.startHereP {
+  font-size: 0.95rem;
+  margin: 15px 15px 12px 15px;
+}
+.startHereCardBottom2 {
+  border: 2px solid white;
+}
+#goToTips {
+  width: 65%;
+  max-width: 144px;
+  margin: 30px auto;
+  padding: 12px;
+  border-radius: 33px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  background-color: rgba(160, 160, 160, 0.4);
+  color: rgb(240, 230, 255);
+  -webkit-transition: color 500ms ease, text-shadow 2s ease;
+  -moz-transition: color 500ms ease, text-shadow 2s ease;
+  -o-transition: color 500ms ease, text-shadow 2s ease;
+  transition: color 500ms ease, text-shadow 2s ease;
+}
+#goToTips p {
+  margin-bottom: 9px 0;
+}
+
+#goToTips:hover {
+  cursor: pointer;
+  background-color: rgba(123, 123, 123, 0.5);
+  color: rgba(248, 245, 49, 0.9);
+  text-shadow: 0px 0px 9px rgba(210, 232, 250, 0.4), 0px 0px 18px rgba(255, 255, 255, 0.6);
+}
+#goToTips:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border-radius: 33px;
+  background: #fff;
+  z-index: -1;
+  background: linear-gradient(-40deg, #d2e8fa, #6b6b6b, #f8f531);
+}
+#goToTips:after{
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  bottom: -2px;
+  right: -2px;
+  border-radius: 33px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(15px);
+  background: linear-gradient(-40deg, #d2e8fa, #fcfcfc, #f8f531);
+}
+#scrollDownArrow {
+  font-size: 2rem;
+}
+
+
+@media only screen and (min-width: 475px) {
+  .startHereCard {
+    width: 90%;
+    min-width: 270px;
+    max-width: 390px;
+    margin: 15px;
+  }
+  .startHereTopicTitle {
+    padding: 3px 15px;
+  }
+  
+}
+
+@media only screen and (min-width: 620px) {
+  .startHereCard {
+    width: 30%;
+    min-width: 270px;
+    max-width: 390px;
+    margin: 15px;
+  }
+}

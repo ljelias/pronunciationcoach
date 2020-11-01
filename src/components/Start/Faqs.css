@@ -1,0 +1,115 @@
+#faqsTop {
+  margin-top: 1px;
+}
+#faqRow1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 75px 0 45px 0;
+}
+
+.faqCard {
+  color: rgb(60, 60, 60);
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 98%;
+  margin: 6px auto;
+  padding: 12px 6px;
+  box-shadow: 0 3px 18px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+}
+.faqList {
+  margin: 15px 9px;
+  padding-left: 15px;
+}
+.faqTitle {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: 12px;
+  padding: 0 12px;
+}
+.faqItem {
+  margin-bottom: 39px;
+}
+.faqTopicItem {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+.faqP {
+  font-size: 1rem;
+  margin: 9px 0;
+}
+.connector {
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.ulSublist {
+  padding: 0 21px 0 21px;
+}
+.faqSubItem {
+  font-size: 0.95rem;
+}
+
+
+@media only screen and (min-width: 475px) {
+  .faqTitle {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: 45px;
+  }
+  .faqCard {
+    width: 85%;
+    margin: 24px auto;
+    padding: 15px 12px;
+  }
+  .faqList {
+    margin: 21px 15px;
+    padding-left: 21px;
+  }
+  .faqTopicItem {
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+  }
+  .faqP {
+    font-size: 1.05rem;
+  }
+  .ulSublist {
+    padding: 0 30px 0 30px;
+  }
+  
+  .faqSubItem {
+    font-size: 1.05rem;
+  }
+    
+}
+
+@media only screen and (min-width: 660px) {
+  .faqCard {
+    width: 85%;
+    margin: 30px auto;
+    padding: 24px;
+  }
+  .faqList {
+    margin: 21px 24px 21px 21px;
+    padding-left: 21px;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .faqCard {
+    width: 80%;
+    margin: 36px auto;
+    padding: 30px;
+  }
+  .faqList {
+    margin: 24px 30px 24px 24px;
+    padding-left: 24px;
+  }  
+}
+
+

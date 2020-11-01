@@ -1,0 +1,84 @@
+#moreResourcesTop {
+  margin-top: 1px;
+}
+#moreResourcesRow1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 90px 9px 60px 9px;
+}
+.moreResourcesCard {
+  width: 100%;
+  margin: 15px 2px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 18px 1px rgba(0, 0, 0, 0.6);
+}
+.moreResourcesCardHeader {
+  min-height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.moreResourcesTopicTitle {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding: 3px;
+}
+.moreColorA {
+  background-color: rgba(156, 169, 192, 0.85);
+}
+.moreColorB {
+  background-color: rgba(252, 249, 119, 0.85);
+}
+.moreColorC {
+  background-color: rgba(201, 238, 127, 0.75);
+}
+.moreResourcesCardBottom {
+  background-color: white;
+  padding: 0px 15px;
+  height: 100%;
+}
+.moreResourcesP {
+  font-size: 0.95rem;
+  margin: 15px 15px 12px 15px;
+}
+.moreResourcesMiniP {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-style: italic;
+  margin-left: 21px;
+  margin-top: -8px;
+  margin-bottom: -11px;
+}
+.moreResourcesCardBottom2 {
+  border: 2px solid white;
+}
+
+
+@media only screen and (min-width: 475px) {
+  .moreResourcesCard {
+    width: 90%;
+    min-width: 270px;
+    max-width: 390px;
+    margin: 15px;
+  }
+  .moreResourcesTopicTitle {
+    padding: 3px 15px;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .moreResourcesCard {
+    width: 30%;
+    min-width: 270px;
+    max-width: 390px;
+    margin: 15px;
+  }
+
+}

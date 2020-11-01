@@ -1,0 +1,173 @@
+#topTenTop {
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+  color: rgb(60, 60, 60);
+  padding-top: 48px;
+  margin-bottom: 18px;
+}
+.topTenRoll {
+  min-height: 495px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1px;
+}
+.topTenHeader {
+  margin: 0;
+  padding: 9px 3px;  
+  background-color: rgba(154, 205, 50, 0.6);
+}
+#topTenTitle {
+  font-size: 1.35rem;
+  margin-left: 6vw;
+  margin-bottom: 12px;
+}
+.tipButtonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 98%;
+  margin: 0 auto;
+}
+#arrowButton1,
+#arrowButton2 {
+  font-size: 2rem;
+  background-color: rgba(123, 123, 123, 0.4);
+  border: 2px solid rgba(123, 123, 123, 0.75);
+  color: rgb(54, 54, 54);
+}
+#arrowButton1 {
+  border-radius: 6px 0 0 6px;
+}
+#arrowButton2 {
+  border-radius: 0 6px 6px 0;
+}
+#arrowButton1:hover,
+#arrowButton2:hover {
+  cursor: pointer;
+  background-color: rgba(123, 123, 123, 0.9);
+}
+#arrowButton1:active,
+#arrowButton2:active {
+  color: yellowgreen;
+  border: 2px solid yellowgreen;
+}
+.topTenP {
+  padding: 0 3px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.05rem;
+  font-style: italic;
+}
+.topten {
+  display: none;
+  width: 95%;
+  min-height: 366px;
+  margin: 24px auto 36px auto;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  box-shadow: 0px 4px 18px 4px rgba(0, 0, 0, 0.5);
+  padding: 18px 24px;
+}
+.topten p,
+.topten li {
+animation: fadein 1s;
+}
+@keyframes fadein {
+  from { opacity: 0; color: white; }
+  to   { opacity: 1; color: rgb(54, 54, 54); }
+}
+.tipTitle {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+#subdiv1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-between;
+  padding: 9px 0;
+}
+.exampleDiv1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 222px;
+  margin: 0 9px;
+}
+.exampleStart {
+  font-weight: 700;
+}
+.tipImg {
+  margin-left: 2px;
+  margin-top: 6px;
+  max-height: 111px;
+  float: right;
+}
+.tipParag {
+  font-size: 0.95rem;
+  line-height: 1.3rem;
+  margin-bottom: 6px;
+}
+.tipParagInset {
+  margin: 0 2vw 6px 2vw;
+}
+.subtitle {
+  margin-top: 9px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (min-width: 475px) {
+  #topTenTitle {
+    font-size: 1.5rem;
+  }
+  .tipButtonRow {
+    width: 90%;
+  }
+  .tipImg {
+    margin-left: 4px;
+    margin-right: 6px;
+    max-height: 129px;
+  }
+  .topTenP {
+    font-size: 1.05rem;
+    line-height: 1.25rem;
+    padding: 0 15px;
+  } 
+}
+
+
+@media only screen and (min-width: 840px) {
+  #topTenTitle {
+    font-size: 1.6rem;
+  }
+  .tipButtonRow {
+    width: 85%;
+  }
+  .topten {
+    width: 85%;
+  }
+  .topTenP {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    padding: 0 21px;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  .topTenP {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  .tipButtonRow {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .topTenRoll {
+    width: 90%;
+  }
+}

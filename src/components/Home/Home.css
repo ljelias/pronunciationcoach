@@ -1,354 +1,68 @@
-.row1 {
+#homeTop {
+  width: 100%;
+}
+#startMenuRow {
+  position: fixed;
+  top: 111px;
+  right: 18px;
+  left: 18px;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
-}
-
-.subrowA {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-  padding: 2vh 2vw;
-}
-.subrowB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 85%;
-  box-shadow: inset 0 0 18px  rgba(0, 0, 0, 0.7);
-  max-height: 540px;
-  min-width: 304px;
-  margin: 4vh auto 12vh auto;
-  padding: 2vh 2vw;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-
-/*
-.columnA {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 3;
-  min-width: 300px;
-  overflow: hidden;
-  padding: 0 2vw;
-}
-.columnB {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 5; */
-/*  border-top: 5px solid rgba(245, 245, 245, 0.3);
-  border-left: 5px solid rgba(245, 245, 245, 0.3);
-  border-bottom: 5px solid rgba(245, 245, 245, 0.3); */
-/*  box-shadow: inset 0 0 18px  rgba(0, 0, 0, 0.7);
-  max-height: 540px;
-  min-width: 304px;
-  margin: 2vh 2vw;
-  padding: 2vh 2vw;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-*/
-#intro {
-  position: relative;
-  background-color: rgba(227, 221, 216, 0.7);
-  margin: 0 0 36px 0;
-  padding: 18px 12px;
-  text-align: center;
-  color: rgba(60, 60, 60, 0.9);
-  border-radius: 0;
-}
-#subTitle {
-  font-size: 1.7rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
-#scrollToTips {
-  margin: 9px auto;
-  padding: 9px 12px;
-  border-radius: 33px;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.2rem;
-  font-weight: 600;
-  position: relative;
-  background-color: rgba(160, 160, 160, 0.9);
-  color: rgb(240, 230, 255);
-  -webkit-transition: color 500ms ease, text-shadow 2s ease;
-  -moz-transition: color 500ms ease, text-shadow 2s ease;
-  -o-transition: color 500ms ease, text-shadow 2s ease;
-  transition: color 500ms ease, text-shadow 2s ease;
-}
-#scrollToTips:hover {
-  cursor: pointer;
-  background-color: rgba(123, 123, 123, 0.5);
-  color: rgba(248, 245, 49, 0.9);
-  text-shadow: 0px 0px 9px rgba(210, 232, 250, 0.4), 0px 0px 18px rgba(255, 255, 255, 0.6);
-}
-#scrollToTips:before{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  border-radius: 33px;
-  background: #fff;
-  z-index: -1;
-  background: linear-gradient(-30deg, #d2e8fa, #5a5a5a, #f8f531);
-}
-#scrollToTips:after{
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: -9px;
-  bottom: -2px;
-  right: -2px;
-  border-radius: 33px;
-  background: #fff;
-  z-index: -2;
-  filter: blur(15px);
-  background: linear-gradient(-30deg, #d2e8fa, #fcfcfc, #f8f531);
-}
-#scrollDownArrow {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
-}
-
-.topicCard {
-  min-height: 120px;
-  width: 80%;
-  min-width: 300px;
-  background-color: rgba(123, 123, 123, 0.85);
-  border: 0px solid rgba(245, 245, 245, 0.3);
-/*  box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.6); */
-  margin: 18px auto 39px auto;
-  padding: 15px 18px;
-  color: rgb(40, 40, 40);
-}
-/*
-.topicA {
-  background-color: rgba(180, 180, 180, 0.8);
-}
-.topicB {
-  background-color: rgba(179, 223, 91, 0.7);
-}
-.topicC {
-  background-color: rgba(221, 184, 121, 0.8);
-}
-.topicD {
-  background-color: rgba(218, 164, 152, 0.8);
-}
-*/
-.topicA {
-  background-color: rgba(252, 249, 119, 0.8);
-}
-.topicB {
-  background-color: rgba(201, 238, 127, 0.7);
-}
-.topicC {
-  background-color: rgba(255, 202, 161, 0.8);
-}
-.topicD {
-  background-color: rgba(253, 205, 123, 0.8);
-
-}
-
-.scrollTitle {
-  font-size: 1.25rem;
-  font-style: italic;
-  font-weight: 600;
-  margin-bottom: 9px;
-}
-.scrollP {
-  font-size: 0.95rem;
-  line-height: 1.2rem;
-  margin-bottom: 9px;
-}
-
-.row2 {
-  width: 100%;
-  background-color: rgba(245, 245, 245, 0.4);
-  color: rgb(54, 54, 54);
-  padding-top: 18px;
-}
-.topTenRoll {
-  min-height: 495px;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 1px;
-}
-.topTenHeader {
-  padding: 18px 0;  
-}
-#topTenTitle {
-  display: inline-block;
-  margin: 0 0 0 5vw;
-  font-size: 1.6rem;
-  font-weight: 700;
-  font-style: italic;
-}
-#topTenSubtitle{
-  display: inline-block;
-  margin: 0 3vw;
-  color: rgb(54, 54, 54);
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-.tipButtonRow {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: 85%;
-  margin: 0 auto;
+  margin: 0px;
+  background-color: rgba(229, 226, 221, 0.85);
+  box-shadow: 0px 0px 4px 2px rgba(60, 60, 60, 0.8);
 }
-#arrowButton1,
-#arrowButton2 {
-  font-size: 2rem;
-  background-color: rgba(123, 123, 123, 0.4);
-  border: 2px solid rgba(123, 123, 123, 0.75);
-  color: rgb(54, 54, 54);
-}
-#arrowButton1 {
-  border-radius: 6px 0 0 6px;
-}
-#arrowButton2 {
-  border-radius: 0 6px 6px 0;
-}
-#arrowButton1:hover,
-#arrowButton2:hover {
-  cursor: pointer;
-  background-color: rgba(123, 123, 123, 0.9);
-}
-#arrowButton1:active,
-#arrowButton2:active {
-  color: yellowgreen;
-  border: 2px solid yellowgreen;
-}
-.topTenP {
-  display: inline-block;
-  color: rgb(54, 54, 54);
-  background-color: rgba(154, 205, 50, 0.7);
-  border: 1px solid yellowgreen;
-  padding: 9px 6px;
-  text-align: center;
-  font-size: 0.9rem;
-  line-height: 1.1rem;
-  font-style: italic;
-  font-weight: 600;
-}
-.topten {
-  display: none;
-  width: 95%;
-  min-height: 366px;
-  margin: 18px auto 75px auto;
-  background-color: whitesmoke;
-  border-radius: 9px;
-  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.5);
-  padding: 18px 24px;
-}
-.topten p,
-.topten li {
-animation: fadein 1s;
-}
-@keyframes fadein {
-  from { opacity: 0; color: white; }
-  to   { opacity: 1; color: rgb(54, 54, 54); }
-}
-.tipTitle {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-#subdiv1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: space-between;
-  padding: 9px 0;
-}
-.exampleDiv1 {
-  display: flex;
-  flex-direction: column;
+.startMenuOption {
   flex-basis: 100%;
   flex: 1;
-  min-width: 240px;
-  margin: 0 9px;
+  min-height: 30px;
+  font-size: 0.75rem;
+  line-height: 0.85rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(60, 60, 60, 0.9);
+  padding: 3px 9px 4px 9px;
+  border: 1px solid  rgba(60, 60, 60, 0.4);
+  position: relative;
+  z-index: 3;
 }
-.exampleStart {
-  font-weight: 700;
+.startMenuOption:hover {
+  color: rgba(245, 245, 245, 1);
+  background-color: rgba(100, 149, 237, 0.3);
 }
-.tipImg {
-  margin-left: 2px;
-  margin-top: 6px;
-  max-height: 111px;
-  float: right;
+.startMenuOption:active {
+  border-top: 2px solid  rgba(60, 60, 60, 0.4);
+  border-bottom: 0px solid  rgba(60, 60, 60, 0.4);
+  box-shadow: 0px 1px 9px 5px rgba(210, 232, 250, 0.4), 0px 2px 18px 9px rgba(255, 255, 255, 0.6);
+
 }
-.tipParag {
-  font-size: 0.95rem;
-  line-height: 1.3rem;
-  margin-bottom: 6px;
-}
-.tipParagInset {
-  margin: 0 2vw 6px 2vw;
-}
-.subtitle {
-  margin-top: 12px;
+@media only screen and (min-width: 305px) {
+  #startMenuRow {
+    top: 90px;
+  }  
 }
 
 @media only screen and (min-width: 475px) {
-  .tipImg {
-    margin-left: 4px;
-    margin-right: 6px;
-    max-height: 129px;
-  }
-  .topTenP {
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
-}
-
-
-@media only screen and (min-width: 840px) {
-  .topten {
-    width: 85%;
-  }
-  .topTenP {
-    font-size: 1.05rem;
-    line-height: 1.25rem;
-  }
-  #scrollToTips {
-    margin: 9px auto;
+  .startMenuOption {
+    min-height: 33px;
+    font-size: 0.8rem;
+    line-height: 0.85rem;
   }
 
 }
 
-@media only screen and (min-width: 890px) {
-  #scrollToTips {
-    margin: 9px 24px;
+@media only screen and (min-width: 677px) {
+  #startMenuRow {
+    top: 60px;
   }
-}
-
-
-@media only screen and (min-width: 1000px) {
-  .topTenRoll {
-    width: 90%;
+  .startMenuOption {
+    min-height: 36px;
+    font-size: 0.9rem;
+    line-height: 0.95rem;
   }
-  #scrollToTips {
-    margin: 9px 36px;
-  }
-
 }

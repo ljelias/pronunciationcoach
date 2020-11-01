@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import { HashLink as Link } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import './NotFoundPage.css';
 
@@ -8,29 +9,24 @@ class NotFoundPage extends Component {
     currentPages: [
       {
         pageName: 'Home',
-        pageDescription: 'PronunciationCoach main page, including the "Top Ten Tips".',
+        pageDescription: 'PronunciationCoach main page, including the "Top Ten Tips", "FAQs", "About", and more.',
         pageLink: '/'
       },
       {
-        pageName: 'Vowel Test',
+        pageName: 'Vowel Check',
         pageDescription: 'Listening activities to test yourself and discover which vowel contrasts are difficult for you.',
-        pageLink: '/voweltest'
+        pageLink: '/vowelcheck'
       },
       {
-        pageName: 'Exercises',
-        pageDescription: 'Listening activities to practice hearing some of the vowel sound contrasts that learners of English more frequently find difficult.',
-        pageLink: '/exercises'
+        pageName: 'Classes',
+        pageDescription: 'Live interactive group classes. Class descriptions and registration links.',
+        pageLink: '/classes'
       },
       {
         pageName: 'Resources',
         pageDescription: 'Recommended resources: top picks for helpful language learning books.',
         pageLink: '/resources' 
       },
-      {
-        pageName: 'Anent',
-        pageDescription: 'About the PronunciationCoach, services available, and a contact form.',
-        pageLink: '/about' 
-      }
   ] };
 
 

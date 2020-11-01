@@ -67,11 +67,11 @@ a {
 }
 .shadowA:hover {
   cursor: pointer;
-  border: 1px solid grey;
+  border: 1px solid rgba(200, 200, 200, 0.4);
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 .shadowA:active {
-  background-color: rgba(73, 202, 47, 0.63);
+  background-color: rgba(154, 205, 50, 0.6);
 }
 .shadowA2 {
   padding: 0 2px;
@@ -84,7 +84,7 @@ a {
   box-shadow: 0px 3px 3px 0px rgba(245, 245, 245, 0.5);
 }
 .shadowA2:active {
-  background-color: rgba(56, 221, 23, 0.63);
+  background-color: rgba(154, 205, 50, 0.6);
 }
 .bold {
   font-weight: 700;
@@ -94,26 +94,27 @@ a {
   top: 0;
   z-index: 2;
   width: 100%;
-  min-height: 54px;
-  background-color: rgba(140, 140, 140, 1);
+  min-height: 111px;
+  background-color: rgba(229, 226, 221, 1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 0px;
 }
 .mainName {
-  display: flex;
-  flex-direction: row;
   flex-basis: 100%;
-  align-items: center;
   flex: 1;
   min-width: 200px;
   color: whitesmoke;
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
-  margin: 0 2vw;
+  text-align: center;
+  background-color: rgba(130, 130, 130, 1);
+  margin: 3px 2vw 0 2vw;
+  padding: 2px 12px 6px 12px;
+  border: 1px solid rgba(130, 130, 130, 1);
+  border-radius: 45px;
 }
 .mainName:hover {
   text-shadow: 0px 0px 9px #d2e8fa, 0px 0px 15px white;
@@ -121,66 +122,104 @@ a {
 .mainName:active {
   color: #fdfca5;
   text-shadow: 0px 0px 12px #fffd75, 0px 0px 18px #d2e8fa, 0px 0px 24px white;
+  border-top: 2px solid rgba(90, 90, 90, 0.9);
+  border-bottom: 0px solid rgba(130, 130, 130, 1);
 }
+
+#subTitle {
+  flex-basis: 100%;
+  flex: 2;
+  text-align: center;
+  color: rgba(60, 60, 60, 0.9);
+  font-size: 1rem;
+  line-height: 1.05rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
 .headerNav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-basis: 100%;
-  flex: 5;
+  flex: 4;
   min-width: 270px;
   justify-content: center;
   align-content: center;
-  color: whitesmoke;
-  align-self: center;
-  text-align: center;
-  font-size: 0.9rem;
-  margin: 0 8vw;
+  margin: 0 1vw;
+  padding-bottom: 4px;
 }
 .topNav {
+  font-size: 0.9rem;
+  text-align: center;
+  color: rgb(60, 60, 60);
   padding: 0px 9px 3px 9px;
+  margin: 1px 0 1px 0;
   border-radius: 2px;
+  border: 1px solid rgba(200, 200, 200, 0);
 }
 .topNav:hover {
+  color: whitesmoke;
   background-color: rgba(241, 241, 241, 0.5);
-  color: rgb(60, 60, 60);
+  background-color: rgba(90, 90, 90, 0.5);
+  border: 1px solid rgba(90, 90, 90, 0.2);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+
 }
 .topNav:active {
   color: yellowgreen;
+  border-top: 0px solid rgba(200, 200, 200, 0);
+  border-bottom: 2px solid rgba(90, 90, 90, 0.1);
 }
 .App {
   position: fixed; 
-  overflow: hidden;
-  overflow: auto;
-  top: 70px; right: 0; bottom: 111px; left: 0;
+  top: 111px; 
+  right: 0; 
+  bottom: 66px; 
+  left: 0;
+  overflow:hidden;
+  overflow-y: scroll;
+
 }
 .pageBottom {
   position: fixed;
   bottom: 0;
   z-index: 2;
   width: 100%;
-  height: 111px;
+  height: 66px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: transparent;
 }
 .footerLeft {
-  width: 20%;
-  min-width: 150px;
-  padding: 4px 9px;
+  flex-basis: 100%;
+  flex: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 141px;
+  padding: 2px 0;
+  text-align: center;
   color: rgba(245, 245, 245, 0.1);
 }
 .footerLeft:hover {
   color: rgba(245, 245, 245, 0.5);
 }
 .footerCenter {
-  width: 30%;
-  min-width: 150px;
-  padding: 4px;
+  flex-basis: 100%;
+  flex: 3;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  padding: 2px 0;
   text-align: center;
   color: rgba(245, 245, 245, 0.1);
 }
@@ -188,9 +227,14 @@ a {
   color: rgba(245, 245, 245, 0.5);
 }
 .footerRight {
-  width: 49%;
-  min-width: 270px;
-  padding: 4px 9px;
+  flex-basis: 100%;
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
   text-align: center;
   color: rgba(245, 245, 245, 0.1);
 }
@@ -206,7 +250,6 @@ a {
   line-height: 1rem;
 }
 .pageBottomLink {
-  display: inline-block;
   font-size: 0.75rem;
   line-height: 0.95rem;
   margin: 1px 6px 3px 6px;
@@ -245,32 +288,32 @@ a {
   padding: 18px 30px;
 }
 .scrollToTop {
-  width: 100%;
-  padding: 3px 6px;
+  width: 35%;
+  margin: 24px auto;
+  padding: 6px;
   font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
-  background-color: rgba(245, 245, 245, 0.2);
+  background-color: rgba(245, 245, 245, 0.35);
+  border-radius: 3px;
 }
 .scrollToTop:hover {
   cursor: pointer;
   background-color: rgba(154, 205, 50, 0.5);
 }
 
-
-@media only screen and (min-width: 475px) {
+@media only screen and (min-width: 305px) {
   .mainHeader {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .headerNav {
-    min-width: 240px;
-    justify-content: flex-end;
-    margin: 0;
-    padding-right: 2%;
+    min-height: 90px;
   }
   .App {
-    top: 54px; 
+    top: 90px; 
+  }
+}
+
+@media only screen and (min-width: 475px) {
+  .headerNav {
+    min-width: 240px;
   }
   .contactLabel {
     display: inline-block;
@@ -281,7 +324,32 @@ a {
   #message {
     margin-top: 9px;
   }
+  #subTitle {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
 }
+
+
+@media only screen and (min-width: 677px) {
+  .mainHeader {
+    min-height: 60px;
+  }
+  .mainName {
+    margin-bottom: 3px;
+  }
+  .headerNav {
+    justify-content: flex-end;
+  }
+  .App {
+    top: 60px; 
+  }
+  .scrollToTop {
+    width: 25%;
+  }
+}
+
+
 
 @media only screen and (min-width: 715px) {
   .pageBottom {

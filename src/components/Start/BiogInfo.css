@@ -1,0 +1,226 @@
+#biogTop {
+  margin-top: 1px;
+}
+.row1Biog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 54px 9px;
+}
+.biogCard {
+  width: 98%;
+  margin: 18px auto 9px auto;
+  background-color: rgba(111, 111, 111, 0.7);
+  color: whitesmoke;
+  padding: 18px;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+.biogTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+.biogP {
+  font-size: 1.05rem;
+  line-height: 1.3rem;
+  margin-bottom: 9px;
+}
+#buttonLine {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 12px auto;
+}
+#openContactForm {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: whitesmoke;
+  background-color: rgba(154, 205, 50, 0.4);
+  border: 2px solid rgba(245, 245, 245, 0.2);
+  border-radius: 18px;
+  padding: 4px 18px;
+}
+#openContactForm:hover {
+  cursor: pointer;
+  color: rgb(60, 60, 60);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgb(130, 130, 130);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+#contactCard {
+  display: none;
+}
+.row2Biog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0px;
+  padding: 0;
+  background-color: rgba(123, 123, 123, 0.6);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  width: 100%;
+  min-width: 304px;
+  max-width: 720px;
+  min-height: 240px;
+  background-color: rgba(245, 245, 245, 0.95);
+  background-color: rgb(192, 221, 133);
+  box-shadow: 0px 9px 18px 6px rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  margin: 0 auto;
+  padding: 4vh 3vw 6vh 3vw;
+  font-size: 0.9rem;
+}
+
+#contactFormHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#contactFormTitle {
+  flex-basis: 100;
+  flex: 5;
+}
+.xOut {
+  flex-basis: 100%;
+  flex: 1;
+  color: whitesmoke;
+  font-size: 27px;
+  line-height: 20px;
+  background-color: rgb(182, 129, 129);
+  border: 2px solid rgb(182, 129, 129);
+  height: 30px;
+  max-width: 30px;
+  border-radius: 18px;
+  text-align: center;
+}
+.xOut:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 9px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgb(194, 77, 77);
+  border: 2px solid rgb(194, 77, 77);
+}
+.xOut:active {
+  color:  rgba(245, 245, 245, 0.5);
+  background-color: rgba(194, 77, 77, 0.5);
+  border: 2px solid rgba(194, 77, 77, 0.3);
+  border-top: 3px solid rgba(194, 77, 77, 0.3);
+  border-bottom: 1px solid rgba(194, 77, 77, 0.3);
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.5);
+}
+#formInstructions {
+  margin-bottom: 6px;
+}
+.formP {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+.contactBtn {
+  float: right;
+  margin: 0px;
+  padding: 6px 15px;
+  border-radius: 3px;
+  background-color: rgba(160, 160, 160, 0.6);
+}
+.contactBtn:hover {
+  cursor: pointer;
+  background-color: rgba(160, 160, 160, 0.35);
+  box-shadow: 0px 4px 9px 4px rgba(0, 0, 0, 0.5);
+}
+.contactBtn:active {
+  background-color: rgba(154, 205, 50, 0.6);
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.5);
+}
+#checkboxes {
+  display: none;
+}
+.boxLabel {
+  display: block;
+  text-align: left;
+  margin: 0 3px;
+}
+.contactInputs {
+  width: 55%;
+  min-width: 240px;
+  margin-bottom: 6px;
+}
+#message {
+  width: 80%;
+  min-width: 275px;
+  margin-top: 3px;
+  vertical-align: top;
+}
+.thankyouMsg {
+  margin-top: 36px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: none;
+}
+
+@media only screen and (min-width: 475px) {
+  #message {
+    min-width: 285px;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  .biogCard {
+    width: 90%;
+    margin-top: 36px;
+    padding: 24px 30px;    
+  }  
+  .biogTitle {
+    font-size: 1.35rem;
+  }
+  .biogP {
+    font-size: 1.15rem;
+    line-height: 1.4rem;
+    margin-bottom: 12px;
+  }
+  .row2Biog {
+    padding: 3vh 0;
+  }
+  #contactForm {
+    width: 90%;
+    margin: 15vh auto;
+  }   
+}
+
+
+
+@media only screen and (min-width: 750px) {
+  .boxLabel {
+    display: inline-block;
+    width: 69px;
+    text-align: right;
+    margin: 9px 3px 3px 3px;
+  }
+  #message {
+    margin-top: 9px;
+  }
+}
+
+
+@media only screen and (min-width: 840px) {
+  .biogCard {
+    width: 85%;
+    padding: 21px 30px;
+    margin-top: 42px;
+  }
+  #contactForm {
+    width: 85%;
+  }
+}
