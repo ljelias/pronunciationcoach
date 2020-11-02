@@ -22,7 +22,7 @@ class Header extends Component {
       <nav className='headerNav'>
         <Link to='/vowelcheck'><span className="topNav">Vowel&nbsp;Check</span></Link>
         <Link to='/classes'><span className="topNav">Classes</span></Link>
-        <Link to='/resources'><span className="topNav">Resources</span></Link>
+        <Link to='/resources'><span className="topNav">Book Recs</span></Link>
         <a href='https://pronunciationcoach.blog/' target='_blank' rel='noopener noreferrer'><span className="topNav">Blog</span></a>
       </nav>
     </header>

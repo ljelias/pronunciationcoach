@@ -56,7 +56,7 @@ class Faqs extends Component {
               Why? Because ESL textbooks and grammar books teach the formal sentence structure and grammar needed for written English. Plus, if you learned English
                 primarily through reading and writing, you just don't see them very often in written materials.</p>
               <p className="faqP"><span className="connector">HOWEVER...</span> in order to be skilled with spoken English, you need to learn to use them. Go to the <Link
-                to='/resources' className='shadowA'>Resources</Link> page to see books that I recommend for learning phrasal verbs.
+                to='/resources' className='shadowA'>Book&nbsp;Recs</Link> page to see books that I recommend for learning phrasal verbs.
             </p>
 
             </li>
@@ -64,16 +64,16 @@ class Faqs extends Component {
               <h4 className="faqTopicItem">Why do different textbooks and dictionaries have different vowel systems, and different symbols for some of the vowels?</h4>
               <p className="faqP">English has 15 different vowel sounds. (And some say that there are more
               than 15!) AND one of the primary differences between American and British English, or between different regional accents,
-              is differences in the vowel sounds. Therefore, ESL textbooks are often different because the authors are from
+              is differences in the vowel sounds. Therefore, different ESL textbooks may present the vowels differently because the authors are from
               different places!!</p>
               <p className="faqP">PronunciationCoach presents the vowel system in a way that...</p>
               <ul className="ulSublist">
                 <li className='faqSubItem'>aims for the "General American English" style.</li>
                 <li className='faqSubItem'>helps clarify some very useful pronunciation-spelling patterns that many textbooks overlook.</li>
                 <li className='faqSubItem'>is similar to how many native-speaking children are taught in school.</li>
-                <li className='faqSubItem'>is straightforward, not complicated by overanalyzing very small distinctions. 
-                Small variations often happen naturally for certain letter combinations or stress patterns, things that linguists love to analyze,
-                but most native English speakers typically are not even aware of. You do not need to know all of the fine-grained
+                <li className='faqSubItem'>is straightforward and not complicated by over-analyzing very small distinctions. 
+                Small variations often happen naturally for certain letter combinations or stress patterns (things that linguists love to analyze),
+                but most native English speakers typically are not even aware of them. You do not need to know all of the fine-grained
                 differences in order to speak English well.</li>
               </ul>
             </li>
@@ -88,8 +88,8 @@ class Faqs extends Component {
             </li>
           </ul>
         </div>
-        <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Go to Top ^</div>
         </div>
+        <div className='scrollToTop' onClick={() => this.scrollToTop()}>^ Go to Top ^</div>
       </section>
     </>);
   }

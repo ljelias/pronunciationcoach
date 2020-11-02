@@ -30,19 +30,19 @@ class StartHere extends Component {
             <div className="startHereCardBottom">
               <p className="startHereP">The English vowel system is complex, and many English learners need to correct the way they pronounce at least a few of the vowels.</p>
               <p className="startHereP"><em>CHECK YOURSELF: </em>The <Link to='/vowelcheck' className='shadowA'>Vowel&nbsp;Check</Link> page covers vowel contrasts that are most often difficult for learners.</p>
-              <p className="startHereP">Listen to the quizzes to assess yourself. Can you hear the differences between the vowels? You may discover some areas of weakness. </p>
-              <p className="startHereP">The training exercises let you listen to the word pairs from the quizzes, to help you train your ear.</p>
+              <p className="startHereP"><strong>1. </strong>There are some short listening quizzes to assess yourself. Can you hear the differences between the vowels? You may discover some areas of weakness. </p>
+              <p className="startHereP"><strong>2. </strong>The training exercises let you listen to the word pairs from the quizzes, to help you train your ear.</p>
             </div>
           </div>
         <div className="startHereCard">
           <div className="startHereCardHeader topicColorB"><h3 className="startHereTopicTitle">NEXT: CHECK VOWEL&nbsp;"O"</h3></div>
           <div className="startHereCardBottom">
-            <p className="startHereP">The vowel that is probably mispronounced most often is "O", 
+            <p className="startHereP">Vowel "O" is the vowel that is probably mispronounced most often, 
               so this is one of the first things to check.</p>          
             <p className="startHereP">Many students do not know that English “O” has three different sounds, so they
               use just one O&#8209;sound (with rounded lips) every time they see this letter in English.</p>          
             <p className="startHereP"><em>BUT WAIT!!</em> Besides the three basic sounds, there is also a fourth sound  
-              used in some frequently used words!</p>          
+              used in some of the most frequent words!</p>          
             <p className="startHereP">Do you know all the sounds of "O"? Find out in the blog lesson <a
                 href='https://pronunciationcoach.blog/2012/10/25/the-sounds-of-o/' target='_blank' rel='noopener noreferrer'
                 className='shadowA'><em>"The&nbsp;Sounds&nbsp;of&nbsp;O"</em></a>.</p>          

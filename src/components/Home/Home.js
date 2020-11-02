@@ -69,7 +69,7 @@ class Home extends Component {
       <div id='homeTop'>
         <nav id="startMenuRow">
           <div className="startMenuOption" id="menuOption1" onClick={() => {this.setCurrentOption('StartHere', 'menuOption1'); this.scrollToTop();}}>START HERE</div>
-          <div className="startMenuOption" id="menuOption2" onClick={() => this.setCurrentOption('MoreResources', 'menuOption2')}>MORE RESOURCES</div>
+          <div className="startMenuOption" id="menuOption2" onClick={() => this.setCurrentOption('MoreResources', 'menuOption2')}>MORE HELP</div>
           <div className="startMenuOption" id="menuOption3" onClick={() => {this.setCurrentOption('Faqs', 'menuOption3'); this.scrollToTop();}}>FAQs</div>
           <div className="startMenuOption" id="menuOption4" onClick={() => this.setCurrentOption('BiogInfo', 'menuOption4')}>ABOUT</div>
           <div className="startMenuOption" id="menuOption5" ><em>(more soon!)</em></div>
